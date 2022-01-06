@@ -443,8 +443,13 @@
                                                     </td>
                                                     <t t-set="total_qty" t-value="total_qty + round(line.quantity,1)"/>
                                                     <td style="border:1px solid black">
-                                                        <span class="text-nowrap"
-                                                              t-esc="round(line.price_before_discount,2)"/>
+                                                        <t t-if="line.tax_ids">
+                                                            <span class="text-nowrap"
+                                                              t-esc="round((line.price_unit / (1+((line.tax_ids[0].amount or 0)/100))),2)"/>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <span>0</span>
+                                                        </t>
                                                     </td>
 
                                                     <!--                                                    <td style="border:1px solid black">-->
