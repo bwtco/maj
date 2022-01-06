@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_backend_inherit" name="disable edit confirmed PO assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/tax_invoice_with_barcode_new/static/src/js/models.js"/>
+        </xpath>
+    </template>
+</odoo>
