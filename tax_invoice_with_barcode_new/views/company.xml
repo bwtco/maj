@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="view_inherit_view_company_form" model="ir.ui.view">
+            <field name="name">view_inherit_view_company_form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                
+                <!-- position: after|before|replace|attributes|inside -->
+                <xpath expr="//field[@name='favicon']" position="after">
+                    <field name="show_tax_invoice_header"/>
+                    <field name="invoice_tax_header_logo" widget="image" class="oe_avatar" attrs="{'invisible':[('show_tax_invoice_header','=',False)]}" />
+                    <field name="invoice_tax_footer_logo" widget="image" class="oe_avatar" attrs="{'invisible':[('show_tax_invoice_header','=',False)]}"/>
+                </xpath>
+
+                
+            </field>
+        </record>
+    </data>
+</odoo>
