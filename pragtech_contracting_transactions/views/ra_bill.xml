@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+	<record id="rabill_form_view_inherit"  model="ir.ui.view">
+			<field name="name">RA Bill</field>
+			<field name="model">ra.bill</field>
+			<field name="inherit_id" ref="pragtech_contracting.rabill_form_view"/>
+			<field name="arch" type="xml">
+			<xpath expr="//group[3]" position="after">
+			<separator string="Advance Recovery" />
+					<group colspan="4" col="4">
+						<field name="advance_recovery_ids" nolabel="1"
+							>
+							<tree colors="#006600:this_bill_recovery>0"
+								editable="bottom" create="0" delete="0">
+								<field name="advance_id" readonly="1" />
+								<field name="advance_amount" readonly="1" />
+								<field name="recovered_till_date" readonly="1" />
+								<field name="bill_id" readonly="1" />
+								<field name="balance_amount" readonly="1" />
+								<field name="this_bill_recovery" readonly="0" />
+							</tree>
+						</field>
+					</group>
+					<group class="oe_subtotal_footer oe_right">
+						<!-- <field name="total_advance_recovery_amt" widget="monetary"
+							readonly="1" /> -->
+					</group>
+
+					<separator string="Debit Recovery" />
+					<group colspan="4" col="4">
+						<field name="debit_note_ids" nolabel="1"
+							>
+							<tree colors="#006600:this_bill_recovery>0" editable="bottom"
+								create="false" delete="false" >
+								<field name="debit_id" readonly="1" />
+								<field name="debit_note_amount" readonly="1" />
+								<field name="recovered_till_date" readonly="1" />
+								<field name="balance_amount" readonly="1" />
+								<field name="this_bill_recovery" readonly="0" />
+							</tree>
+						</field>
+					</group>
+					<group class="oe_subtotal_footer oe_right">
+					<!-- 	<field name="total_debit_recovery_amt" widget="monetary"
+							readonly="1" /> -->
+					</group>
+
+					<separator string="Credit Given" />
+					<group colspan="4" col="4">
+						<field name="credit_note_ids" nolabel="1">
+							<tree colors="#006600:this_bill_recovery>0" editable="bottom" create="false" delete="false">
+								
+								<field name="credit_id" readonly="1" />
+								<field name="credit_note_amount" readonly="1" />
+								<field name="recovered_till_date" readonly="1" />
+								<field name="bill_id" readonly="1" />
+								<field name="balance_amount" readonly="1" />
+								<field name="this_bill_recovery" readonly="0" />
+							</tree>
+						</field>
+					</group>
+			</xpath>
+		<!-- 	<xpath expr="//group[9]/div" position="before">
+				<group class="oe_subtotal_footer oe_right">
+						<field name="total_credit_amt" string="Total Credit Recovery" widget="monetary" readonly="1" />
+					</group>
+			</xpath> -->
+			
+			</field>
+			</record>
+			
+	
+	</data>
+</odoo>

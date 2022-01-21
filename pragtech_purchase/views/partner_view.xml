@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_partner_bank_form_inherited" model="ir.ui.view">
+            <field name="name">partner.bank.account.inherited</field>
+            <field name="model">res.partner.bank</field>
+            <field name="inherit_id" ref="base.view_partner_bank_form"/>
+            <field name="arch" type="xml">
+
+                <field name="acc_number" position="after">
+                    <field name="partner_id" readonly="1"/>
+                </field>
+                <!-- <xpath expr="/form/group/field[@name='partner_id']" position="replace">
+                <field name="partner_id" readonly="1"/>
+                </xpath> -->
+                <xpath expr="/form/sheet/group/group/field[@name='company_id']" position="replace">
+                    <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"
+                           readonly="1"/>
+                </xpath>
+
+                <xpath expr="/form/sheet/group" position="after">
+                    <notebook>
+                        <page string="Audit Trail">
+                            <field name="mesge_ids">
+                                <tree>
+                                    <field name="date"/>
+                                    <field name="create_uid"/>
+                                    <field name="write_uid"/>
+                                    <field name="remark"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_res_partner_form_inherited_vendor" model="ir.ui.view">
+            <field name="name">view.partner.form.inherited</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <!-- <xpath expr="/form/sheet/notebook/page[@name='sales_purchases']/group/group[@name='sale']" position="replace">
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page[@name='sales_purchases']/group/group[@name='purchase']" position="replace">
+                </xpath>
+                <xpath expr="/form/sheet/group" position="after">
+                    <group colspan="4" col="4">
+                        <group string="Sale" name="sale">
+                            <field name="customer"/>
+                            <field name="user_id" context="{'default_groups_ref': ['base.group_partner_manager']}"/>
+                        </group>
+                        <group string="Purchase" name="purchase">
+                            <field name="supplier"/>
+                        </group>
+                        <group string="Contractor" name="contractor">
+                            <field name="contractor"/>
+                        </group>
+                    </group>
+                </xpath> -->
+
+                <xpath expr="//page[@name='internal_notes']" position="after">
+                    <field name="chk_is_supplier" invisible="1"/>
+                    <page string="Vendor Information" attrs="{'invisible':[('chk_is_supplier','=',False)]}">
+
+                        <group colspan="4" col="4">
+                            <field name="cst_no"/>
+                            <field name="vat_no"/>
+                            <field name="pan_no"/>
+                            <field name="service_tax_no"/>
+                            <field name="weekly_off"/>
+                            <field name="credit_capacity"/>
+                            <field name="grading"/>
+                            <field name="primary_supplier"/>
+                            <field name="organization_type"/>
+                            <field name="vendor_type"/>
+                            <field name="vendor_status"/>
+                            <field name="trial_allowed" attrs="{'invisible':[('vendor_status','!=','trial')]}"/>
+                            <field name="trial_used" attrs="{'invisible':[('vendor_status','!=','trial')]}"/>
+                            <field name="status_remark"/>
+                            <field name="turn_over"/>
+                            <field name="number_of_employees"/>
+                            <field name="inbusiness_since"/>
+                            <field name="registration_date"/>
+                            <!-- <field name="esic_no" attrs="{'invisible':[('contractor','!=',True)]}"/>
+                            <field name="lwmf_no" attrs="{'invisible':[('contractor','!=',True)]}"/>
+                            <field name="wct_no" attrs="{'invisible':[('contractor','!=',True)]}"/>
+                            <field name="shop_act_no" attrs="{'invisible':[('contractor','!=',True)]}"/>
+                            <field name="shop_act_expiry_date" attrs="{'invisible':[('contractor','!=',True)]}"/>
+                            <field name="pf_code_registration_no" attrs="{'invisible':[('contractor','!=',True)]}"/>
+ -->
+                        </group>
+
+                        <!-- <separator string="Material Categories"/> <field name="categ_ids"/> -->
+                        <separator string="Category Information"/>
+                        <group colspan="4" col="4">
+                            <field name="material_category" attrs="{'invisible':[('chk_is_supplier','=', False)]}"
+                                   widget="many2many_tags"/>
+                        </group>
+                    </page>
+                    <page string="Documents">
+                        <field name="attachment_line_ids"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+

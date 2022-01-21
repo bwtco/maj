@@ -1,0 +1,1058 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pragtech_tender_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-08 07:05+0000\n"
+"PO-Revision-Date: 2021-03-08 07:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid ""
+"<b style=\"font-size: medium;\">Bid Name: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">اسم المشروع: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">القسم: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">تاريخ البداية: </b><br/>\n"
+"                                        <b style=\"font-size: medium;\">تاريخ النهاية: </b><br/>\n"
+"                                        <b style=\"font-size: medium;\">الإجمالي: </b><br/>\n"
+"                                        <b style=\"font-size: medium;\">الترتيب: </b><br/>\n"
+"                                        <b style=\"font-size: medium;\">الحالة: </b><br/>"
+msgstr ""
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "<b style=\"font-size: medium;\">Pre-bid Meeting MOM: </b>"
+msgstr ""
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid ""
+"<b style=\"font-size: medium;\">Tender Name: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">اسم المشروع: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">القسم: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">المناقصة من: </b><br/>\n"
+"                                        <b style=\"font-size: medium;\">المناقصة إلى: </b><br/>"
+msgstr ""
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid ""
+"<b style=\"font-size: medium;\">Total Budget: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">إيداع العربون: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">إيداع مبلغ التأمين </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">أضرار تم تسويتها: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">أضرار قائمة: </b>\n"
+"                                        <br/>\n"
+"                                        <b style=\"font-size: medium;\">تاريخ الاجتماع ما قبل المناقصة: </b>\n"
+"                                        <br/>"
+msgstr ""
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.view_tenders_kanban
+msgid "<strong>Deadline: </strong>"
+msgstr "الموعد النهائي"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.view_labours_kanban
+msgid "<strong>Your Price: </strong>"
+msgstr "السعر الخاص بك"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.list_all_tenders
+msgid "All Published Tenders"
+msgstr "جميع المناقصات المنشورة"
+
+#. module: pragtech_tender_management
+#: model:website.menu,name:pragtech_tender_management.publish_product_example
+msgid "All Tenders"
+msgstr "جميع المناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__all_total
+msgid "All Total"
+msgstr "كل الإجمالي"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__mat_amount
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__bids_labour_amount
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__bids_overhead_amount
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__answer
+msgid "Answer"
+msgstr "إجابة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__tenders_tenders__state__approve
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Approve"
+msgstr "موافقة"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Bid"
+msgstr "مناقصة"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Bid Information"
+msgstr "معلومات المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__start_date
+msgid "Bid from"
+msgstr "المناقصة من"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__end_date
+msgid "Bid to"
+msgstr "المناقصة إلى"
+
+#. module: pragtech_tender_management
+#: model:ir.actions.act_window,name:pragtech_tender_management.bids_form_action_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__bids_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__bids_id
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Bids"
+msgstr "مناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_bids_bids
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+msgid "Bids Bids"
+msgstr "مناقصات مناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_comment
+msgid "Bids Comment"
+msgstr "تعليق على مناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_bids_labour
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_labour_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__bids_labour_id
+msgid "Bids Labour"
+msgstr "مناقصات عمل"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_bids_labours_labour
+msgid "Bids Labours Labour"
+msgstr "مناقصات عمالة العمل"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_bids_bids_line
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_line_id
+msgid "Bids Line"
+msgstr "خط المناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.ui.menu,name:pragtech_tender_management.bids_main_menu
+msgid "Bids Main Menu"
+msgstr "القائمة الرئيسية للمناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_bids_overhead
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_overhead_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__bids_overhead_id
+msgid "Bids Overhead"
+msgstr "سقف المناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_bids_overhead_overhead
+msgid "Bids Overhead Overhead"
+msgstr "سقف المناقصات الأعلى"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Bids Questionnaire"
+msgstr "استطلاع المناقصات"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+msgid "Bids Questionnaires"
+msgstr "استطلاعات المناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_bids_questions
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_question_ids
+msgid "Bids Questions"
+msgstr "أسئلة المناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__can_publish
+msgid "Can Publish"
+msgstr "يمكن النشر"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_city
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__city
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "City"
+msgstr "المدينة"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.actions.act_window,help:pragtech_tender_management.dept_action
+msgid "Click to define a new Department."
+msgstr "اضغط لتحديد قسم جديد."
+
+#. module: pragtech_tender_management
+#: model_terms:ir.actions.act_window,help:pragtech_tender_management.questionnaire_menu_action
+msgid "Click to define a new Rating Qustionnaire."
+msgstr "اضغط لتحديد استطلاع تقييم جديد."
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__comment
+msgid "Comment"
+msgstr "تعليق"
+
+#. module: pragtech_tender_management
+#: model:ir.ui.menu,name:pragtech_tender_management.configuration_menu
+msgid "Configuration"
+msgstr "إعدادات"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.rating_qustionnaire_form
+msgid "Cost Code"
+msgstr "رمز التكلفة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__count_bids
+msgid "Count Bids"
+msgstr "عد المناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_country_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__country_id
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Country"
+msgstr "البلد"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_res_department__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__create_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_res_department__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__create_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__create_date
+msgid "Created on"
+msgstr "تم الإنشاء في"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.list_all_tenders
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.list_tenders
+msgid "Deadline"
+msgstr "الموعد النهائي"
+
+#. module: pragtech_tender_management
+#: model:ir.actions.act_window,name:pragtech_tender_management.dept_action
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__department
+#: model:ir.ui.menu,name:pragtech_tender_management.dept_menu
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.dept_form
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.dept_tree
+msgid "Department"
+msgstr "القسم"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_res_department
+msgid "Department master"
+msgstr "رئيس القسم"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__bids_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__bids_labour_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__bids_labour_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__bids_overhead_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__bids_overhead_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__labour_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__overhead_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__labour_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__overhead_description
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__line_description
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Description"
+msgstr "الوصف"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_res_department__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__display_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__display_name
+msgid "Display Name"
+msgstr "عرض الاسم"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__tenders_tenders__state__done
+msgid "Done"
+msgstr "تم"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__tenders_tenders__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__earnest_money_deposit
+msgid "Earnest Money Deposit"
+msgstr "إيداع العربون"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_end_date
+msgid "End Date"
+msgstr "تاريخ النهاية"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_res_department__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__tenders_tenders__state__in_progress
+msgid "In Progress"
+msgstr "قيد المعالجة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__is_published
+msgid "Is Published"
+msgstr "تم النشر"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__labour_id
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Labour"
+msgstr "عامل"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Labour Details"
+msgstr "تفاصيل العامل"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__bids_labour_product_uom
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__bids_labour_product_uom
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__product_uom
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__product_uom
+msgid "Labour UoM"
+msgstr "وحدة قياس العمل"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__labour_your_price
+msgid "Labour Your Price"
+msgstr "سعرك للعمل"
+
+#. module: pragtech_tender_management
+#: model:ir.actions.act_window,name:pragtech_tender_management.tenders_labours_form_action
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_labours_form_view
+msgid "Labours"
+msgstr "عمال"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_labours_labour
+msgid "Labours Labours"
+msgstr "عمال أعمال"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_labours_tree_view
+msgid "Labours Project"
+msgstr "مشروع العمل"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_res_department____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders____last_update
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Last Price"
+msgstr "السعر النهائي"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_res_department__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__write_uid
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_res_department__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__write_date
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__mat_last_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__bids_labour_last_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__bids_overhead_last_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__labour_last_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__overhead_last_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__labour_last_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__overhead_last_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__material_last_price
+msgid "Last price"
+msgstr "السعر النهائي"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__line_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__line_id
+msgid "Line"
+msgstr "حد"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__liquidated_damage
+msgid "Liquidated Damage"
+msgstr "أضرار تم تسويتها"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Location"
+msgstr "الموقع"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.logged_in_template
+msgid "Login Here..."
+msgstr "تسجيل الدخول هنا..."
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__bids_bids__state__lost
+msgid "Lost"
+msgstr "تم فقدان"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Material"
+msgstr "الأداوات"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Material Details"
+msgstr "تفاصيل الأدوات"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__material_your_price
+msgid "Material Your Price"
+msgstr "سعر الأدوات الخاص بك"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Measure of units"
+msgstr "وحدة القياس"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__bids_product_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__labour_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__overhead_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__tender_question_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_res_department__name
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__tender_labour_labour_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__tender_overhead_overhead_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__name
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Name"
+msgstr "الاسم"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__name_of_bidder
+msgid "Name of bidders"
+msgstr "اسم صاحب المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,help:pragtech_tender_management.field_res_department__name
+msgid "Name of the department"
+msgstr "اسم القسم"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,help:pragtech_tender_management.field_tenders_tenders__department
+msgid "Name of the department inviting tender"
+msgstr "اسم القسم الداعي للمناقصة"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.list_all_tenders
+msgid "No Tenders defined."
+msgstr "لم يتم تحديد مناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__mat_note
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__bids_labour_note
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__bids_overhead_note
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__question_question__type__number
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__tender_questions__type__number
+msgid "Numerical"
+msgstr "رقميي"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__overhead_id
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Overhead"
+msgstr "سقف"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Overhead Details"
+msgstr "تفاصيل السقف"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_overhead_overhead
+msgid "Overhead Overhead"
+msgstr "السقف الأعلى"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__bids_overhead_product_uom
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__bids_overhead_product_uom
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__product_uom
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__product_uom
+msgid "Overhead UoM"
+msgstr "وحدة قياس السقف"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__overhead_your_price
+msgid "Overhead Your Price"
+msgstr "سعر السقف الخاص بك"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__performance_security_deposit
+msgid "Performance Security Deposit"
+msgstr "إيداع مبلغ التأمين"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Pre-Bid Meeeting Details"
+msgstr "تفاصيل الاجتماع ما قبل المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__pre_bid_meeting_date
+msgid "Pre-bid Meeting Date"
+msgstr "تاريخ الاجتماع ما قبل المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__pre_bid_meeting_mom
+msgid "Pre-bid Meeting MOM"
+msgstr "تاريخ الاجتماع ما قبل المناقصة شهر على شهر"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__product_id
+msgid "Product"
+msgstr "منتج"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__bids_product_uom
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__product_uom
+msgid "Product UoM"
+msgstr "وحدة قياس المنتج"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Qty"
+msgstr "كمية"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__bids_product_uom_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__bids_labour_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labours_labour__bids_labour_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__bids_overhead_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead_overhead__bids_overhead_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_labours_labour__labour_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_overhead_overhead__overhead_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_labour__labour_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_overhead__overhead_qty
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders_line__product_uom_qty
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "Quantity"
+msgstr "كمية"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_questions__question
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__question_id
+msgid "Question"
+msgstr "سؤال"
+
+#. module: pragtech_tender_management
+#: model:ir.actions.act_window,name:pragtech_tender_management.questionnaire_menu_action
+#: model:ir.ui.menu,name:pragtech_tender_management.questionnaire_menu
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Questionnaire"
+msgstr "استطلاع"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.list_tenders
+msgid "Rank"
+msgstr "ترتيب"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_top_rank
+msgid "Ranking"
+msgstr "يحصل على ترتيب"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_question_question
+msgid "Rating Questionnaire"
+msgstr "تقييم الاستطلاع"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Reject"
+msgstr "رفض"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__tenders_tenders__state__rejected
+msgid "Rejected"
+msgstr "تم الرفض"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_user_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__user_id
+msgid "Responsible"
+msgstr "مسؤول"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,help:pragtech_tender_management.field_tenders_tenders__website_id
+msgid "Restrict publishing to this website."
+msgstr "تقييد النشر على هذا الموقع الالكتروني."
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__is_seo_optimized
+msgid "SEO optimized"
+msgstr "تم تحسين SEO"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "SUBMIT"
+msgstr "تسليم"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__seo_name
+msgid "Seo name"
+msgstr "اسم تحسين محرك البحث SEO"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.logged_in_template
+msgid "Sorry, You are not Logged in... Please Login first"
+msgstr "عذرا، أنت لم تقم بتسجيل الدخول... الرجاء تسجيل الدخول أولا"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_start_date
+msgid "Start Date"
+msgstr "تاريخ البداية"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_state_id
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__state_id
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "State"
+msgstr "الولاية"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__state
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_street
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__street
+msgid "Street"
+msgstr "الشارع"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Street 2..."
+msgstr "الشارع ٢..."
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Street..."
+msgstr "الشارع..."
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_street2
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__street2
+msgid "Street2"
+msgstr "الشارع٢"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__bids_bids__state__submitted
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__tenders_tenders__state__submitted
+msgid "Submitted"
+msgstr "تم التسليم"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Tender Information"
+msgstr "معلومات المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__tender_labour_id
+msgid "Tender Labour"
+msgstr "عمل المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__tender_line_id
+msgid "Tender Line"
+msgstr "حد المناقصة"
+
+#. module: pragtech_tender_management
+#: model:res.groups,name:pragtech_tender_management.custom_sales_group_manager
+msgid "Tender Manager"
+msgstr "مدير المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__tender_name
+msgid "Tender Name"
+msgstr "اسم المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__tender_overhead_id
+msgid "Tender Overhead"
+msgstr "سقف المناقصة"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Tender Questionnaires"
+msgstr "استطلاعات المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_tender_questions
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__tender_question_ids
+msgid "Tender Questions"
+msgstr "أسئلة المناقصة"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_tree_view
+msgid "Tender Tender"
+msgstr "مناقصة مناقصة"
+
+#. module: pragtech_tender_management
+#: model:res.groups,name:pragtech_tender_management.custom_sales_group_user
+msgid "Tender User"
+msgstr "مستخدم المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__tender_id
+msgid "Tender name"
+msgstr "اسم المناقصة"
+
+#. module: pragtech_tender_management
+#: model:ir.actions.act_window,name:pragtech_tender_management.tenders_form_action
+#: model:ir.model,name:pragtech_tender_management.model_tenders_tenders
+#: model:ir.ui.menu,name:pragtech_tender_management.tenders_menu
+msgid "Tenders"
+msgstr "مناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_tenders_labour
+msgid "Tenders Labour"
+msgstr "مناقصات عمل"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_tenders_tenders_line
+msgid "Tenders Line"
+msgstr "خط المناقصات"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.list_tenders
+msgid "Tenders List"
+msgstr "قائمة المناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.ui.menu,name:pragtech_tender_management.tenders_main_menu
+msgid "Tenders Main Menu"
+msgstr "القائمة الرئيسية للمناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model,name:pragtech_tender_management.model_tenders_overhead
+msgid "Tenders Overhead"
+msgstr "سقف المناقصات"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_tree_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "Tenders Tender"
+msgstr "مناقصات"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions__name
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__question_question__type__text
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__tender_questions__type__text
+msgid "Text"
+msgstr "نص"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.rank_template
+msgid "Thank you for being our vender"
+msgstr "شكرا لكونك بائع لدينا"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,help:pragtech_tender_management.field_tenders_tenders__website_url
+msgid "The full URL to access the document through the website."
+msgstr "عنوان URL الكامل للوصول إلى المستند من خلال الموقع."
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.list_all_tenders
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.list_tenders
+msgid "Title"
+msgstr "العنوان"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__top_rank
+msgid "Top rank"
+msgstr "أعلى ترتيب"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_all_total
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__total_budget
+msgid "Total Budget"
+msgstr "إجمالي الميزانية"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Total amount:"
+msgstr "إجمالي المبلغ"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_question_question__type
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tender_questions__type
+msgid "Type"
+msgstr "النوع"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__bids_bids__state__under_review
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+msgid "Under Review"
+msgstr "تحت المراجعة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__unliquidated_damage
+msgid "Unliquidated Damage"
+msgstr "أضرار قائمة"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__website_published
+msgid "Visible on current website"
+msgstr "مرئي على الموقع الحالي"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__website_id
+msgid "Website"
+msgstr "الموقع الالكتروني"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__website_url
+msgid "Website URL"
+msgstr "عنوان الموقع الالكتروني"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__website_meta_description
+msgid "Website meta description"
+msgstr "وصف الموقع الالكتروني"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__website_meta_keywords
+msgid "Website meta keywords"
+msgstr "الكلمات المفتاحية للموقع الالكتروني"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__website_meta_title
+msgid "Website meta title"
+msgstr "عنوان الموقع الالكتروني"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__website_meta_og_img
+msgid "Website opengraph image"
+msgstr "صورة أوبن غراف للموقع الالكتروني"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields.selection,name:pragtech_tender_management.selection__bids_bids__state__won
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+msgid "Won"
+msgstr "فاز"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+msgid "You"
+msgstr "أنت"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.rank_template
+msgid "Your Bid has been submitted successfully."
+msgstr "تم تسليم المناقصة الخاصة بك بنجاح"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_bids_info
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.show_tenders_info
+msgid "Your Price"
+msgstr "السعر الخاص بك"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.rank_template
+msgid "Your Rank:"
+msgstr "ترتيبك"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids_line__mat_your_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_labour__bids_labour_your_price
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_overhead__bids_overhead_your_price
+msgid "Your price"
+msgstr "السعر الخاص بك"
+
+#. module: pragtech_tender_management
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.bids_form_view
+#: model_terms:ir.ui.view,arch_db:pragtech_tender_management.tenders_form_view
+msgid "ZIP"
+msgstr "ZIP"
+
+#. module: pragtech_tender_management
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_bids_bids__bids_zip
+#: model:ir.model.fields,field_description:pragtech_tender_management.field_tenders_tenders__zip
+msgid "Zip"
+msgstr "Zip"
