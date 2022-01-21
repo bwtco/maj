@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="view_picking_form_inherited" model="ir.ui.view">
+			<field name="name">view.picking.form.inherited</field>
+			<field name="model">stock.picking</field>
+			<field name="inherit_id" ref="stock.view_picking_form" />
+			<field name="arch" type="xml">
+
+				<xpath expr="/form/sheet/group/group/field[@name='backorder_id']"
+					position="after">
+					<field name="project_id"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="challan_no"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="challan_date"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="stage_id" />
+					<field name="flag" invisible="1" />
+				</xpath>
+				<xpath expr="/form/sheet/group/group/field[@name='partner_id']"
+					position="after">
+					<field name="type"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="project_wbs"
+						context="{'form_view_ref':'pragtech_purchase.project_task_inherited_form_wbs1'}"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="po_id"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="brand_id"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="challan_qty"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="bill_id"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+
+				</xpath>
+
+				<xpath
+					expr="/form/sheet/notebook/page/group/group/field[@name='company_id']"
+					position="after">
+					<field name="invoice_no"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="bill_id"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="other_charges"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="transport_bill_id"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="gate_registration_no"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="loading_charges"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+				</xpath>
+
+<!--				<xpath expr="/form/sheet/notebook/page/group/group/field[@name='priority']" position="after">-->
+				<xpath expr="/form/sheet/notebook/page/group/group" position="after">
+					<field name="invoice_date"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="bill_id"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="vehicle_no"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="other_charges2"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="transport_amount"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="gate_registration_date"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+				</xpath>
+
+
+				<!-- <xpath
+					expr="/form/sheet/notebook/page/field[@name='move_line_ids']/tree/field[@name='qty_done']"
+					position="after">
+					<field name="specification" />
+					<field name="total_rate" />
+				</xpath>
+ -->
+				<xpath expr="/form/header/button[@name='action_assign']"
+					position="before">
+					<button name="change_state" string="Change Stage" type="object"
+						attrs="{'invisible': ['|',('flag','=',True),('state','in',('done','cancel'))]}" />
+				</xpath>
+
+				<xpath expr="/form/header/button[@name='action_confirm']"
+					position="replace">
+
+				</xpath>
+
+				<xpath expr="/form/header/button[@name='button_validate']"
+					position="replace">
+					<button name="button_validate" string="Validate" type="object"
+						attrs="{'invisible': ['|',('flag','!=',True),('state','in',('done','cancel'))]}" />
+				</xpath>
+
+
+<!--				<xpath expr="//form/sheet/notebook/page/button[@name='put_in_pack']" position="after">-->
+				<xpath expr="//form/sheet/notebook/page" position="after">
+					<separator string="Stages Log" />
+					<group>
+						<field name="mesge_ids" nolabel="1">
+							<tree>
+								<field name="date" />
+								<field name="from_stage" />
+								<field name="to_stage" />
+								<field name="remark" />
+								<field name="res_id" invisible="1" />
+								<field name="author_id" />
+							</tree>
+						</field>
+					</group>
+				</xpath>
+			</field>
+		</record>
+
+		<!--<record id="view_stock_move_form_inherited" model="ir.ui.view">
+			<field name="name">stock.move_tree_view</field>
+			<field name="model">stock.move</field>
+			<field name="inherit_id" ref="stock.view_move_picking_tree" />
+			<field name="arch" type="xml">
+				<xpath expr="/tree/field[@name='state']" position="after">
+					<button type="object" name="action_cancel" string="Cancel Move" />
+				</xpath>
+			</field>
+		</record>-->
+
+		<record id="view_stock_location_form_inherited" model="ir.ui.view">
+			<field name="name">stock.location_form_view</field>
+			<field name="model">stock.location</field>
+			<field name="inherit_id" ref="stock.view_location_form" />
+			<field name="arch" type="xml">
+				<xpath expr="/form/sheet/h2/field[@name='location_id']" position="after">
+					<label for="project_id" class="oe_edit_only" />
+					<h2>
+						<field name="project_id" />
+					</h2>
+				</xpath>
+
+			</field>
+		</record>
+
+		<record id="view_stock_location_search_inherited" model="ir.ui.view">
+			<field name="name">stock.location_search_view</field>
+			<field name="model">stock.location</field>
+			<field name="inherit_id" ref="stock.view_location_search" />
+			<field name="arch" type="xml">
+				<xpath expr="/search/filter[@name='in_location']" position="after">
+					<filter name="project_id" string="Project" help="Project Name" />
+					<group expand="0" string="Group By">
+						<filter string="Project" name="project" domain="[]" context="{'group_by':'project_id'}" />
+					</group>
+				</xpath>
+			</field>
+		</record>
+		<record id="vpicktree_inherited" model="ir.ui.view">
+			<field name="name">stock.picking_search_view</field>
+			<field name="model">stock.picking</field>
+			<field name="inherit_id" ref="stock.vpicktree" />
+			<field name="arch" type="xml">
+				<xpath expr="/tree/field[@name='name']" position="after">
+					<field name="picking_type_code" invisible="1"></field>
+					<field name="challan_no"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+					<field name="challan_date"
+						attrs="{'invisible': [('picking_type_code','not in','incoming')]}" />
+				</xpath>
+			</field>
+		</record>
+		<!-- <record id="stoock_move_form_inherited" model="ir.ui.view"> <field 
+			name="name">stock.move.form.view</field> <field name="model">stock.move</field> 
+			<field name="inherit_id" ref="stock.view_move_form"/> <field name="arch" 
+			type="xml"> <xpath expr="/form/sheet/group/group/group/field[@name='name']" 
+			position="after"> <field name="contractor_id"/> <field name="task_id" context="{'form_view_ref':'pragtech_purchase.project_task_form'}"/> 
+			</xpath> </field> </record> -->
+
+	</data>
+</odoo>
+    

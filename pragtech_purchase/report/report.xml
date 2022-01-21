@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<report string="Purchase Order Summary" id="action_report_purchase_order_summary"
+			model="po.summary.wizard" report_type="qweb-pdf"
+			name="pragtech_purchase.report_purchase_order_summary" file="pragtech_purchase.report_purchase_order_summary" />
+
+			<report string="Purchase Order Summary" id="action_report_purchase_order_summary_group_by_vendor"
+			model="po.summary.wizard" report_type="qweb-pdf"
+			name="pragtech_purchase.report_purchase_order_summary_group_by_vendor" file="pragtech_purchase.report_purchase_order_summary_group_by_vendor" />
+
+		<report string="Purchase Order Bill Summary" id="action_report_purchase_order_bill_summary"
+			model="po.bill.summary.wizard" report_type="qweb-pdf"
+			name="pragtech_purchase.report_purchase_order_bill_summary" file="pragtech_purchase.report_purchase_order_bill_summary" />
+
+		<report string="Short Supply Report" id="action_report_purchase_order_short_supply"
+			model="short.supply.wizard" report_type="qweb-pdf"
+			name="pragtech_purchase.report_purchase_order_short_supply_summary" file="pragtech_purchase.report_purchase_order_short_supply_summary" />
+
+		<report string="Unbilled GRN Report" id="action_report_purchase_order_unbilled_grn"
+			model="unbilled.grn.wizard" report_type="qweb-pdf"
+			name="pragtech_purchase.report_purchase_order_unbilled_grn" file="pragtech_purchase.report_purchase_order_unbilled_grn" />
+
+		<report string="Consumption Report" id="action_report_purchase_consumption"
+			model="consumption.report.wizard" report_type="qweb-pdf"
+			name="pragtech_purchase.report_consumption" file="pragtech_purchase.report_consumption" />
+
+			<!-- Reporting Menus -->
+
+
+	</data>
+</odoo>

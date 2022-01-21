@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_purchase_order_bill_summary_document">
+            <t t-call="web.external_layout">
+                <t t-set="p" t-value="1"/>
+                <t t-set="o" t-value="o.with_context({})"/>
+                <div class="page">
+                    <div align="center">
+                        <h2>Purchase Order Bill Summary</h2>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div>
+                        <strong>Report Date:</strong>
+                        <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%m/%d/%Y')"/>
+                    </div>
+                    <br/>
+                    <t t-set="project_id" t-value="0"/>
+                    <t t-set="project_wbs_id" t-value="0"/>
+                    <t t-set="partner_id" t-value="0"/>
+                    <t t-set="invoice_id" t-value="0"/>
+                    <t t-set="po_brk" t-value="0"/>
+                    <t t-set="is_po" t-value="0"/>
+                    <t t-set="prev_po" t-value="0"/>
+                    <tr t-foreach="o.order_line" t-as="wizard_line">
+                        <t t-if="(prev_po != wizard_line.purchase_id)">
+                            <div class="oe_structure"/>
+                            <div class="row">
+                                <div class="col-6 ">
+                                    <div t-if="wizard_line.project_id">
+                                        <strong>Project:</strong>
+                                        <span t-field="wizard_line.project_id"/>
+                                    </div>
+
+                                    <div t-if="wizard_line.project_wbs_id">
+                                        <strong>Project WBS:</strong>
+                                        <span t-field="wizard_line.project_wbs_id"/>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div t-if="wizard_line.partner_id">
+                                        <strong>Vendor:</strong>
+                                        <span t-field="wizard_line.partner_id"/>
+
+                                    </div>
+                                    <div t-if="wizard_line.date_invoice">
+                                        <strong>Bill Date:</strong>
+                                        <span t-field="wizard_line.date_invoice"/>
+                                    </div>
+                                    <div t-if="o.from_date">
+                                        <strong>From Date:</strong>
+                                        <span t-field="o.from_date"/>
+                                    </div>
+                                    <div t-if="o.to_date">
+                                        <strong>To Date:</strong>
+                                        <span t-field="o.to_date"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            <strong>Reference</strong>
+                                        </th>
+                                        <th class="text-center">
+                                            <strong>Delivery Challan No.</strong>
+                                        </th>
+                                        <th class="text-center">
+                                            <strong>Challan Date</strong>
+                                        </th>
+                                        <th class="text-center">
+                                            <strong>Purchase Order</strong>
+                                        </th>
+                                        <th class="text-center">
+                                            <strong>Product</strong>
+                                        </th>
+                                        <th class="text-center">
+                                            <strong>Quantity</strong>
+                                        </th>
+                                        <th class="text-center">
+                                            <strong>Taxes</strong>
+                                        </th>
+                                        <th class="text-center">
+                                            <strong>Unit Price</strong>
+                                        </th>
+                                        <th class="text-center">
+                                            <strong>Net Price</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-set="total_bill_amt" t-value="0"/>
+                                    <tr t-foreach="wizard_line.stock_moves_ids" t-as="invoice_line">
+                                        <td class="text-center">
+                                            <span t-field="invoice_line.picking_id.name"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="invoice_line.picking_id.challan_no"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="invoice_line.picking_id.challan_date"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="invoice_line.picking_id.origin"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="invoice_line.purchase_line_id.product_id"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="invoice_line.purchase_line_id.qty_invoiced"/>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="invoice_line.purchase_line_id.price_unit"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-field="invoice_line.purchase_line_id.price_subtotal"
+                                                  t-field-options="{&quot;widget&quot;: &quot;False&quot;}"/>
+                                        </td>
+                                        <t t-set="total_bill_amt"
+                                           t-value="total_bill_amt+invoice_line.purchase_line_id.price_subtotal"/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row float-right">
+                                <div class="col-xs-6 ">
+                                    <table class="table table-condensed">
+                                        <tr class="border-black">
+                                            <td>
+                                                <strong>Total:</strong>
+                                                <span t-esc="total_bill_amt"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="oe_structure"/>
+                            <t t-set="prev_po" t-value="wizard_line.purchase_id"/>
+                        </t>
+                        <p style="page-break-after: always;"/>
+                    </tr>
+                </div>
+            </t>
+        </template>
+        <template id="report_purchase_order_bill_summary">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="pragtech_purchase.report_purchase_order_bill_summary_document"/>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

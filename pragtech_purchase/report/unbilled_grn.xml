@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_purchase_order_unbilled_grn_document">
+            <t t-call="web.external_layout">
+                <t t-set="p" t-value="1"/>
+                <t t-set="o" t-value="o.with_context({})"/>
+                <div class="page">
+                    <div align="center">
+                        <h2>Unbilled GRN</h2>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div>
+                        <strong>Report Date:</strong>
+                        <span
+                                t-esc="context_timestamp(datetime.datetime.now()).strftime('%m/%d/%Y')"/>
+                    </div>
+                    <br/>
+                    <t t-set="project_id" t-value="0"/>
+                    <t t-set="sub_project_id" t-value="0"/>
+                    <t t-set="project_wbs_id" t-value="0"/>
+                    <t t-set="partner_id" t-value="0"/>
+                    <t t-set="vendor_id" t-value="0"/>
+                    <table class="table" style="width:100%">
+
+                        <thead>
+                            <tr>
+                                <th class="text-center">
+                                    <strong>Purchase Order</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Vendor</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Product</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Product Quantity</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Received Quantity</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Billed Quantity</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Unbilled Quantity</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Billed Amount</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>Unbilled Amount</strong>
+                                </th>
+                            </tr>
+
+                        </thead>
+                        <t t-set="prev_vendor" t-value="0"/>
+                        <tr t-foreach="o.order_line" t-as="wizard_line">
+                            <t t-if="(prev_vendor != wizard_line.purchase_order_id.project_id)">
+                                <tr t-foreach="wizard_line.purchase_order_id" t-as="po_obj">
+                                    <div class="oe_structure"/>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div t-if="po_obj.project_id">
+                                                <strong>Project:</strong>
+                                                <span t-field="po_obj.project_id"/>
+                                                <t t-set="project_id" t-value="po_obj.project_id.id"/>
+                                            </div>
+
+                                            <div t-if="po_obj.sub_project">
+                                                <strong>Sub Project:</strong>
+                                                <span t-field="po_obj.sub_project"/>
+                                                <t t-set="sub_project_id" t-value="po_obj.sub_project.id"/>
+                                            </div>
+
+                                            <div t-if="po_obj.project_wbs">
+                                                <strong>Project WBS:</strong>
+                                                <span t-field="po_obj.project_wbs"/>
+                                                <t t-set="project_wbs_id" t-value="po_obj.project_wbs.id"/>
+                                            </div>
+                                            <br/>
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div t-if="o.from_date">
+                                                <strong>From Date:</strong>
+                                                <span t-field="o.from_date"/>
+                                            </div>
+                                            <div t-if="o.to_date">
+                                                <strong>To Date:</strong>
+                                                <span t-field="o.to_date"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <t t-set="prev_vendor" t-value="wizard_line.purchase_order_id.project_id"/>
+                                </tr>
+                            </t>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center" style="width:16%">
+                                        <span t-field="wizard_line.purchase_order_id"/>
+                                    </td>
+                                    <td class="text-center" style="width:16%">
+                                        <span t-field="wizard_line.partner_id"/>
+                                    </td>
+                                    <td class="text-center" style="width:10%">
+                                        <span t-field="wizard_line.product_id"/>
+                                    </td>
+                                    <td class="text-center" style="width:10%">
+                                        <span t-field="wizard_line.product_qty"/>
+                                    </td>
+                                    <td class="text-center" style="width:10%">
+                                        <span t-field="wizard_line.recieved_qty"/>
+                                    </td>
+                                    <td class="text-center" style="width:10%">
+                                        <span t-field="wizard_line.billed_qty"/>
+                                    </td>
+                                    <td class="text-center" style="width:10%">
+                                        <span t-field="wizard_line.unbilled_qty"/>
+                                    </td>
+                                    <td class="text-center" style="width:10%">
+                                        <span t-field="wizard_line.billed_amount"/>
+                                    </td>
+                                    <td class="text-center" style="width:10%">
+                                        <span t-field="wizard_line.unbilled_amount"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <div class="oe_structure"/>
+
+                        </tr>
+                    </table>
+                </div>
+            </t>
+        </template>
+        <template id="report_purchase_order_unbilled_grn">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="pragtech_purchase.report_purchase_order_unbilled_grn_document"/>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

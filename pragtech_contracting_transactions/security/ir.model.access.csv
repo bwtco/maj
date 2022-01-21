@@ -1,0 +1,10 @@
+contractor_admin_debit_recovery_line,admin access debit.recovery.line,pragtech_contracting.model_debit_recovery_line,pragtech_contracting.group_manager,1,1,1,1
+contractor_asst_manager_debit_recovery_line,assistant manager debit.recovery.line,pragtech_contracting.model_debit_recovery_line,pragtech_contracting.group_asst_manager,1,1,1,0
+contractor_sr_user_debit_recovery_line,Sr. Executive debit.recovery.line,pragtech_contracting.model_debit_recovery_line,pragtech_contracting.group_sr_user,1,1,0,0
+contractor_user_debit_recovery_line,User debit.recovery.line,pragtech_contracting.model_debit_recovery_line,pragtech_contracting.group_user,1,0,0,0
+contractor_admin_credit_recovery_line,admin access credit.recovery.line,pragtech_contracting.model_credit_recovery_line,pragtech_contracting.group_manager,1,1,1,1
+contractor_asst_manager_credit_recovery_line,assistant manager credit.recovery.line,pragtech_contracting.model_credit_recovery_line,pragtech_contracting.group_asst_manager,1,1,1,0
+contractor_sr_user_credit_recovery_line,Sr. Executive credit.recovery.line,pragtech_contracting.model_credit_recovery_line,pragtech_contracting.group_sr_user,1,1,0,0
+contractor_user_credit_recovery_line,User credit.recovery.line,pragtech_contracting.model_credit_recovery_line,pragtech_contracting.group_user,1,0,0,0
+
+access_payment_tokens,payment_tokens,payment.model_payment_token,pragtech_contracting.group_manager,1,1,1,1

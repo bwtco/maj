@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<!--    <template id="assets_frontend_website" inherit_id="web.assets_frontend" name="Flatmates Frontend">-->
+<!--        <xpath expr="." position="inside">-->
+<!--            <script type="text/javascript" src="/pragtech_tender_management/static/src/js/tenders.js"></script>-->
+<!--        </xpath>-->
+<!--    </template>-->
+</odoo>

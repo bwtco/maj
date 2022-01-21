@@ -1,0 +1,21 @@
+<odoo>
+  <data>
+  <menuitem id="main_menu_transaction" parent="pragtech_contracting.contracting_menu"
+			name="Transactions" sequence="4"/>
+		<menuitem action="pragtech_contracting.action_transaction" id="menu_transaction"
+			parent="main_menu_transaction" name="Advance/Debit/Credit Note"
+			sequence="1" />
+			
+			
+			<menuitem action="pragtech_contracting.action_advance" id="menu_advance" parent="main_menu_transaction"
+			name="Advance/Debit Recovery" sequence="2" />
+			
+			
+		<menuitem action="pragtech_contracting.action_credit" id="menu_credit" parent="main_menu_transaction"
+			name="Credit Recovery" sequence="3" />
+			
+			<menuitem action="pragtech_contracting.action_retention" id="menu_retention"
+			parent="main_menu_transaction" name="Retention Release" />
+			
+  </data>
+</odoo>
