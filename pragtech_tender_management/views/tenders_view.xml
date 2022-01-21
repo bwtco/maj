@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="tenders_form_view" model="ir.ui.view">
+            <field name="name">tenders.form.view</field>
+            <field name="model">tenders.tenders</field>
+            <field name="arch" type="xml">
+                <form string="Tenders Tender">
+                    <header>
+                        <button name="action_tender_submit" string="SUBMIT" type="object" states="draft" class="oe_highlight"/>
+                        <button name="action_tender_approve" string="Approve" type="object" states="submitted" class="oe_highlight" groups="pragtech_tender_management.custom_sales_group_manager"/>
+                        <button name="action_tender_cancel" string="Reject" type="object" states="submitted" class="oe_highlight"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,submitted,approve,in_progress,done"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <div class="oe_button_box" name="button_box">
+                                <field name="is_published" widget="website_redirect_button" attrs="{'invisible': [('state','in',['draft', 'submitted','rejected'])]}"/>
+                                <button name="action_view_bids" type="object" icon="fa-tasks" class="oe_stat_button">
+                                    <field name="count_bids" widget="statinfo" string="Bids"/>
+                                </button>
+                            </div>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="tender_name"/>
+                                <field name="name"/>
+                                <field name="department"/>
+
+                                <label for="street" string="Location" />
+                                <div class="o_address_format">
+                                    <field name="street" placeholder="Street..." class="o_address_street"/>
+                                    <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                                    <field name="city" placeholder="City" class="o_address_city" style="width:40%"/>
+                                    <field name="state_id" class="o_address_state" placeholder="State" options='{"no_open": True}' style="width:40%"/>
+                                    <field name="zip" placeholder="ZIP" class="o_address_zip" style="width:16%"/>
+                                    <field name="country_id" placeholder="Country" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
+                                </div>
+                                <field name="user_id"/>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                                <field name="top_rank" readonly="True"/>
+                            </group>
+                            <group>
+                                <field name="total_budget"/>
+                                <field name="earnest_money_deposit"/>
+                                <field name="performance_security_deposit"/>
+                                <field name="liquidated_damage"/>
+                                <field name="unliquidated_damage"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page name="pag1" string="Material">
+                                <field name="tender_line_id">
+                                    <tree editable="bottom">
+                                        <field name="product_id"/>
+                                        <field name="line_description"/>
+                                        <field name="product_uom_qty"/>
+                                        <field name="product_uom"/>
+                                        <field name="material_last_price"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="pag2" string="Labour">
+                                <field name="tender_labour_id">
+                                    <tree editable="bottom">
+                                        <field name="tender_labour_labour_id"/>
+                                        <field name="labour_description"/>
+                                        <field name="labour_qty"/>
+                                        <field name="product_uom"/>
+                                        <field name="labour_last_price"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="pag3" string="Overhead">
+                                <field name="tender_overhead_id">
+                                    <tree editable="bottom">
+                                        <field name="tender_overhead_overhead_id"/>
+                                        <field name="overhead_description"/>
+                                        <field name="overhead_qty"/>
+                                        <field name="product_uom"/>
+                                        <field name="overhead_last_price"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="pag4" string="Pre-Bid Meeeting Details">
+                                <group>
+                                    <field name="pre_bid_meeting_date"/>
+                                    <field name="pre_bid_meeting_mom"/>
+                                </group>
+                            </page>
+                            <page name="pag5" string="Tender Questionnaires">
+                                <field name="tender_question_ids">
+                                    <tree>
+                                        <field name="tender_question_id"/>
+                                        <field name="type"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="tender_question_id"/>
+                                            <field name="type"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tenders_tree_view" model="ir.ui.view">
+            <field name="name">tenders.tree.view</field>
+            <field name="model">tenders.tenders</field>
+            <field name="arch" type="xml">
+                <tree string="Tender Tender">
+                    <field name="name"/>
+                    <field name="city"/>
+                    <field name="country_id"/>
+                    <field name="user_id"/>
+                    <field name="start_date" />
+                    <field name="end_date" />
+                    <field name="top_rank"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_tenders_kanban" model="ir.ui.view">
+            <field name="name">tenders.kanban</field>
+            <field name="model">tenders.tenders</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_mobile">
+                    <field name="name"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong><field name="tender_name"/></strong>
+                                    </div>
+                                    <div class="col-6 text-right"><field name="country_id"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <strong>Deadline: </strong><field name="end_date"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="tenders_form_action" model="ir.actions.act_window">
+            <field name="name">Tenders</field>
+            <field name="res_model">tenders.tenders</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+
+        <menuitem id="tenders_menu" name="Tenders"/>
+        <menuitem id="tenders_main_menu" parent="tenders_menu" name="Tenders Main Menu" action="tenders_form_action" sequence="1"/>
+        <menuitem id="configuration_menu" name="Configuration" parent="tenders_menu" sequence="3"/>
+
+        <record id="dept_form" model="ir.ui.view">
+            <field name="name">Department Form</field>
+            <field name="model">res.department</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Department">
+                    <sheet>
+                        <group col="4" colspan="4">
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="dept_tree" model="ir.ui.view">
+            <field name="name">Department Tree</field>
+            <field name="model">res.department</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Department">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="dept_action" model="ir.actions.act_window">
+            <field name="name">Department</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.department</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to define a new Department. </p>
+            </field>
+        </record>
+        <menuitem id="dept_menu" name="Department" parent="configuration_menu" action="dept_action"/>
+
+        <record id="rating_qustionnaire_form" model="ir.ui.view">
+            <field name="name">Rating Qustionnaire Form</field>
+            <field name="model">tender.questions</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Cost Code">
+                    <sheet>
+                        <group col="4" colspan="4">
+                            <field name="name"/>
+                            <field name="type"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="rating_qustionnaire_tree" model="ir.ui.view">
+            <field name="name">Rating Qustionnaire Tree</field>
+            <field name="model">tender.questions</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/><field name="type"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="questionnaire_menu_action" model="ir.actions.act_window">
+            <field name="name">Questionnaire</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">tender.questions</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create"> Click to define a new Rating Qustionnaire. </p>
+            </field>
+        </record>
+        <menuitem id="questionnaire_menu" name="Questionnaire" parent="configuration_menu" action="questionnaire_menu_action"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="view_project_form_inherited_for_gantt" model="ir.ui.view">
+			<field name="name">view.project.form.inherited</field>
+			<field name="model">project.project</field>
+			<field name="inherit_id" ref="pragtech_ppc.view_project_form_inherited1" />
+			<field name="arch" type="xml">
+			<button name="change_state" position="after">
+				<button name="open_gantt_view_action1" type="object" string="View Gantt Chart" /></button>
+
+			</field>
+		</record>
+	</data>
+</odoo>

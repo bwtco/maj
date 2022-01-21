@@ -1,0 +1,14 @@
+<odoo>
+	<data>
+		<menuitem name="Reports" id="labour_reports_menu_id" parent="pragtech_contracting.contracting_menu"/>
+		<menuitem action="pragtech_contracting.work_order_summary_action" id="menu_work_order_summary" parent="labour_reports_menu_id"
+			sequence="1"/>
+		<menuitem action="pragtech_contracting.ra_bill_summary_action" id="menu_ra_bill_summary" parent="labour_reports_menu_id" sequence="2"/>
+		<menuitem action="pragtech_contracting.incomplete_work_order_summary_action" id="menu_incomplete_wo_summary" parent="labour_reports_menu_id"
+			sequence="3"/>
+		<menuitem action="pragtech_contracting.contractor_payment_action" id="menu_contract_payment_report" parent="labour_reports_menu_id"
+			sequence="4"/>
+
+		<menuitem action="pragtech_contracting.grn_report_action" id="menu_grn_report" parent="labour_reports_menu_id" sequence="5"/>
+	</data>
+</odoo>

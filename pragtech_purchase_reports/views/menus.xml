@@ -1,0 +1,19 @@
+<odoo>
+	<data>
+		<menuitem id="purchase.purchase_report" name="Reports" parent="purchase.menu_purchase_root" sequence="99"/>
+		<menuitem action="pragtech_purchase.purchase_order_summary_action" id="menu_purchase_order_summary" name="Purchase Order Summary"
+			parent="purchase.purchase_report" sequence="1" />
+				<menuitem action="pragtech_purchase.purchase_order_bill_summary_action" name="Purchase Order Bill Summary" id="menu_purchase_order_bill_summary"
+			parent="purchase.purchase_report" sequence="2" />
+			 <menuitem action="pragtech_purchase.purchase_order_short_supply_action" id="menu_purchase_order_short_supply"
+			parent="purchase.purchase_report" name="Short Supply Summary" sequence="3" />
+			 <menuitem id="purchase_analysis_report" name="Purchase Analysis" parent="purchase.purchase_report" sequence="5"
+        	action="purchase.action_purchase_order_report_all"/>
+        	<menuitem action="pragtech_purchase.purchase_order_unbilled_grn_action" id="menu_purchase_order_unbilled_grn"
+			parent="purchase.purchase_report" name="Unbilled GRN Report" sequence="4" />
+<!--		<menuitem action="pragtech_purchase.purchase_consumption_grn_action" id="menu_consumption_report"-->
+<!--			parent="stock.menu_warehouse_report" sequence="100" name="Consumption Report"  />-->
+
+
+	</data>
+</odoo>

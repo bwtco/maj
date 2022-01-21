@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="procurement_form_view_id" model="ir.ui.view">
+            <field name="name">procurement.form.view</field>
+            <field name="model">purchase.procurement</field>
+            <field name="arch" type="xml">
+                <form string="Procurement Type">
+                    <sheet>
+                        <group colspan="4" col="4">
+                            <field name="project_id" attrs="{'invisible':[('material_selection', 'in', 'all')]}"/>
+                            <field name="sub_project" attrs="{'invisible':[('material_selection', 'in', 'all')]}"/>
+                            <field name="project_wbs" context="{'form_view_ref':'pragtech_purchase.project_task_inherited_form_wbs1'}"
+                                   attrs="{'invisible':[('material_selection', '=', 'all')]}"/>
+                            <!-- <field name="is_all_material"/> <field name="is_show_all_material"/> -->
+                            <field name="material_selection" widget="radio"/>
+                            <field name="material_id"
+                                   attrs="{'invisible':[('material_selection', '=', 'all')],'required':[('material_selection','in','single')]}"/>
+                            <field name="from_date"/>
+                            <field name="to_date"/>
+                            <!--<field name="procurement_type" />-->
+                            <field name="warehouse_id"/>
+                        </group>
+                        <group colspan="4" col="4">
+                            <group/>
+                            <group/>
+                            <group/>
+                            <button name="compute_procurements_lines" type="object"
+                                    class="fa fa-search" string="Search Requisitions">
+                            </button>
+                        </group>
+                        <notebook>
+
+                            <page string="Requisition Order">
+                                <field name="select_all"/>
+                                <field name="procurement_line_ids">
+
+                                    <tree string="requisition_order_tree" editable="bottom">
+                                        <field name="is_select"/>
+                                        <field name="requisition_no" readonly="True"/>
+                                        <!-- <field name="name" /> -->
+                                        <field name="group_id" readonly="True"/>
+                                        <field name="task_id" readonly="True" context="{'form_view_ref':'pragtech_purchase.project_task_form'}"/>
+                                        <field name="unit" readonly="True"/>
+                                        <field name="rate" readonly="True"/>
+
+                                        <field name="material_id" readonly="True"/>
+                                        <!-- <field name="requisition_date" /> <field name="requirement_date"
+                                            /> -->
+                                        <field name="quantity" readonly="True"/>
+                                        <!-- <field name="total_approved_qty" /> <field name="total_ordered_qty"
+                                            /> <field name="balance_qty" /> -->
+                                        <field name="requisition_type" readonly="True"/>
+                                        <!-- 	<field name="procurement_type" /> -->
+                                        <field name="warehouse_id"/>
+                                        <!-- <field name="status" /> <field name="specification" /> <field
+                                            name="brand_id" /> <field name="priority" /> <field name="remark" /> -->
+                                    </tree>
+                                </field>
+                            </page>
+
+                        </notebook>
+                    </sheet>
+
+                    <footer>
+                        <button string="Save" name="save_method" type="object" class="oe_highlight"/>
+                        <button special="cancel" string="Cancel" class="btn-default"/>
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+        <record id="action_procurement_type_wiz" model="ir.actions.act_window">
+            <field name="name">Procurement Type</field>
+            <field name="res_model">purchase.procurement</field>
+            <!--<field name="view_type">form</field>-->
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="menu_procurement_type" parent="purchase.menu_procurement_management"
+                  sequence="10" name="Procurement Type" action="action_procurement_type_wiz"/>
+    </data>
+</odoo>
+
+
+
+
+
+
+
+
+

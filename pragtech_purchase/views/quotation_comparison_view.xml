@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<record id="quotation_comp_particular_tree" model="ir.ui.view">
+			<field name="name">quotation.compare.particular.tree</field>
+			<field name="model">quotation.compare.particular</field>
+			<field name="arch" type="xml">
+					<tree string="Particular" create="false" delete="false" editable="bottom">
+						<field name="is_approve"/>
+						<field name="product_id" readonly="1"/>
+						<field name="price_expt" readonly="1"/>
+						<field name="product_qty" invisible="0"/>
+						<field name="product_uom" invisible="0"/>
+					</tree>
+			</field>
+		</record>
+
+
+		<record id="quotation_comparison_form_view" model="ir.ui.view">
+			<field name="name">quotation.comparison.view</field>
+			<field name="model">quotation.comparison</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+
+
+				<form string="Comparison Details">
+					<header>
+						<button name="confirm_action" type="object" string="confirm" class="oe_highlight" attrs="{'invisible': [('state','not in','draft')]}"/>
+						<field name="state" readonly="1" widget="statusbar"/>
+					</header>
+					<t t-foreach="docs" t-as="doc"/>
+					<div class="oe_title">
+						<h1>
+							<field name="sequence_name" readonly="1"/>
+						</h1>
+					</div>
+
+					<group colspan="4" col="4">
+						<field name="project_id" attrs="{'readonly':[('state','=','confirm')]}"/>
+						<field name="sub_project" domain="[('project_id','=',project_id)]" attrs="{'readonly':[('state','=','confirm')]}"/>
+						<field name="project_wbs_id" domain="[('project_id','!=',False),('project_id','=',project_id),('sub_project','=',sub_project),('is_wbs', '=', True)]"
+							attrs="{'readonly':[('state','=','confirm')]}"/>
+					</group>
+					<group colspan="4" col="4">
+						<field name="from_date" attrs="{'readonly':[('state','=','confirm')]}"/>
+						<field name="to_date" attrs="{'readonly':[('state','=','confirm')]}"/>
+						<field name="selected_vendors"/>
+					</group>
+
+					<group colspan="6" col="2" attrs="{'invisible': [('state','not in','draft')]}">
+						<group string="Material List">
+							<div style="margin-top: 2px;margin-right: 10px;">
+								<field name="material_line">
+									<tree string="Material lines" create="false" delete="false" editable="bottom">
+										<field name="material_id" />
+										<field name="is_material" readonly="0"/>
+									</tree>
+								</field>
+							</div>
+						</group>
+
+						<group string="Supplier List">
+							<div style="margin-top: 2px;margin-left: 10px;">
+								<field name="vendors_line">
+									<tree string="Vendor lines" create="false" delete="false" editable="bottom">
+										<field name="vendor_id" />
+										<field name="is_vendor" />
+									</tree>
+								</field>
+							</div>
+						</group>
+					</group>
+
+					<group class="oe_subtotal_footer oe_right" attrs="{'invisible': [('state','not in','draft')]}">
+						<button name="compute_quotation_details" type="object" class="fa fa-search" string="Search Quotation" attrs="{'invisible': [('state','in', ('confirm'))]}"/>
+					</group>
+
+					<group string="Quotation Details" attrs="{'invisible': [('state','not in','draft')]}">
+						<div>
+							<field name="quotation_details">
+								<tree create="false" delete="false" editable="bottom">
+									<field name="is_use" readonly="0"/>
+									<field name="vendor_id" readonly="1"/>
+									<field name="name" readonly="1"/>
+									<field name="date" readonly="1"/>
+									<field name="product_id" readonly="1"/>
+									<field name="product_qty" readonly="1"/>
+									<field name="product_uom" readonly="1"/>
+									<field name="price_unit" readonly="1"/>
+									<field name="tax_id" widget="many2many_tags" readonly="1" domain="[('type_tax_use','=','purchase')]" context="{'default_type_tax_use': 'purchase'}"/>
+									<field name="tax_percent" invisible="1"/>
+									<field name="tax" readonly="1"/>
+									<field name="negotiated_rate" readonly="1"/>
+									<field name="price_subtotal" readonly="1"/>
+								</tree>
+							</field>
+						</div>
+					</group>
+
+					<group class="oe_subtotal_footer oe_right" attrs="{'invisible': [('state','not in','draft')]}">
+						<field name="total_amount"/>
+					</group>
+
+					<group class="oe_subtotal_footer oe_right">
+						<button name="compute_selected_quotations" type="object" class="fa fa-plus" string="Add" attrs="{'invisible': [('state','in', ('confirm'))]}"/>
+					</group>
+
+
+					<group colspan="7" col="3">
+						<group string="Particulars">
+							<div style="margin-top: 15px;margin-right: 10px">
+								<field name="quotation_comp_particular" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="Particular" create="false" delete="false" editable="bottom">
+										<field name="is_approve"/>
+										<field name="product_id" readonly="1"/>
+										<field name="price_expt" readonly="1"/>
+										<field name="product_qty" invisible="0"/>
+										<field name="product_uom" invisible="0"/>
+									</tree>
+								</field>
+							</div>
+						</group>
+
+						<group name="vendor1" attrs="{'invisible':[('selected_vendors','=',0)]}">
+							<div style="margin-top: 10px;margin-right: 10px">
+								<h2>
+									<field name="vendor1" nolabel="1" readonly="1"/>
+								</h2>
+								<field name="quotation_comp_vendor1" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="Vendor lines" create="false" delete="false" editable="bottom" colors="blue:is_approve==True">
+										<!-- <button name="approve_vendor1" type="object" icon="gtk-apply" attrs="{'invisible': [('is_approve','=',True)]}"/> <button name="cancel_vendor1" 
+											type="object" icon="gtk-cancel" attrs="{'invisible': [('is_approve','=',False)]}"/> -->
+
+										<field name="is_approve" invisible="0"/>
+										<field name="product_id" invisible="1"/>
+										<field name="vendor_id" invisible="1"/>
+										<field name="negotiated_rate"/>
+										<field name="tax_id" invisible="1"/>
+										<field name="amount" readonly="1"/>
+									</tree>
+								</field>
+								<field name="quotation_comp_tax_details1" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="tax_details_vendor1" create="false" delete="false" editable="bottom">
+										<field name="vendor_id" invisible="1"/>
+										<field name="product_id" invisible="1"/>
+										<field name="tax_id" widget="many2many_tags" domain="[('type_tax_use','=','purchase')]" context="{'default_type_tax_use': 'purchase'}"/>
+										<field name="tax"/>
+									</tree>
+								</field>
+								<group class="oe_subtotal_footer oe_right">
+									<field name="total_vendor1"/>
+									<!-- <button name="button_dummy" string="(update)" type="object" class="oe_link"/> -->
+								</group>
+								<group>
+									<button name="get_taxes1" string="Calculate All Taxes" type="object" class="oe_link" attrs="{'invisible': [('state','in', ('confirm'))]}"/>
+								</group>
+							</div>
+						</group>
+
+						<group name="vendor2" attrs="{'invisible': [('vendor2','=',False)]}">
+							<!--string="Vendor2" attrs="{'invisible': [('quotation_comp_vendor2','=',[])]}" -->
+							<div style="margin-top: 10px;margin-right: 10px">
+								<h2>
+									<field name="vendor2" nolabel="1" readonly="1"/>
+								</h2>
+								<field name="quotation_comp_vendor2" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree priority="1" string="Vendor Lines" create="false" delete="false" editable="bottom" colors="blue:is_approve==True">
+										<!-- <button name="approve_vendor2" type="object" icon="gtk-apply" attrs="{'invisible': [('is_approve','=',True)]}"/> <button name="cancel_vendor2" 
+											type="object" icon="gtk-cancel" attrs="{'invisible': [('is_approve','=',False)]}"/> -->
+										<field name="is_approve"/>
+										<field name="product_id" invisible="1"/>
+										<field name="vendor_id" invisible="1"/>
+										<field name="negotiated_rate"/>
+										<field name="amount" readonly="1"/>
+										<field name="tax_id" invisible="1"/>
+									</tree>
+								</field>
+								<field name="quotation_comp_tax_details2" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="tax_details_vendor2" create="false" delete="false" editable="bottom">
+										<field name="vendor_id" invisible="1"/>
+										<field name="product_id" invisible="1"/>
+										<field name="tax_id" widget="many2many_tags" domain="[('type_tax_use','=','purchase')]" context="{'default_type_tax_use': 'purchase'}"/>
+										<field name="tax"/>
+									</tree>
+								</field>
+								<group class="oe_subtotal_footer oe_right">
+									<field name="total_vendor2"/>
+								</group>
+							</div>
+						</group>
+
+						<group name="vendor3" attrs="{'invisible': [('vendor3','=',False)]}">
+							<!--attrs="{'invisible': [('quotation_comp_vendor3','=',[])]}" -->
+							<div style="margin-top: 10px;margin-right: 10px">
+								<h2>
+									<field name="vendor3" nolabel="1" readonly="1"/>
+								</h2>
+								<field name="quotation_comp_vendor3" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="Vendor Lines" create="false" delete="false" editable="bottom" colors="blue:is_approve==True">
+										<!-- <button name="approve_vendor3" type="object" icon="gtk-apply" attrs="{'invisible': [('is_approve','=',True)]}"/> <button name="cancel_vendor3" 
+											type="object" icon="gtk-cancel" attrs="{'invisible': [('is_approve','=',False)]}"/> -->
+										<field name="is_approve"/>
+										<field name="product_id" invisible="1"/>
+										<field name="vendor_id" invisible="1"/>
+										<field name="negotiated_rate"/>
+										<field name="amount" readonly="1"/>
+										<field name="tax_id" invisible="1"/>
+									</tree>
+								</field>
+								<field name="quotation_comp_tax_details3" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="tax_details_vendor3" create="false" delete="false" editable="bottom">
+										<field name="vendor_id" invisible="1"/>
+										<field name="product_id" invisible="1"/>
+										<field name="tax_id" widget="many2many_tags" domain="[('type_tax_use','=','purchase')]" context="{'default_type_tax_use': 'purchase'}"/>
+										<field name="tax"/>
+									</tree>
+								</field>
+								<group class="oe_subtotal_footer oe_right">
+									<field name="total_vendor3"/>
+								</group>
+							</div>
+						</group>
+						<group name="vendor4" attrs="{'invisible': [('vendor4','=',False)]}">
+							<!--attrs="{'invisible': [('quotation_comp_vendor4','=',[])]}" -->
+							<div style="margin-top: 10px;margin-right: 10px">
+								<h2>
+									<field name="vendor4" nolabel="1" readonly="1"/>
+								</h2>
+								<field name="quotation_comp_vendor4" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="Vendor lines" create="false" delete="false" editable="bottom" colors="blue:is_approve==True">
+										<!-- <button name="approve_vendor4" type="object" icon="gtk-apply" attrs="{'invisible': [('is_approve','=',True)]}"/> <button name="cancel_vendor4" 
+											type="object" icon="gtk-cancel" attrs="{'invisible': [('is_approve','=',False)]}"/> -->
+										<field name="is_approve"/>
+										<field name="product_id" invisible="1"/>
+										<field name="vendor_id" invisible="1"/>
+										<field name="negotiated_rate"/>
+										<field name="amount" readonly="1"/>
+										<field name="tax_id" invisible="1"/>
+									</tree>
+								</field>
+								<field name="quotation_comp_tax_details4" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="tax_details_vendor4" create="false" delete="false" editable="bottom">
+										<field name="vendor_id" invisible="1"/>
+										<field name="product_id" invisible="1"/>
+										<field name="tax_id" widget="many2many_tags" domain="[('type_tax_use','=','purchase')]" context="{'default_type_tax_use': 'purchase'}"/>
+										<field name="tax"/>
+									</tree>
+								</field>
+								<group class="oe_subtotal_footer oe_right">
+									<field name="total_vendor4"/>
+								</group>
+							</div>
+						</group>
+						<group name="vendor5" attrs="{'invisible': [('vendor5','=',False)]}">
+							<!--attrs="{'invisible': [('quotation_comp_vendor5','=',[])]}" -->
+							<div style="margin-top: 10px;margin-right: 10px">
+								<h2>
+									<field name="vendor5" nolabel="1" readonly="1"/>
+								</h2>
+								<field name="quotation_comp_vendor5" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="Vendor Lines" create="false" delete="false" editable="bottom" colors="blue:is_approve==True">
+										<!-- <button name="approve_vendor5" type="object" icon="gtk-apply" attrs="{'invisible': [('is_approve','=',True)]}"/> <button name="cancel_vendor5" 
+											type="object" icon="gtk-cancel" attrs="{'invisible': [('is_approve','=',False)]}"/> -->
+										<field name="is_approve"/>
+										<field name="product_id" invisible="1"/>
+										<field name="vendor_id" invisible="1"/>
+										<field name="negotiated_rate"/>
+										<field name="amount" readonly="1"/>
+										<field name="tax_id" invisible="1"/>
+									</tree>
+								</field>
+								<field name="quotation_comp_tax_details5" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="tax_details_vendor5" create="false" delete="false" editable="bottom">
+										<field name="vendor_id" invisible="1"/>
+										<field name="product_id" invisible="1"/>
+										<field name="tax_id" widget="many2many_tags" domain="[('type_tax_use','=','purchase')]" context="{'default_type_tax_use': 'purchase'}"/>
+										<field name="tax"/>
+									</tree>
+								</field>
+								<group class="oe_subtotal_footer oe_right">
+									<field name="total_vendor5"/>
+								</group>
+							</div>
+
+						</group>
+
+						<group name="vendor6" attrs="{'invisible': [('vendor6','=',False)]}">
+							<!--attrs="{'invisible': [('quotation_comp_vendor6','=',[])]}" -->
+							<div style="margin-top: 10px;margin-right: 10px">
+								<h2>
+									<field name="vendor6" nolabel="1" readonly="1"/>
+								</h2>
+								<field name="quotation_comp_vendor6" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="Vendor Lines" create="false" delete="false" editable="bottom" colors="blue:is_approve==True">
+										<!-- <button name="approve_vendor6" type="object" icon="gtk-apply" attrs="{'invisible': [('is_approve','=',True)]}"/> <button name="cancel_vendor6" 
+											type="object" icon="gtk-cancel" attrs="{'invisible': [('is_approve','=',False)]}"/> -->
+										<field name="is_approve"/>
+										<!-- class="fa fa-check-circle" -->
+										<field name="product_id" invisible="1"/>
+										<field name="vendor_id" invisible="1"/>
+										<field name="negotiated_rate"/>
+										<field name="amount" readonly="1"/>
+										<field name="tax_id" invisible="1"/>
+									</tree>
+								</field>
+								<field name="quotation_comp_tax_details6" nolabel="1" attrs="{'readonly':[('state','=','confirm')]}">
+									<tree string="tax_details_vendor6" create="false" delete="false" editable="bottom">
+										<field name="vendor_id" invisible="1"/>
+										<field name="product_id" invisible="1"/>
+										<field name="tax_id" widget="many2many_tags" domain="[('type_tax_use','=','purchase')]" context="{'default_type_tax_use': 'purchase'}"/>
+										<field name="tax"/>
+									</tree>
+								</field>
+								<group class="oe_subtotal_footer oe_right">
+									<field name="total_vendor6"/>
+								</group>
+							</div>
+						</group>
+					</group>
+
+
+					<group col="1">
+						<group string="Terms and Conditions">
+							<div>
+								<field name="description1" placeholder="External note..."/>
+								<field name="description2" placeholder="External note..."/>
+								<field name="description3" placeholder="External note..."/>
+								<field name="description4" placeholder="External note..."/>
+							</div>
+						</group>
+					</group>
+				</form>
+			</field>
+		</record>
+
+
+		<record id="quotation_compare_search_view" model="ir.ui.view">
+			<field name="name">quotation.comparison.search.form</field>
+			<field name="model">quotation.comparison</field>
+			<field name="arch" type="xml">
+				<search string="Tasks">
+					<!--<field name="is_wbs"/> <field name="name"/> <filter domain="[('is_wbs','=',True)]" name="name" string="My Approvals"/> -->
+					<field name="project_id"/>
+					<field name="project_wbs_id"/>
+					<field name="sequence_name"/>
+					<field name="state"/>
+					<separator/>
+					<filter string="Confirmed" name="confirmed" domain="[('state','=','confirm')]"/>
+					<filter string="Not Confirmed" name="not confirmed" domain="[('state','=','draft')]"/>
+					<separator/>
+					<group expand="0" string="Group By">
+						<filter string="Project" name="project" context="{'group_by':'project_id'}"/>
+						<filter string="Project Wbs" name="project webs" domain="[]" context="{'group_by':'project_wbs_id'}"/>
+						<filter string="Name/No" name="nameno" domain="[]" context="{'group_by':'sequence_name'}"/>
+						<filter string="State" name="state" domain="[]" context="{'group_by':'state'}"/>
+						<separator/>
+					</group>
+				</search>
+			</field>
+		</record>
+
+
+		<record id="quotation_comparison_tree_view" model="ir.ui.view">
+			<field name="name">quotation.comparison.tree</field>
+			<field name="model">quotation.comparison</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="quotation_comparison_tree">
+					<field name="sequence_name"/>
+					<field name="project_wbs_id"/>
+					<field name="project_id"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="quotation_comparison_action" model="ir.actions.act_window">
+			<field name="name">Quotation Comparison</field>
+			<field name="res_model">quotation.comparison</field>
+			<!--<field name="view_type">form</field>-->
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="quotation_comparison_id" parent="purchase.menu_procurement_management" sequence="2" name="Quotation Comparison" action="quotation_comparison_action"/>
+
+		<record id="material_list_tree_view" model="ir.ui.view">
+			<field name="name">material.list.tree</field>
+			<field name="model">material.list</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="material_list_tree">
+					<field name="material_id"/>
+					<field name="is_material"/>
+				</tree>
+			</field>
+		</record>
+	</data>
+</odoo>
