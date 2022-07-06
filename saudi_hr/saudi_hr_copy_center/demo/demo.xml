@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="copy_center_1" model="copy.center">
+            <field name="employee_id" ref="hr.employee_al"/>
+            <field name="request_type">confidential</field>
+            <field name="job_description">Chief Technical Officer</field>
+            <field name="date_submited" eval="datetime.today()"/>
+            <field name="date_required" eval="datetime.today() + relativedelta(days=1)"/>
+            <field name="paper">a4</field>
+            <field name="copy_style">1 sided to 1 sided</field>
+            <field name="orientation">portrait</field>
+            <field name="delivery_instructions">deliver_to_employee_desk</field>
+            <field name="payment_mode">own_account</field>
+            <field name="emp_contribution">100</field>
+            <field name="special_instructions">Need Black and white copy</field>
+            <field name="state">draft</field>
+        </record>
+
+        <record id="copy_center_2" model="copy.center">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="request_type">confidential</field>
+            <field name="job_description">Experienced Developer</field>
+            <field name="date_submited" eval="datetime.today()"/>
+            <field name="date_required" eval="datetime.today() + relativedelta(days=1)"/>
+            <field name="paper">colour_paper</field>
+            <field name="copy_style">2 sided to 1 sided</field>
+            <field name="orientation">portrait</field>
+            <field name="delivery_instructions">deliver_to_employee_desk</field>
+            <field name="payment_mode">company_account</field>
+            <field name="company_contribution">100</field>
+            <field name="special_instructions">Blue window cover with blue back</field>
+            <field name="state">confirm</field>
+        </record>
+
+        <record id="copy_center_3" model="copy.center">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="request_type">confidential</field>
+            <field name="job_description">Experienced Developer</field>
+            <field name="date_submited" eval="datetime.today()"/>
+            <field name="date_required" eval="datetime.today() + relativedelta(days=1)"/>
+            <field name="paper">a3</field>
+            <field name="copy_style">1 sided to 2 sided</field>
+            <field name="orientation">landscape</field>
+            <field name="delivery_instructions">deliver_to_employee_desk</field>
+            <field name="payment_mode">both</field>
+            <field name="emp_contribution">100</field>
+            <field name="company_contribution">200</field>
+            <field name="special_instructions">Collated</field>
+            <field name="state">validate</field>
+        </record>
+
+        <record id="product_line_1" model="product.line">
+            <field name="copy_center_id" ref="copy_center_1"/>
+            <field name="product_id" ref="saudi_hr_copy_center.product_product_stationary4"/>
+            <field name="quantity">1</field>
+            <field name="set">200</field>
+            <field name="price_unit">0.50</field>
+            <field name="price_subtotal">100</field>
+            <field name="description">Copy center</field>
+        </record>
+
+        <record id="product_line_2" model="product.line">
+            <field name="copy_center_id" ref="copy_center_2"/>
+            <field name="product_id" ref="saudi_hr_copy_center.product_product_stationary3"/>
+            <field name="quantity">1</field>
+            <field name="set">50</field>
+            <field name="price_unit">2</field>
+            <field name="price_subtotal">100</field>
+            <field name="description">Blue window cover with blue back</field>
+        </record>
+
+        <record id="product_line_3" model="product.line">
+            <field name="copy_center_id" ref="copy_center_3"/>
+            <field name="product_id" ref="saudi_hr_copy_center.product_product_stationary"/>
+            <field name="quantity">1</field>
+            <field name="set">5</field>
+            <field name="price_unit">75</field>
+            <field name="price_subtotal">375</field>
+            <field name="description">Collated</field>
+        </record>
+    </data>
+</odoo>

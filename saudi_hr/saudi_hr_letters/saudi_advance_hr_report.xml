@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="bankloan_transfer" model="ir.actions.report">
+        <field name="name">Bank Loan Transfer</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.bankloan_transfer_qweb</field>
+        <field name="report_file">saudi_hr_letters.bankloan_transfer_qweb</field>
+        <field name="print_report_name">'Bank Loan Transfer'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>
+        -->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_bankloan_transfer_qweb"/>
+    </record>
+
+    <record id="bankloan_transfer_female" model="ir.actions.report">
+        <field name="name">Bank Loan Transfer Female</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.bankloan_transfer_female_qweb</field>
+        <field name="report_file">saudi_hr_letters.bankloan_transfer_female_qweb</field>
+        <field name="print_report_name">'Bank Loan Transfer Female'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_bankloan_transfer_female_qweb"/>
+    </record>
+
+    <record id="bankopen_account" model="ir.actions.report">
+        <field name="name">Bank Open Account</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.bankopen_account_report</field>
+        <field name="report_file">saudi_hr_letters.bankopen_account_report</field>
+        <field name="print_report_name">'Bank Open Account'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_bankopen_account"/>
+    </record>
+
+
+    <record id="bankopen_account_female" model="ir.actions.report">
+        <field name="name">Bank Open Account female</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.bankopen_account_report_female</field>
+        <field name="report_file">saudi_hr_letters.bankopen_account_report_female</field>
+        <field name="print_report_name">'Bank Open Account Female'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_bankopen_account"/>
+    </record>
+
+    <record id="certificate_ofapprove" model="ir.actions.report">
+        <field name="name">Ratification Certificate</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.certificate_toapprove</field>
+        <field name="report_file">saudi_hr_letters.certificate_toapprove</field>
+        <field name="print_report_name">'Ratification Certificate'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_certificate_toapprove"/>
+    </record>
+
+    <record id="family_iqama" model="ir.actions.report">
+        <field name="name">Family Iqama</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.family_iqama_report</field>
+        <field name="report_file">saudi_hr_letters.family_iqama_report</field>
+        <field name="print_report_name">'Family Iqama'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_family_iqama_report"/>
+    </record>
+
+    <record id="mroor_report" model="ir.actions.report">
+        <field name="name">Mroor Report</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.mroor_qreport</field>
+        <field name="report_file">saudi_hr_letters.mroor_qreport</field>
+        <field name="print_report_name">'Mroor Report'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_mroor_qreport"/>
+    </record>
+
+    <record id="house_allowence" model="ir.actions.report">
+        <field name="name">House Allowance</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.house_allowance_report</field>
+        <field name="report_file">saudi_hr_letters.house_allowance_report</field>
+        <field name="print_report_name">'House Allowance'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_house_allowance_report"/>
+    </record>
+
+    <record id="saudi_hr_letters_whomeconcern" model="ir.actions.report">
+        <field name="name">To Whom Concern</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.whomeconcern_report</field>
+        <field name="report_file">saudi_hr_letters.whomeconcern_report</field>
+        <field name="print_report_name">'To Whome Concern'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_whomeconcern_report"/>
+    </record>
+
+    <record id="towhome_concern" model="ir.actions.report">
+        <field name="name">To Whom Concern</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.towhome_concern_arabic_report</field>
+        <field name="report_file">saudi_hr_letters.towhome_concern_arabic_report</field>
+        <field name="print_report_name">'To Whome Concern'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_towhome_concern_arabic_report"/>
+    </record>
+
+    <record id="towhom_concern_female" model="ir.actions.report">
+        <field name="name">To Whome Concern Female</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.towhom_concern_female_report</field>
+        <field name="report_file">saudi_hr_letters.towhom_concern_female_report</field>
+        <field name="print_report_name">'To Whome Concern'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_towhom_concern_female_report"/>
+    </record>
+
+
+    <record id="stamping_certificate" model="ir.actions.report">
+        <field name="name">Stamping Certificate</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.stamping_certificate_report</field>
+        <field name="report_file">saudi_hr_letters.stamping_certificate_report</field>
+        <field name="print_report_name">'Stamping Certificate'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_stamping_certificate_report"/>
+    </record>
+
+    <record id="stamping_certificate_female" model="ir.actions.report">
+        <field name="name">Stamping Certificate Female</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.stamping_certificate_female_report</field>
+        <field name="report_file">saudi_hr_letters.stamping_certificate_female_report</field>
+        <field name="print_report_name">'Stamping Certificate Female'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_stamping_certificate_female_report"/>
+    </record>
+
+    <record id="wifefrom_home_country" model="ir.actions.report">
+        <field name="name">Wife Home Country</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.wifefrom_home_country_report</field>
+        <field name="report_file">saudi_hr_letters.wifefrom_home_country_report</field>
+        <field name="print_report_name">'Wife Home Country'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_wifefrom_home_country_report"/>
+    </record>
+
+    <record id="walid_school" model="ir.actions.report">
+        <field name="name">Valid School</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.walid_school_report</field>
+        <field name="report_file">saudi_hr_letters.walid_school_report</field>
+        <field name="print_report_name">'Valid School'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_walid_school_report"/>
+    </record>
+
+    <record id="walid_school" model="ir.actions.report">
+        <field name="name">Valid School</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.walid_school_report</field>
+        <field name="report_file">saudi_hr_letters.walid_school_report</field>
+        <field name="print_report_name">'Valid School'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_walid_school_report"/>
+    </record>
+
+    <record id="saudibritish_bankloan" model="ir.actions.report">
+        <field name="name">Saudi British Bank Loan Form</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.saudibritish_bankloan_report</field>
+        <field name="report_file">saudi_hr_letters.saudibritish_bankloan_report</field>
+        <field name="print_report_name">'Saudi British Bank Loan Form'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_saudibritish_bankloan_report"/>
+    </record>
+
+    <record id="saudi_hr_letters_transport" model="ir.actions.report">
+        <field name="name">Transport Report</field>
+        <field name="model">multi.reports</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">saudi_hr_letters.saudi_hr_letters_transport_report</field>
+        <field name="report_file">saudi_hr_letters.saudi_hr_letters_transport_report</field>
+        <field name="print_report_name">'Transport Report'</field>
+        <!--<field name="binding_model_id" ref="model_multi_reports"/>
+        <field name="binding_type">report</field>-->
+        <field name="attachment">"(object.employee_id.name + '.pdf')"</field>
+        <field name="attachment_use">False</field>
+        <!--<field name="menu">False</field>-->
+        <field name="paperformat_id" ref="paperformat_saudi_hr_letters_transport_report"/>
+    </record>
+</odoo>

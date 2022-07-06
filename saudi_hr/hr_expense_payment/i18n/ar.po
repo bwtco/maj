@@ -1,0 +1,391 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_expense_payment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-06 04:36+0000\n"
+"PO-Revision-Date: 2022-01-06 04:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields.selection,name:hr_expense_payment.selection__hr_expense_payment__payment_mode__both
+msgid "Both"
+msgstr "على حد سواء"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__calculate_company_expense
+msgid "Calculate Company Expense"
+msgstr "حساب مصاريف الشركة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields.selection,name:hr_expense_payment.selection__hr_expense_payment__payment_mode__company_account
+msgid "Company"
+msgstr "شركة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense__company_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__company_contribution
+msgid "Company Contribution"
+msgstr "مساهمة الشركة"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:0
+#, python-format
+msgid "Company Paid should not be more then total expense."
+msgstr "يجب ألا تكون الشركة المدفوعة أكثر من إجمالي المصروفات."
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:0
+#, python-format
+msgid ""
+"Contribution should be either greater then 0 or should not be more that "
+"total expense"
+msgstr ""
+"المساهمة يجب أن تكون إما أكبر من 0 أو لا يجب أن تكون أكثر من"
+"المصاريف الكلية"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields.selection,name:hr_expense_payment.selection__hr_expense_payment__payment_mode__own_account
+msgid "Employee (to reimburse)"
+msgstr "موظف (لسداد)"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense__emp_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__emp_contribution
+msgid "Employee Contribution"
+msgstr "مساهمة الموظف"
+
+#. module: hr_expense_payment
+#: model:hr.salary.rule,name:hr_expense_payment.hr_salary_rule_employee_expense_deduction
+msgid "Employee Expense Deduction"
+msgstr "خصم مصاريف الموظف"
+
+#. module: hr_expense_payment
+#: model:hr.salary.rule,name:hr_expense_payment.hr_salary_rule_employee_expense_reimburse
+msgid "Employee Expense Reimburse"
+msgstr "سداد نفقات الموظف"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:0
+#, python-format
+msgid "Employee Paid amount should not be more then total expense."
+msgstr "يجب ألا يكون مبلغ الموظف المدفوع أكثر من إجمالي المصروفات."
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:0
+#, python-format
+msgid ""
+"Employee and Company paid by amount should be equal to total expense amount."
+msgstr "يجب أن يكون الموظف والشركة المدفوعان بالمبلغ مساويًا لمبلغ المصاريف الإجمالي."
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__expense_note
+msgid "Expense Note"
+msgstr "ملاحظة المصاريف"
+
+#. module: hr_expense_payment
+#: model:ir.model,name:hr_expense_payment.model_hr_expense_sheet
+msgid "Expense Report"
+msgstr "تقرير المصاريف"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:0
+#, python-format
+msgid "Expenses"
+msgstr "نفقات"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "رمز الخط الرائع ، على سبيل المثال FA- المهام"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__has_message
+msgid "Has Message"
+msgstr "رسالة"
+
+#. module: hr_expense_payment
+#: model:ir.model,name:hr_expense_payment.model_hr_expense
+msgid "Hr Expense"
+msgstr "مصاريف الموارد البشرية"
+
+#. module: hr_expense_payment
+#: model:ir.model,name:hr_expense_payment.model_hr_expense_payment
+msgid "Hr Expense Payment"
+msgstr "دفع نفقات الموارد البشرية"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__id
+msgid "ID"
+msgstr "بطاقة تعريف"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى نشاط استثناء."
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__message_needaction
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__message_has_error
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense__include_salary
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_sheet__include_salary
+msgid "Include in Salary"
+msgstr "تضمين في الراتب"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_is_follower
+msgid "Is Follower"
+msgstr "تابع"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "النشاط التالي حدث التقويم"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:0
+#, python-format
+msgid "No any expense need to create!"
+msgstr "لا حاجة لخلق حساب!"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_sheet__not_inc_sal_amt
+msgid "Not Include Salary Amount Total"
+msgstr "لا تشمل مبلغ الراتب الإجمالي"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__company_contribution_amount
+msgid "Paid By Company"
+msgstr "تدفع من قبل الشركة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__emp_contribution_amount
+msgid "Paid By Employee"
+msgstr "يدفع من قبل الموظف"
+
+#. module: hr_expense_payment
+#: model:ir.model,name:hr_expense_payment.model_hr_payslip
+msgid "Pay Slip"
+msgstr "قسيمة الدفع"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__payment_mode
+msgid "Payment By"
+msgstr "الدفع بواسطة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense__slip_id
+msgid "Payslip"
+msgstr "قسيمة الراتب"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:0
+#, python-format
+msgid "Please define expense products"
+msgstr "يرجى تحديد منتجات المصاريف"
+
+#. module: hr_expense_payment
+#: model:hr.salary.rule.category,name:hr_expense_payment.REIMBURSE
+msgid "Reimburse"
+msgstr "يوفي، يعوض"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__activity_user_id
+msgid "Responsible User"
+msgstr "مستخدم مسؤول"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة على أساس الأنشطة \ n"
+"متأخر: تاريخ الاستحقاق فات بالفعل \ n"
+"اليوم: تاريخ النشاط هو اليوم \ n"
+"مخطط له: الأنشطة المستقبلية."
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,help:hr_expense_payment.field_hr_expense_payment__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"

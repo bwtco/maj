@@ -1,0 +1,667 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saudi_hr_air_allowance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-07 05:19+0000\n"
+"PO-Revision-Date: 2022-01-07 05:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_annual_ticket_detail__infant_fare
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_city_airfare__infant_fare
+msgid "12.5% of Adult Fare"
+msgstr "12.5٪ من أجرة البالغين"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_annual_ticket_detail__child_fare
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_city_airfare__child_fare
+msgid "80% of Adult Fare"
+msgstr "80٪ من أجرة البالغين"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.view_annual_ticket_by_employees
+msgid ""
+"<span colspan=\"4\" nolabel=\"1\">This wizard will generate annual ticket "
+"records for all selected employee(s) based on leave allocation.</span>"
+msgstr ""
+"<span colspan=\"4\" nolabel=\"1\">سيقوم هذا المعالج بإنشاء تذكرة سنوية "
+"سجلات لجميع الموظفين المختارين بناءً على تخصيص الإجازات.</span>"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.saudi_hr_air_allowance_empcontract_report_qweb
+msgid ""
+"<span>:بدل التذاكر السنوي</span>\n"
+"                        <br/>"
+msgstr ""
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.saudi_hr_air_allowance_empcontract_report_qweb
+msgid "<span>Annual Airfare Allowance:</span>"
+msgstr "<span>بدل السفر الجوي السنوي:</span>"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.saudi_hr_air_allowance_empcontract_report_qweb
+msgid ""
+"<span>The Employee is entitled to annual airfare allowance as per company "
+"policy for Employee (SAR______), spouse (______) plus two dependent children"
+" (80% each of adult fare), in case of infant (12.5% of adult fare) from "
+"Saudi Arabia to your point of origin which shall be payable in equal monthly"
+" instalments.</span>"
+msgstr ""
+"<span>يحق للموظف بدل السفر السنوي حسب الشركة "
+"سياسة الموظف (ريال _______), الزوج (______) بالإضافة إلى طفلين معالين"
+" (80٪ من سعر الفرد البالغ) ، في حالة الرضيع (12.5٪ من أجرة البالغين) ابتداءً من "
+"المملكة العربية السعودية إلى بلدك الأصلي والتي يجب أن تدفع شهريًا على قدم المساواة"
+" أقساط.</span>"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.saudi_hr_air_allowance_empcontract_report_qweb
+msgid ""
+"<span>يحق للموظف الحصول على بدل تذاكر سفر</span>\n"
+"                        <br/>\n"
+"                        <span>سنوية وفقا لسياسة الشركة, للموظف(2400</span>\n"
+"                        <br/>\n"
+"                        <span>ر.س.) و الزوجة(2400 ر.س.) و اثنين من</span>\n"
+"                        <br/>\n"
+"                        <span>الأطفال( 80% لكل من الأطفال) إذا كان هناك</span>\n"
+"                        <br/>\n"
+"                        <span>رضيع (12.5% سن الراشد)  من المملكة</span>\n"
+"                        <br/>\n"
+"                        <span>العربية السعودية إلى بلد المنشأ و التي تكون</span>\n"
+"                        <br/>\n"
+"                        <span>.مستحقة الدفع على أقساط شهرية متساوية</span>\n"
+"                        <br/>\n"
+"                        <span/>\n"
+"                        <br/>"
+msgstr ""
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.constraint,message:saudi_hr_air_allowance.constraint_res_city_unique_city_name
+msgid "A city with this name is already in system!"
+msgstr "مدينة بهذا الاسم موجودة بالفعل في النظام!"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.constraint,message:saudi_hr_air_allowance.constraint_city_airfare_unique_city_fare
+msgid "A fare for this city already in system!"
+msgstr "أجرة لهذه المدينة بالفعل في النظام!"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields.selection,name:saudi_hr_air_allowance.selection__annual_ticket_status__member_type__adult
+msgid "Adult"
+msgstr "الكبار"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__adult_fare
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__adult_fare
+msgid "Adult Fare"
+msgstr "أجرة الكبار"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__adults
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__adults
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Adult(s)"
+msgstr "الكبار)"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__air_allowance
+msgid "Air Allowance"
+msgstr "بدل الهواء"
+
+#. module: saudi_hr_air_allowance
+#: model:hr.salary.rule,name:saudi_hr_air_allowance.hr_salary_rule_airfare_allowance
+#: model:hr.salary.rule,name:saudi_hr_air_allowance.hr_salary_rule_airfare_allowance_child1
+#: model:hr.salary.rule,name:saudi_hr_air_allowance.hr_salary_rule_airfare_allowance_child2
+#: model:hr.salary.rule,name:saudi_hr_air_allowance.hr_salary_rule_airfare_allowance_child3
+msgid "Air Fare Allowance"
+msgstr "بدل أجرة الطيران"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.actions.act_window,name:saudi_hr_air_allowance.action_city_airfare
+#: model:ir.ui.menu,name:saudi_hr_air_allowance.menu_config_air_fare
+msgid "Air Fares"
+msgstr "أسعار تذاكر الطيران"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__allocated_amount
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__allocated_amount
+msgid "Allocated Amount"
+msgstr "المبلغ المخصص"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Allowance"
+msgstr "مخصص"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_generate_air_allowance__allowance_amount
+msgid "Allowance Amount"
+msgstr "مبلغ المخصص"
+
+#. module: saudi_hr_air_allowance
+#: code:addons/saudi_hr_air_allowance/wizard/generate_air_allowance.py:0
+#, python-format
+msgid "Allowance amount should be less then remaining amount!!"
+msgstr "يجب أن يكون مبلغ المخصص أقل من المبلغ المتبقي !!"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.actions.act_window,name:saudi_hr_air_allowance.action_annual_ticket_view
+#: model:ir.model,name:saudi_hr_air_allowance.model_annual_ticket
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__annual_ticket_id
+#: model:ir.ui.menu,name:saudi_hr_air_allowance.menu_annual_ticket
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Annual Ticket"
+msgstr "التذكرة السنوية"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__annual_ticket_detail_ids
+msgid "Annual Ticket Detail"
+msgstr "تفاصيل التذكرة السنوية"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.actions.act_window,name:saudi_hr_air_allowance.action_report_annual_ticket
+#: model:ir.model,name:saudi_hr_air_allowance.model_annual_ticket_report
+msgid "Annual Ticket Report"
+msgstr "تقرير التذكرة السنوي"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model,name:saudi_hr_air_allowance.model_annual_ticket_status
+msgid "Annual Ticket Status"
+msgstr "حالة التذكرة السنوية"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.view_annual_ticket_by_employees
+msgid "Annual Ticket by Employees"
+msgstr "التذكرة السنوية للموظفين"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model,name:saudi_hr_air_allowance.model_annual_ticket_detail
+msgid "Annual Ticket details"
+msgstr "تفاصيل التذكرة السنوية"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_reports_print_view
+msgid "Annual ticket Report"
+msgstr "تقرير التذكرة السنوي"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_reports_print_view
+msgid "Are you sure you want to Generate Annual Tickets Report?"
+msgstr "هل أنت متأكد أنك تريد إنشاء تقرير تذاكر سنوي؟"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_reports_print_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.generate_air_allowance_from_view
+msgid "Cancel"
+msgstr "يلغي"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields.selection,name:saudi_hr_air_allowance.selection__annual_ticket_status__member_type__child
+msgid "Child"
+msgstr "طفل"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__child_fare
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__child_fare
+msgid "Child Fare"
+msgstr "أجرة الطفل"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__children
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__children
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Children"
+msgstr "أطفال"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__city_id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city__name
+msgid "City"
+msgstr "مدينة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model,name:saudi_hr_air_allowance.model_city_airfare
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.view_city_airfare_form
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.view_city_airfare_tree
+msgid "City AirFare"
+msgstr "طيران المدينة"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.actions.act_window,help:saudi_hr_air_allowance.action_city_airfare
+msgid "Click to define a new Air Fare."
+msgstr "انقر لتحديد أجرة طيران جديدة."
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__company_id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__country_id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city__country_id
+msgid "Country"
+msgstr "دولة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_employees__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_generate_air_allowance__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__create_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__create_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_employees__create_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report__create_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__create_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__create_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_generate_air_allowance__create_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__display_name
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__display_name
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_employees__display_name
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report__display_name
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__display_name
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__display_name
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_generate_air_allowance__display_name
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__employee_id
+msgid "Employee"
+msgstr "موظف"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model,name:saudi_hr_air_allowance.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_annual_ticket_detail__adults
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__adults
+msgid "Employee and Spouse"
+msgstr "الموظف والزوج"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_employees__employee_ids
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.view_annual_ticket_by_employees
+msgid "Employees"
+msgstr "الموظفين"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report__excel_file
+msgid "Excel File"
+msgstr "ملف اكسل"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report__filename
+msgid "File Name"
+msgstr "اسم الملف"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.generate_air_allowance_from_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.view_annual_ticket_by_employees
+msgid "Generate"
+msgstr "يولد"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.actions.act_window,name:saudi_hr_air_allowance.action_generate_air_allowance_view
+#: model:ir.model,name:saudi_hr_air_allowance.model_generate_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.generate_air_allowance_from_view
+msgid "Generate Air Allowance"
+msgstr "توليد بدل الهواء"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Generate Allowance"
+msgstr "توليد البدل"
+
+#. module: saudi_hr_air_allowance
+#: code:addons/saudi_hr_air_allowance/models/annual_ticket.py:0
+#, python-format
+msgid "Generate Annual Leaving"
+msgstr "توليد الإجازة السنوية"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model,name:saudi_hr_air_allowance.model_annual_ticket_employees
+msgid "Generate Annual Ticket Record for all selected employees"
+msgstr "إنشاء سجل تذاكر سنوي لجميع الموظفين المحددين"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__has_message
+msgid "Has Message"
+msgstr "رسالة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_employees__id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report__id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_generate_air_allowance__id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city__id
+msgid "ID"
+msgstr "بطاقة تعريف"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__message_needaction
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__message_has_error
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محددًا، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields.selection,name:saudi_hr_air_allowance.selection__annual_ticket_status__member_type__infant
+msgid "Infant"
+msgstr "رضيع"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__infant_fare
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__infant_fare
+msgid "Infant Fare"
+msgstr "أجرة الرضع"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__infant
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__infant
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Infant(s)"
+msgstr "الرضع (ق)"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket____last_update
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail____last_update
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_employees____last_update
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report____last_update
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status____last_update
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare____last_update
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_generate_air_allowance____last_update
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_employees__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_generate_air_allowance__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__write_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__write_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_employees__write_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_report__write_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__write_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_city_airfare__write_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_generate_air_allowance__write_date
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_res_city__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_annual_ticket_detail__children
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__children
+msgid "Maximum two children, if no infants(Age must be between 2 to 18)"
+msgstr "طفلين كحد أقصى ، إذا لم يكن هناك رضع (يجب أن يكون العمر بين 2 إلى 18)"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_annual_ticket_detail__infant
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__infant
+msgid "Maximum two infants, if no children(Below 2 Years)"
+msgstr "رضيعان كحد أقصى ، إذا لم يكن هناك أطفال (أقل من عامين)"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__member_type
+msgid "Member Type"
+msgstr "نوع العضو"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields.selection,name:saudi_hr_air_allowance.selection__annual_ticket_status__ticket_status__not_used
+msgid "Not Used"
+msgstr "غير مستعمل"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الاخطاء"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model,name:saudi_hr_air_allowance.model_other_hr_payslip
+msgid "Other HR Payslip"
+msgstr "قسيمة راتب أخرى خاصة بالموارد البشرية"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__other_hr_payslip_ids
+msgid "Other Hr Payslip"
+msgstr "قسيمة الموارد البشرية الأخرى"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_reports_print_view
+msgid "Print"
+msgstr "مطبعة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__remaining_amount
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__remaining_amount
+msgid "Remaining Amount"
+msgstr "الكمية المتبقية"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model,name:saudi_hr_air_allowance.model_res_city
+msgid "Res City"
+msgstr "مدينة الدقة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__air_destination
+msgid "Return ticket fare from employees home town"
+msgstr "أجرة تذكرة العودة من مسقط رأس الموظفين"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_annual_ticket_detail__adult_fare
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_city_airfare__adult_fare
+msgid "This amount shows return fare from the selected city."
+msgstr "يعرض هذا المبلغ أجرة العودة من المدينة المختارة."
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__ticket_detail_id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_other_hr_payslip__ticket_detail_id
+msgid "Ticket Detail"
+msgstr "تفاصيل التذكرة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__ticket_status_ids
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__ticket_status
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Ticket Status"
+msgstr "حالة التذكرة"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Total Allocated Amount"
+msgstr "المبلغ الإجمالي المخصص"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Total Remaining Amount"
+msgstr "إجمالي المبلغ المتبقي"
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_from_view
+msgid "Total Used Amount"
+msgstr "إجمالي المبلغ المستخدم"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields.selection,name:saudi_hr_air_allowance.selection__annual_ticket_status__ticket_status__used
+msgid "Used"
+msgstr "تستخدم"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__used_amount
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_status__used_amount
+msgid "Used Amount"
+msgstr "المبلغ المستخدم"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__air_destination
+msgid "Vacation Destination"
+msgstr "المقصد"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_hr_contract__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,help:saudi_hr_air_allowance.field_hr_contract__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: saudi_hr_air_allowance
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket__year_id
+#: model:ir.model.fields,field_description:saudi_hr_air_allowance.field_annual_ticket_detail__year_id
+msgid "Year"
+msgstr "عام"
+
+#. module: saudi_hr_air_allowance
+#: code:addons/saudi_hr_air_allowance/models/annual_ticket.py:0
+#: code:addons/saudi_hr_air_allowance/wizard/generate_annual_ticket.py:0
+#, python-format
+msgid "You already done %s annual ticket for this particular year!!"
+msgstr "لقد حصلت بالفعل على تذكرة٪ s السنوية لهذا العام بالتحديد !!"
+
+#. module: saudi_hr_air_allowance
+#: code:addons/saudi_hr_air_allowance/wizard/generate_annual_ticket.py:0
+#, python-format
+msgid "You already generate %s annual ticket details!!"
+msgstr "لقد قمت بالفعل بإنشاء تفاصيل٪ s السنوية للتذكرة !!"
+
+#. module: saudi_hr_air_allowance
+#: code:addons/saudi_hr_air_allowance/wizard/annual_ticket_report.py:0
+#, python-format
+msgid ""
+"You are not able to print this report please contact your administrator : %s"
+" "
+msgstr ""
+"لا يمكنك طباعة هذا التقرير ، الرجاء الاتصال بالمسؤول:٪ s"
+" "
+
+#. module: saudi_hr_air_allowance
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.annual_ticket_reports_print_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_air_allowance.generate_air_allowance_from_view
+msgid "or"
+msgstr "أو"

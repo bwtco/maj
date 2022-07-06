@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Email template contract updation -->
+        <record id="passport_expiry_email" model="mail.template">
+            <field name="name">Notification For Passport Expiry</field>
+            <field name="model_id" ref="model_emp_passport_register"/>
+            <field name="email_from">{{'noreply@localhost'}}</field>
+            <field name="email_to">{{object.employee_id.work_email or ''}}</field>
+            <field name="subject">Notification For Passport Expiry</field>
+            <field name="body_html" type="html">
+                <p>Hello <t t-out="object.employee_id.name"/>,</p>
+                <p>You have only '10' days remaining, your passport Expire date is <b><t t-out="object.expiration_date"/></b>, Please Renew your passport.</p>
+                <p>Regards,</p>
+                <p><t t-out="object.env.user.name"/></p>
+            </field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="passport_resubmission_email" model="mail.template">
+            <field name="name">Notification For Passport Resubmission</field>
+            <field name="model_id" ref="model_emp_passport_request"/>
+            <field name="email_from">{{'noreply@localhost'}}</field>
+            <field name="email_to">{{object.employee_id.work_email or ''}}</field>
+            <field name="subject">Notification For Passport Resubmission</field>
+            <field name="body_html" type="html">
+                <p>Hello <t t-out="object.employee_id.name"/>,</p>
+                <p>You have to Resubmit passport, your passport Resubmission date was <b><t t-out="object.date_to"/></b>,
+                Please Resubmit your passport as soon as possible.</p>
+                <p>Regards,</p>
+                <p><t t-out="object.env.user.name"/></p>
+            </field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="passport_submission_email" model="mail.template">
+            <field name="name">Notification For Passport Submission</field>
+            <field name="model_id" ref="model_int_passport_process"/>
+            <field name="email_from">{{object.env.user.email or ''}}</field>
+            <field name="partner_to">{{object.approve_by.partner_id.id}}</field>
+            <field name="subject">Notification For Passport Submission</field>
+            <field name="body_html" type="html">
+                <p>Hello <t t-out="object.approve_by.partner_id.name"/>,</p>
+                <p>Passport <t t-out="object.passport_no"/> of employee <t t-out="object.employee_id.name"/> is submitted to office <t t-out="object.store_branch_id.name"/> in locker number <t t-out="object.loker"/>.</p>
+                <p>Regards,</p>
+                <p><t t-out="object.env.user.name"/></p>
+            </field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+    </data>
+</odoo>

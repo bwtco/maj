@@ -1,0 +1,517 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_skills_recruitment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-06 06:07+0000\n"
+"PO-Revision-Date: 2022-01-06 06:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_skills_recruitment
+#: model:mail.template,body_html:hr_skills_recruitment.recruitment_email_template_employment_reference
+msgid ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"    <p>Hello ${object.contact_name},</p>\n"
+"\n"
+"    <p>I am ${object.env.user.name} from ${object.env.user.company_id.name} Pvt.Ltd. This is with regard to referral check of ${object.employee_id.name or ''}, who worked with you as ${object.job_title}. Can you please let me know the following details about him/her:</p>\n"
+"    <ul>\n"
+"        <li>Period of Employment:</li>\n"
+"        <li>Designation:</li>\n"
+"        <li>Reason for leaving the organization:</li>\n"
+"        <li>Exit formalities:Completed / Uncompleted</li>\n"
+"        <li>Verified By:</li>\n"
+"    </ul>\n"
+"    <p>It would be very kind if you could spare a few minutes and provide your feedback.</p>\n"
+"    <p>Your cooperation and quick response by return e-mail would be highly appreciated.</p>\n"
+"    <p>Thanks & Regards,</p>\n"
+"    HR Manager\n"
+"</div>\n"
+msgstr ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"    <p>مرحبا ${object.contact_name},</p>\n"
+"\n"
+"    <p>انا ${object.env.user.name} من ${object.env.user.company_id.name} الجندي. هذا فيما يتعلق بفحص الإحالة من ${object.employee_id.name or ''}, من عمل معك ${object.job_title}. هل يمكنك إعلامي بالتفاصيل التالية عنه / عنها:</p>\n"
+"    <ul>\n"
+"        <li>فترة العمل:</li>\n"
+"        <li>تعيين:</li>\n"
+"        <li>سبب ترك المنظمة:</li>\n"
+"        <li>إجراءات الخروج: مكتمل / غير مكتمل</li>\n"
+"        <li>أكد عن طريق:</li>\n"
+"    </ul>\n"
+"    <p>سيكون لطيفًا جدًا إذا كان بإمكانك تخصيص بضع دقائق وتقديم ملاحظاتك.</p>\n"
+"    <p>سيكون تعاونك واستجابتك السريعة عن طريق إعادة البريد الإلكتروني موضع تقدير كبير.</p>\n"
+"    <p>مع الشكر و التقدير,</p>\n"
+"    مدير الموارد البشرية\n"
+"</div>\n"
+
+#. module: hr_skills_recruitment
+#: model:mail.template,body_html:hr_skills_recruitment.resume_cerificate_expiry_notification
+msgid ""
+"<p>Hello <t t-out=\"object.employee_id.name\"/>,</p><br/>\n"
+"        <p style=\"color:red\">Your Certificate <b><t t-out=\"object.name\"/></b> has been expired on <t t-out=\"object.expiry_date\"/>.</p><br/>\n"
+"        <p>Thank you,</p>\n"
+"        <p><t t-out=\"object.company_id.name\"/></p>\n"
+"        "
+msgstr ""
+"<p>مرحبا <t t-out=\"object.employee_id.name\"/>,</p><br/>\n"
+"        <p style=\"color:red\">Your Certificate <b><t t-out=\"object.name\"/></b> قد انتهت صلاحيته في <t t-out=\"object.expiry_date\"/>.</p><br/>\n"
+"        <p>شكرا لك,</p>\n"
+"        <p><t t-out=\"object.company_id.name\"/></p>\n"
+"        "
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__activities
+msgid "Activities and Societies"
+msgstr "نشاطات ومجتمعات"
+
+#. module: hr_skills_recruitment
+#: model:ir.model,name:hr_skills_recruitment.model_hr_applicant
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__applicant_id
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__applicant_id
+msgid "Applicant"
+msgstr "طالب وظيفة"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Approve"
+msgstr "يعتمد"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__state__approve
+msgid "Approved"
+msgstr "وافق"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__4
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__4
+msgid "April"
+msgstr "أبريل"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__8
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__8
+msgid "August"
+msgstr "أغسطس"
+
+#. module: hr_skills_recruitment
+#: model:mail.template,subject:hr_skills_recruitment.resume_cerificate_expiry_notification
+msgid "Certificate Expiry Notification"
+msgstr "إشعار انتهاء صلاحية الشهادة"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Certification"
+msgstr "شهادة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__display_type__classic
+msgid "Classic"
+msgstr "كلاسيك"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__type_code
+msgid "Code"
+msgstr "رمز"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__company
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__contact_email
+msgid "Contact Email"
+msgstr "تواصل بالبريد الاكتروني"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__contact_name
+msgid "Contact Name"
+msgstr "اسم جهة الاتصال"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__contact_phone
+msgid "Contact Phone No"
+msgstr "رقم هاتف الاتصال"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__contact_title
+msgid "Contact Title"
+msgstr "عنوان الاتصال"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__create_uid
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__create_date
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__is_current_job
+msgid "Current Job"
+msgstr "العمل الحالي"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__date_end
+msgid "Date End"
+msgstr "تاريخ الانتهاء"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__date_start
+msgid "Date Start"
+msgstr "تاريخ البدء"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__12
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__12
+msgid "December"
+msgstr "ديسمبر"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__description
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Description"
+msgstr "وصف"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__display_name
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__display_type
+msgid "Display Type"
+msgstr "نوع العرض"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Education Details"
+msgstr "تفاصيل التعليم"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__employee_id
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__employee_id
+msgid "Employee"
+msgstr "موظف"
+
+#. module: hr_skills_recruitment
+#: model:mail.template,name:hr_skills_recruitment.recruitment_email_template_employment_reference
+#: model:mail.template,report_name:hr_skills_recruitment.recruitment_email_template_employment_reference
+#: model:mail.template,subject:hr_skills_recruitment.recruitment_email_template_employment_reference
+msgid "Employment Reference Check"
+msgstr "التحقق من مرجع التوظيف"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Experience"
+msgstr "خبرة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__2
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__2
+msgid "February"
+msgstr "شهر فبراير"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__field_of_study
+msgid "Field of Study"
+msgstr "مجال الدراسة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__grade
+msgid "Grade(GPA)"
+msgstr "الصف / GPA)"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__id
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__id
+msgid "ID"
+msgstr "بطاقة تعريف"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__organization_name
+msgid "Issuing Organization"
+msgstr "جهة الإصدار"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__1
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__1
+msgid "January"
+msgstr "كانون الثاني"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__job_title
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__7
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__7
+msgid "July"
+msgstr "تموز"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__6
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__6
+msgid "June"
+msgstr "يونيو"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill____last_update
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__write_uid
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__write_date
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__location
+msgid "Location"
+msgstr "موقع"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__3
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__3
+msgid "March"
+msgstr "مارس"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__5
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__5
+msgid "May"
+msgstr "قد"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__certification_month
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__completion_month
+msgid "Month"
+msgstr "شهر"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__is_current_job__no
+msgid "No"
+msgstr "رقم"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__11
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__11
+msgid "November"
+msgstr "شهر نوفمبر"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__10
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__10
+msgid "October"
+msgstr "اكتوبر"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__percentage
+msgid "Percentage"
+msgstr "النسبة المئوية"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__degree_id
+msgid "Program"
+msgstr "برنامج"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__level_progress
+msgid "Progress"
+msgstr "تقدم"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,help:hr_skills_recruitment.field_hr_recruitment_employee_skill__level_progress
+msgid "Progress from zero knowledge (0%) to fully mastered (100%)."
+msgstr "التقدم من صفر معرفة (0٪) إلى إتقان كامل (100٪)."
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Reference"
+msgstr "المرجعي"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__state__refuse
+msgid "Refused"
+msgstr "رفض"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__reg_no
+msgid "Registration No."
+msgstr "رقم التسجيل."
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Resume"
+msgstr "سيرة ذاتية"
+
+#. module: hr_skills_recruitment
+#: model:ir.actions.server,name:hr_skills_recruitment.resume_certificate_expiry_notification_ir_actions_server
+#: model:ir.cron,cron_name:hr_skills_recruitment.resume_certificate_expiry_notification
+#: model:ir.cron,name:hr_skills_recruitment.resume_certificate_expiry_notification
+msgid "Resume Certificate Expire Notification"
+msgstr "إعلام بانتهاء صلاحية الشهادة"
+
+#. module: hr_skills_recruitment
+#: model:mail.template,name:hr_skills_recruitment.resume_cerificate_expiry_notification
+msgid "Resume Certificate Expiry Notification"
+msgstr "استئناف إعلام انتهاء صلاحية الشهادة"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Resume Details"
+msgstr "تفاصيل السيرة الذاتية"
+
+#. module: hr_skills_recruitment
+#: model:ir.model,name:hr_skills_recruitment.model_hr_recruitment_resume_line
+msgid "Resume line of an employee"
+msgstr "سطر السيرة الذاتية للموظف"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Resumé"
+msgstr "سيرة ذاتية"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_applicant__resume_line_ids
+msgid "Resumé lines"
+msgstr "سطور السيرة الذاتية"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Send Email"
+msgstr "ارسل بريد الكتروني"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__certification_month__9
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__completion_month__9
+msgid "September"
+msgstr "شهر تسعة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__skill_id
+msgid "Skill"
+msgstr "مهارة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__skill_level_id
+msgid "Skill Level"
+msgstr "مستوى المهارة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_employee_skill__skill_type_id
+msgid "Skill Type"
+msgstr "نوع المهارة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model,name:hr_skills_recruitment.model_hr_recruitment_employee_skill
+msgid "Skill level for an employee"
+msgstr "مستوى المهارة للموظف"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_applicant__employee_skill_ids
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Skills"
+msgstr "مهارات"
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Skills Details"
+msgstr "تفاصيل المهارات"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__state
+msgid "Status"
+msgstr "حالة"
+
+#. module: hr_skills_recruitment
+#: code:addons/hr_skills_recruitment/models/hr_recruitment_skills.py:0
+#, python-format
+msgid "The skill %s and skill type %s doesn't match"
+msgstr "المهارة٪ s ونوع المهارة٪ s غير متطابقين"
+
+#. module: hr_skills_recruitment
+#: code:addons/hr_skills_recruitment/models/hr_recruitment_skills.py:0
+#, python-format
+msgid "The skill level %s is not valid for skill type: %s "
+msgstr "مستوى المهارة٪ s غير صالح لنوع المهارة:٪ s"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.constraint,message:hr_skills_recruitment.constraint_hr_recruitment_resume_line_date_check
+msgid "The start date must be anterior to the end date."
+msgstr "يجب أن يكون تاريخ البدء سابقًا لتاريخ الانتهاء."
+
+#. module: hr_skills_recruitment
+#: model_terms:ir.ui.view,arch_db:hr_skills_recruitment.inherit_hr_applicant_skill_view_form
+msgid "Title"
+msgstr "عنوان"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.constraint,message:hr_skills_recruitment.constraint_hr_recruitment_employee_skill__unique_skill
+msgid "Two levels for the same skill is not allowed"
+msgstr "مستويان لنفس المهارة غير مسموح بهما"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__line_type_id
+msgid "Type"
+msgstr "نوع"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__university_id
+msgid "University Name"
+msgstr "اسم الجامعة"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__certification_year
+#: model:ir.model.fields,field_description:hr_skills_recruitment.field_hr_recruitment_resume_line__completion_year
+msgid "Year"
+msgstr "عام"
+
+#. module: hr_skills_recruitment
+#: model:ir.model.fields.selection,name:hr_skills_recruitment.selection__hr_recruitment_resume_line__is_current_job__yes
+msgid "Yes"
+msgstr "نعم"

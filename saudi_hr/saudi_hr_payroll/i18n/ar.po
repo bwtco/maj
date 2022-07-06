@@ -1,0 +1,556 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saudi_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-12 12:14+0000\n"
+"PO-Revision-Date: 2022-01-12 12:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields.selection,name:saudi_hr_payroll.selection__other_hr_payslip__operation_type__allowance
+msgid "Allowance"
+msgstr "مخصص"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__amount
+msgid "Amount"
+msgstr "مقدار"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__approved_date_to
+msgid "Approved Date To"
+msgstr "التاريخ المعتمد ل"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields.selection,name:saudi_hr_payroll.selection__other_hr_payslip__calc_type__amount
+msgid "By Amount"
+msgstr "بالمبلغ"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields.selection,name:saudi_hr_payroll.selection__other_hr_payslip__calc_type__days
+msgid "By Days"
+msgstr "بالأيام"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields.selection,name:saudi_hr_payroll.selection__other_hr_payslip__calc_type__hours
+msgid "By Hours"
+msgstr "بالساعات"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields.selection,name:saudi_hr_payroll.selection__other_hr_payslip__calc_type__percentage
+msgid "By Percentage"
+msgstr "حسب النسبة المئوية"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__calc_type
+msgid "Calculation Type"
+msgstr "نوع الحساب"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.payslip_report_view
+msgid "Cancel"
+msgstr "يلغي"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model,name:saudi_hr_payroll.model_company_payslip_report
+msgid "Company Payslip Report"
+msgstr "تقرير قسيمة دفع الشركة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__country_id
+msgid "Country"
+msgstr "دولة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__create_date
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export__create_date
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__create_date
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__date
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields.selection,name:saudi_hr_payroll.selection__other_hr_payslip__operation_type__deduction
+msgid "Deduction"
+msgstr "المستقطع"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__department_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.view_other_hr_payslip_filter
+msgid "Department"
+msgstr " قسم، أقسام"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__description
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_form1
+msgid "Description"
+msgstr "وصف"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__display_name
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export__display_name
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__display_name
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields.selection,name:saudi_hr_payroll.selection__other_hr_payslip__state__done
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_form1
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.view_other_hr_payslip_filter
+msgid "Done"
+msgstr "فعله"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields.selection,name:saudi_hr_payroll.selection__other_hr_payslip__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__employee_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.view_other_hr_payslip_filter
+msgid "Employee"
+msgstr "موظف"
+
+#. module: saudi_hr_payroll
+#: model:hr.salary.rule,name:saudi_hr_payroll.hr_salary_rule_employee_eos_resignation
+msgid "Employee Expense Deduction"
+msgstr "خصم مصاريف الموظف"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_form1
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__name
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: saudi_hr_payroll
+#: model:hr.salary.rule,name:saudi_hr_payroll.hr_salary_rule_employee_reimbursement_allowance
+msgid "Employee Reimbursement"
+msgstr "تعويض الموظف"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__excel_file
+msgid "Excel File"
+msgstr "ملف اكسل"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.hr_payslip_export_form
+msgid "Export Line"
+msgstr "خط التصدير"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.hr_payslip_export_form
+msgid "Export Lines"
+msgstr "خطوط التصدير"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__payslip_export_id
+msgid "Export Structure"
+msgstr "هيكل التصدير"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export__line_ids
+msgid "Export line"
+msgstr "خط التصدير"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_form1
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__filename
+msgid "File Name"
+msgstr "اسم الملف"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.view_other_hr_payslip_filter
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__has_message
+msgid "Has Message"
+msgstr "رسالة"
+
+#. module: saudi_hr_payroll
+#: model:hr.salary.rule.category,name:saudi_hr_payroll.HRA
+msgid "Housing Rent Allowance"
+msgstr "بدل إيجار المسكن"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__id
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export__id
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__id
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,help:saudi_hr_payroll.field_other_hr_payslip__message_needaction
+#: model:ir.model.fields,help:saudi_hr_payroll.field_other_hr_payslip__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,help:saudi_hr_payroll.field_other_hr_payslip__message_has_error
+#: model:ir.model.fields,help:saudi_hr_payroll.field_other_hr_payslip__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__is_difference_field
+msgid "Is Difference Field"
+msgstr "هو مجال الفرق"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.hr_payslip_export_form
+msgid "Is Export Line Difference"
+msgstr "هو تصدير الفرق"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_is_follower
+msgid "Is Follower"
+msgstr "تابع"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report____last_update
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export____last_update
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line____last_update
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__write_date
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export__write_date
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__write_date
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__no_of_days
+msgid "No of Days"
+msgstr "لا أيام"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__no_of_hours
+msgid "No of Hours"
+msgstr "عدد الساعات"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip__first_month_days
+msgid "No of day(s)"
+msgstr "لا أيام"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,help:saudi_hr_payroll.field_other_hr_payslip__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,help:saudi_hr_payroll.field_other_hr_payslip__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,help:saudi_hr_payroll.field_other_hr_payslip__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: saudi_hr_payroll
+#: model:hr.salary.rule,name:saudi_hr_payroll.hr_salary_rule_other_allowance
+#: model:hr.salary.rule.category,name:saudi_hr_payroll.other
+msgid "Other Allowance"
+msgstr "بدلات أخرى"
+
+#. module: saudi_hr_payroll
+#: model:ir.ui.menu,name:saudi_hr_payroll.menu_hr_payroll
+msgid "Other Allowance/Deduction"
+msgstr "بدل / استقطاع آخر"
+
+#. module: saudi_hr_payroll
+#: model:ir.actions.act_window,name:saudi_hr_payroll.action_other_hr_payslip
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_tree
+msgid "Other Allowances/Deduction"
+msgstr "البدلات الأخرى / الاستقطاع"
+
+#. module: saudi_hr_payroll
+#: model:hr.salary.rule,name:saudi_hr_payroll.hr_salary_rule_other_deduction
+msgid "Other Deduction"
+msgstr "خصم آخر"
+
+#. module: saudi_hr_payroll
+#: model:ir.model,name:saudi_hr_payroll.model_other_hr_payslip
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_form1
+msgid "Other HR Payslip"
+msgstr "قسيمة راتب أخرى خاصة بالموارد البشرية"
+
+#. module: saudi_hr_payroll
+#: model:ir.model,name:saudi_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "إيصال المرتب"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip__payment_days
+msgid "Payment Day(s)"
+msgstr "يوم (أيام) الدفع"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__payslip_id
+msgid "Payslip"
+msgstr "قسيمة الراتب"
+
+#. module: saudi_hr_payroll
+#: model:ir.actions.act_window,name:saudi_hr_payroll.action_hr_payslip_export
+#: model:ir.model,name:saudi_hr_payroll.model_hr_payslip_export
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__payslip_export_id
+#: model:ir.ui.menu,name:saudi_hr_payroll.menu_payslip_export
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.hr_payslip_export_form
+msgid "Payslip Export"
+msgstr "تصدير قسائم الدفع"
+
+#. module: saudi_hr_payroll
+#: model:ir.model,name:saudi_hr_payroll.model_hr_payslip_export_line
+msgid "Payslip Export Line"
+msgstr "خط تصدير قسائم الراتب"
+
+#. module: saudi_hr_payroll
+#: model:ir.actions.act_window,name:saudi_hr_payroll.action_payslip_report_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.payslip_report_view
+msgid "Payslip Report"
+msgstr "تقرير قسيمة الدفع"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__percentage
+msgid "Percentage"
+msgstr "النسبة المئوية"
+
+#. module: saudi_hr_payroll
+#: code:addons/saudi_hr_payroll/models/hr_payroll.py:0
+#, python-format
+msgid "Please enter 'Joining Date' of Employee first!"
+msgstr "الرجاء إدخال 'تاريخ انضمام' الموظف أولاً!"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.payslip_report_view
+msgid "Print"
+msgstr "مطبعة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_company_payslip_report__report_name
+msgid "Report Head"
+msgstr "رئيس التقرير"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__rule_id
+msgid "Rule"
+msgstr "قاعدة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payroll_structure__rule_ids
+msgid "Salary Rules"
+msgstr "قواعد المرتبات"
+
+#. module: saudi_hr_payroll
+#: model:ir.model,name:saudi_hr_payroll.model_hr_payroll_structure
+msgid "Salary Structure"
+msgstr "هيكل المرتب"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.view_other_hr_payslip_filter
+msgid "Search Other Allowances/Deduction"
+msgstr "بحث البدلات الأخرى / الخصم"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_form1
+msgid "Select Department"
+msgstr "حدد القسم"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_form1
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_hr_payslip_export_line__sequence
+msgid "Sequence"
+msgstr "تسلسل"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.other_hr_payslip_form1
+msgid "Set as Draft"
+msgstr "تعيين كمسودة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__state
+msgid "State"
+msgstr "ولاية"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.view_other_hr_payslip_filter
+msgid "Status"
+msgstr "حالة"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.view_other_hr_payslip_filter
+msgid "To Approve"
+msgstr "ليوافق"
+
+#. module: saudi_hr_payroll
+#: model:hr.salary.rule.category,name:saudi_hr_payroll.TA
+msgid "Transportation"
+msgstr "وسائل النقل"
+
+#. module: saudi_hr_payroll
+#: model:hr.salary.rule,name:saudi_hr_payroll.hr_salary_rule_transportationallowance
+msgid "Transportation Allowance"
+msgstr "بدل مواصلات"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__operation_type
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.view_other_hr_payslip_filter
+msgid "Type"
+msgstr "نوع"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,field_description:saudi_hr_payroll.field_other_hr_payslip__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: saudi_hr_payroll
+#: model:ir.model.fields,help:saudi_hr_payroll.field_other_hr_payslip__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: saudi_hr_payroll
+#: code:addons/saudi_hr_payroll/models/hr_payroll.py:0
+#, python-format
+msgid "You already Refund payslip with same duration of \"%s\".Kindly check Once."
+msgstr "لقد قمت بالفعل برد قسيمة الدفع بنفس مدة \ '%s \'. يرجى التحقق مرة واحدة."
+
+#. module: saudi_hr_payroll
+#: code:addons/saudi_hr_payroll/models/hr_payroll.py:0
+#, python-format
+msgid ""
+"You already generated payslip with same duration of \"%s\".Kindly check "
+"Once."
+msgstr ""
+"لقد أنشأت بالفعل قسيمة دفع بالمدة نفسها \'%s \ '. يرجى التحقق من ذلك"
+"ذات مرة."
+
+#. module: saudi_hr_payroll
+#: code:addons/saudi_hr_payroll/models/other_hr_payslip.py:0
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة %s!"
+
+#. module: saudi_hr_payroll
+#: model_terms:ir.ui.view,arch_db:saudi_hr_payroll.payslip_report_view
+msgid "or"
+msgstr "أو"

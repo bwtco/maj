@@ -1,0 +1,947 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saudi_hr_accommodation_book
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-06 11:32+0000\n"
+"PO-Revision-Date: 2022-01-06 11:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "'Check-Out Time' should be greater than 'Check-In Time'!"
+msgstr "'يجب أن يكون 'وقت تسجيل المغادرة' أكبر من 'وقت الوصول'!"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.actions.act_window,name:saudi_hr_accommodation_book.action_accommodation_view
+#: model:ir.model,name:saudi_hr_accommodation_book.model_accommodation
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__accommodation_id
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__admin_reports__report__accommodation
+#: model:ir.ui.menu,name:saudi_hr_accommodation_book.menu_accommodation
+#: model:product.product,name:saudi_hr_accommodation_book.hotel_accommodation
+#: model:product.template,name:saudi_hr_accommodation_book.hotel_accommodation_product_template
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_tree_view
+msgid "Accommodation"
+msgstr "إقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model:mail.message.subtype,description:saudi_hr_accommodation_book.mt_accommodation_validate
+#: model:mail.message.subtype,name:saudi_hr_accommodation_book.mt_accommodation_validate
+msgid "Accommodation Approved"
+msgstr "تمت الموافقة على الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "Accommodation Approved."
+msgstr "تمت الموافقة على الإقامة."
+
+#. module: saudi_hr_accommodation_book
+#: model:mail.message.subtype,description:saudi_hr_accommodation_book.mt_accommodation_book
+#: model:mail.message.subtype,name:saudi_hr_accommodation_book.mt_accommodation_book
+msgid "Accommodation Booked"
+msgstr "الإقامة محجوزة"
+
+#. module: saudi_hr_accommodation_book
+#: model:mail.message.subtype,description:saudi_hr_accommodation_book.mt_accommodation_confirm
+#: model:mail.message.subtype,name:saudi_hr_accommodation_book.mt_accommodation_confirm
+msgid "Accommodation Confirmed"
+msgstr "تم تأكيد الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model:mail.message.subtype,description:saudi_hr_accommodation_book.mt_accommodation_new
+#: model:mail.message.subtype,name:saudi_hr_accommodation_book.mt_accommodation_new
+msgid "Accommodation Created"
+msgstr "تم إنشاء الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "Accommodation Created."
+msgstr "تم إنشاء الإقامة."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.actions.act_window,name:saudi_hr_accommodation_book.action_accommodation_line
+#: model:ir.ui.menu,name:saudi_hr_accommodation_book.menu_accommodation_line
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_tree_view
+msgid "Accommodation Details"
+msgstr "تفاصيل الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_form_view
+msgid "Accommodation Information"
+msgstr "معلومات الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model,name:saudi_hr_accommodation_book.model_accommodation_line
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__accommodation_lines
+msgid "Accommodation Lines"
+msgstr "خطوط الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model:mail.message.subtype,description:saudi_hr_accommodation_book.mt_accommodation_refuse
+#: model:mail.message.subtype,name:saudi_hr_accommodation_book.mt_accommodation_refuse
+msgid "Accommodation Refused"
+msgstr "السكن مرفوض"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "Accommodation Refused."
+msgstr "السكن مرفوض"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Accommodation Requests that has been Approved"
+msgstr "طلبات الإقامة التي تمت الموافقة عليها"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Accommodation Requests that has been Booked"
+msgstr "طلبات الإقامة التي تم حجزها"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Accommodation Requests that has been waiting for approval"
+msgstr "طلبات الإقامة التي كانت في انتظار الموافقة"
+
+#. module: saudi_hr_accommodation_book
+#: model:mail.message.subtype,description:saudi_hr_accommodation_book.mt_accommodation_stay_over
+#: model:mail.message.subtype,name:saudi_hr_accommodation_book.mt_accommodation_stay_over
+msgid "Accommodation Stay Over"
+msgstr "الإقامة البقاء أكثر"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "Accommodation Stay Over."
+msgstr "الإقامة البقاء أكثر."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_needaction
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model,name:saudi_hr_accommodation_book.model_admin_reports
+msgid "Admin Reports"
+msgstr "تقارير المسؤول"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__amount
+msgid "Amount"
+msgstr "مقدار"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Approve"
+msgstr "يعتمد"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation__state__validate
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Approved"
+msgstr "وافق"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__approved_date
+msgid "Approved Date"
+msgstr "تاريخ الموافقة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__approved_by
+msgid "Approved by"
+msgstr "تمت الموافقة عليه من قبل"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_attachment_count
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Book"
+msgstr "الكتاب"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation__state__booked
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Booked"
+msgstr "حجز"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__calculate_company_expense
+msgid "Calculate Company Expense"
+msgstr "حساب مصاريف الشركة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation__state__cancel
+msgid "Cancelled"
+msgstr "ألغيت"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__capacity
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_filter
+msgid "Capacity"
+msgstr "الاهلية"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__check_in_time
+msgid "Check In"
+msgstr "تحقق في"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__check_out_time
+msgid "Check Out"
+msgstr "الدفع"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+msgid "Check-In Month"
+msgstr "شهر الوصول"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__city
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__city
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__city
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_filter
+msgid "City"
+msgstr "مدينة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__company_contribution
+msgid "Company Contribution"
+msgstr "مساهمة الشركة"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Confirm"
+msgstr "يتأكد"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__contact_no
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__contact_no
+msgid "Contact No."
+msgstr "رقم الاتصال."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_stay_purpose__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__create_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__create_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility__create_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__create_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__create_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_stay_purpose__create_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: saudi_hr_accommodation_book
+#: model:product.product,uom_name:saudi_hr_accommodation_book.hotel_accommodation
+#: model:product.template,uom_name:saudi_hr_accommodation_book.hotel_accommodation_product_template
+msgid "Days"
+msgstr "أيام"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__department_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Department"
+msgstr "قسم، أقسام"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__department_id
+msgid "Department for which accommodation required"
+msgstr "القسم الذي تتطلب الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__description
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility__note
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__description
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.facility_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_form_view
+msgid "Description"
+msgstr "وصف"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__display_name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__display_name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility__display_name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__display_name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__display_name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_stay_purpose__display_name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation__state__draft
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__email
+msgid "Email"
+msgstr "بريد الالكتروني"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__employee_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Employee"
+msgstr "موظف"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__emp_contribution
+msgid "Employee Contribution"
+msgstr "مساهمة الموظف"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__employee_id
+msgid "Employee for which accommodation required"
+msgstr "الموظف الذي تتطلب الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Expense"
+msgstr "مصروف"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__expense_note
+msgid "Expense Note"
+msgstr "ملاحظة المصاريف"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__expense_ids
+msgid "Expenses"
+msgstr "نفقات"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.room_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_form_view
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.actions.act_window,name:saudi_hr_accommodation_book.action_facility
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__facilities
+#: model:ir.ui.menu,name:saudi_hr_accommodation_book.menu_facilities
+msgid "Facilities"
+msgstr "خدمات"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model,name:saudi_hr_accommodation_book.model_facility
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.facility_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.facility_tree_view
+msgid "Facility"
+msgstr "امكانية"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.room_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_filter
+msgid "Filter"
+msgstr "منقي"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_follower_ids
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_partner_ids
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "رمز الخط الرائع ، على سبيل المثال FA- المهام"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Generate Expense"
+msgstr "توليد المصاريف"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.room_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_filter
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__has_message
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__has_message
+msgid "Has Message"
+msgstr "رسالة"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid ""
+"Hello, %s <br/>Your Accommodation Request is booked.<br/>Check In Date: %s "
+"<br/>Check Out Date: %s <br/>Check Further Details In Accommodation Request."
+msgstr ""
+"مرحبا, %s <br/>تم حجز طلب الإقامة الخاص بك.<br/>تاريخ الوصول: %s "
+"<br/>موعد انتهاء الأقامة: %s <br/>تحقق من مزيد من التفاصيل في طلب الإقامة."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model,name:saudi_hr_accommodation_book.model_hotel
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__hotel_id
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__hotel_id
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation_line__accommodation_type__hotel
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__admin_reports__accommodation_type__hotel
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_tree_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.room_filter
+msgid "Hotel"
+msgstr "الفندق"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.actions.act_window,name:saudi_hr_accommodation_book.action_hotel
+#: model:ir.ui.menu,name:saudi_hr_accommodation_book.menu_hotel
+msgid "Hotels"
+msgstr "الفنادق"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__id
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__id
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility__id
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__id
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__id
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_stay_purpose__id
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__id
+msgid "ID"
+msgstr "بطاقة تعريف"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى نشاط استثناء."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__message_needaction
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__message_unread
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation_line__message_needaction
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation_line__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__message_has_error
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__message_has_sms_error
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation_line__message_has_error
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation_line__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__villa__status__in_service
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_filter
+msgid "In Service"
+msgstr "في الخدمة"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "Information"
+msgstr "معلومة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_is_follower
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_is_follower
+msgid "Is Follower"
+msgstr "تابع"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__job_code_id
+msgid "Job Code"
+msgstr "كود الوظيفة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__job_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Job Position"
+msgstr "وظيفه"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__job_id
+msgid "Job for which accommodation required"
+msgstr "الوظيفة التي تتطلب الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation____last_update
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line____last_update
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility____last_update
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel____last_update
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room____last_update
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_stay_purpose____last_update
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_stay_purpose__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__write_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__write_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility__write_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__write_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__write_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_stay_purpose__write_date
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_main_attachment_id
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_has_error
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_ids
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+msgid "Month"
+msgstr "شهر"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_facility__name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_stay_purpose__name
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "New Accommodation Requests"
+msgstr "طلبات السكن الجديدة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "النشاط التالي حدث التقويم"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Notes"
+msgstr "ملحوظات"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_needaction_counter
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_has_error_counter
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__message_needaction_counter
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation_line__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__message_has_error_counter
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation_line__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__message_unread_counter
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation_line__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__villa__status__in_use
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_filter
+msgid "Occupied"
+msgstr "احتل"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__branch_id
+msgid "Office"
+msgstr "مكتب. مقر. مركز"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__company_contribution_amount
+msgid "Paid By Company"
+msgstr "تدفع من قبل الشركة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__emp_contribution_amount
+msgid "Paid By Employee"
+msgstr "يدفع من قبل الموظف"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__payment_mode
+msgid "Payment By"
+msgstr "الدفع بواسطة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_room__per_day_charge
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__per_day_charge
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.room_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_filter
+msgid "Per Day Charge"
+msgstr "رسوم يومية"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "Please add Accommodation Details first !"
+msgstr "الرجاء إضافة تفاصيل الإقامة أولاً!"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model,name:saudi_hr_accommodation_book.model_stay_purpose
+msgid "Purpose Of Stay"
+msgstr "الغرض من الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__reason_id
+msgid "Purpose of Stay"
+msgstr "الغرض من الإقامة"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_form_view
+msgid "Put the description here"
+msgstr "ضع الوصف هنا"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation__state__refuse
+msgid "Refused"
+msgstr "رفض"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__remarks
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_form_view
+msgid "Remarks"
+msgstr "ملاحظات"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_admin_reports__report
+msgid "Report"
+msgstr "نقل"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__activity_user_id
+msgid "Responsible User"
+msgstr "مستخدم مسؤول"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model,name:saudi_hr_accommodation_book.model_room
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__room_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.room_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.room_tree_view
+msgid "Room"
+msgstr "غرفة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.actions.act_window,name:saudi_hr_accommodation_book.action_room
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__room_ids
+#: model:ir.ui.menu,name:saudi_hr_accommodation_book.menu_room
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.hotel_form_view
+msgid "Rooms"
+msgstr "غرف"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_has_sms_error
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Set to Draft"
+msgstr "تعيين إلى مسودة"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "State"
+msgstr "ولاية"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__state
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_villa__status
+msgid "Status"
+msgstr "حالة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة على أساس الأنشطة \ n"
+"متأخر: تاريخ الاستحقاق فات بالفعل \ n"
+"اليوم: تاريخ النشاط هو اليوم \ n"
+"مخطط له: الأنشطة المستقبلية."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__days
+msgid "Stay Days"
+msgstr "أيام البقاء"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__accommodation_type
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_admin_reports__accommodation_type
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+msgid "Stay In"
+msgstr "ابقى في"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation__state__stay_over
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Stay Over"
+msgstr "ابقى بعيدا"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.purpose_of_stay_form_view
+msgid "Stay Purpose"
+msgstr "البقاء الغرض"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_hotel__telephone
+msgid "Telephone"
+msgstr "هاتف"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "Time Conflict Please Check!"
+msgstr "تعارض الوقت يرجى التحقق!"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__expense_total
+msgid "Total Expense"
+msgstr "المصاريف الكلية"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_form_view
+msgid "Trip Details"
+msgstr "تفاصيل الرحلة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__check_out_time
+msgid "Trip End Date"
+msgstr "تاريخ انتهاء الرحلة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__check_in_time
+msgid "Trip Start Date"
+msgstr "تاريخ بدء الرحلة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_unread
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__message_unread_counter
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__villa__status__vacant
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_filter
+msgid "Vacant"
+msgstr "شاغر"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model,name:saudi_hr_accommodation_book.model_villa
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__villa_id
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation_line__accommodation_type__villa
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__admin_reports__accommodation_type__villa
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_line_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.villa_tree_view
+msgid "Villa"
+msgstr "فيلا"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.actions.act_window,name:saudi_hr_accommodation_book.action_villa
+#: model:ir.ui.menu,name:saudi_hr_accommodation_book.menu_villa
+msgid "Villas"
+msgstr "فلل"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields.selection,name:saudi_hr_accommodation_book.selection__accommodation__state__confirm
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: saudi_hr_accommodation_book
+#: model_terms:ir.ui.view,arch_db:saudi_hr_accommodation_book.accommodation_filter
+msgid "Waiting for Approval"
+msgstr "بانتظار الموافقة"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation__website_message_ids
+#: model:ir.model.fields,field_description:saudi_hr_accommodation_book.field_accommodation_line__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: saudi_hr_accommodation_book
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation__website_message_ids
+#: model:ir.model.fields,help:saudi_hr_accommodation_book.field_accommodation_line__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid ""
+"You can't set details for the Accommodation which is not in states mention "
+"below ['Booked','Approved'] "
+msgstr ""
+"لا يمكنك تعيين تفاصيل عن مكان الإقامة الذي لم يرد ذكره في الدول"
+"أدناه ['محجوزة' ، 'موافق عليها']"
+
+#. module: saudi_hr_accommodation_book
+#: code:addons/saudi_hr_accommodation_book/models/accommodation.py:0
+#, python-format
+msgid "You cannot remove the accommodation which is in %s state!"
+msgstr "لا يمكنك إزالة مكان الإقامة الموجود في حالة٪ s!"

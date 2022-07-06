@@ -1,0 +1,922 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saudi_hr_passport_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-12 09:51+0000\n"
+"PO-Revision-Date: 2022-01-12 09:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_passport_management
+#: model:mail.template,body_html:saudi_hr_passport_management.passport_submission_email
+msgid ""
+"<p>Hello <t t-out=\"object.approve_by.partner_id.name\"/>,</p>\n"
+"                <p>Passport <t t-out=\"object.passport_no\"/> of employee <t t-out=\"object.employee_id.name\"/> is submitted to office <t t-out=\"object.store_branch_id.name\"/> in locker number <t t-out=\"object.loker\"/>.</p>\n"
+"                <p>Regards,</p>\n"
+"                <p><t t-out=\"object.env.user.name\"/></p>\n"
+"            "
+msgstr ""
+"<p>مرحبا <t t-out=\"object.approve_by.partner_id.name\"/>,</p>\n"
+"                <p>جواز سفر <t t-out=\"object.passport_no\"/> من الموظف <t t-out=\"object.employee_id.name\"/> يتم تقديمه إلى المكتب <t t-out=\"object.store_branch_id.name\"/> في رقم الخزانة <t t-out=\"object.loker\"/>.</p>\n"
+"                <p>يعتبر,</p>\n"
+"                <p><t t-out=\"object.env.user.name\"/></p>\n"
+"            "
+
+#. module: saudi_hr_passport_management
+#: model:mail.template,body_html:saudi_hr_passport_management.passport_expiry_email
+msgid ""
+"<p>Hello <t t-out=\"object.employee_id.name\"/>,</p>\n"
+"                <p>You have only '10' days remaining, your passport Expire date is <b><t t-out=\"object.expiration_date\"/></b>, Please Renew your passport.</p>\n"
+"                <p>Regards,</p>\n"
+"                <p><t t-out=\"object.env.user.name\"/></p>\n"
+"            "
+msgstr ""
+"<p>مرحبا <t t-out=\"object.employee_id.name\"/>,</p>\n"
+"                <p>لديك فقط '10' أيام متبقية ، تاريخ انتهاء صلاحية جواز سفرك هو <b><t t-out=\"object.expiration_date\"/></b>, الرجاء تجديد جواز سفرك.</p>\n"
+"                <p>يعتبر,</p>\n"
+"                <p><t t-out=\"object.env.user.name\"/></p>\n"
+"            "
+
+#. module: saudi_hr_passport_management
+#: model:mail.template,body_html:saudi_hr_passport_management.passport_resubmission_email
+msgid ""
+"<p>Hello <t t-out=\"object.employee_id.name\"/>,</p>\n"
+"                <p>You have to Resubmit passport, your passport Resubmission date was <b><t t-out=\"object.date_to\"/></b>,\n"
+"                Please Resubmit your passport as soon as possible.</p>\n"
+"                <p>Regards,</p>\n"
+"                <p><t t-out=\"object.env.user.name\"/></p>\n"
+"            "
+msgstr ""
+"<p>مرحبا <t t-out=\"object.employee_id.name\"/>,</p>\n"
+"                <p>يجب عليك إعادة تقديم جواز السفر ، وكان تاريخ إعادة تقديم جواز سفرك <b><t t-out=\"object.date_to\"/></b>,\n"
+"                يرجى إعادة تقديم جواز سفرك في أسرع وقت ممكن.</p>\n"
+"                <p>يعتبر,</p>\n"
+"                <p><t t-out=\"object.env.user.name\"/></p>\n"
+"            "
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_needaction
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_needaction
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__reason__adding_spouse_name
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__reason__adding_spouse_name
+msgid "Adding Spouse Name"
+msgstr "إضافة اسم الزوج"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__reason__address_change
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__reason__address_change
+msgid "Address Change"
+msgstr "تغير العنوان"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__reason__annual_vacation
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__reason__annual_vacation
+msgid "Annual Vacation"
+msgstr "عطلة سنوية"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Approve"
+msgstr "يعتمد"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__approve_by
+msgid "Approve By"
+msgstr "الموافقة من قبل"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__approve_date
+msgid "Approve Date"
+msgstr "تاريخ الموافقة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__state__approve
+msgid "Approved"
+msgstr "وافق"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+msgid "Approved By"
+msgstr "تمت الموافقة عليه من قبل"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_attachment_count
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_attachment_count
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__reason__business_trip
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__reason__business_trip
+msgid "Business Trip"
+msgstr "رحلة عمل"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_register__state__cancel
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__state__cancel
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__state__cancel
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Cancel"
+msgstr "يلغي"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_register__state__confirm
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__state__confirm
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__state__confirm
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Confirm"
+msgstr "يتأكد"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__create_date
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__create_date
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__expiration_date_hijri
+msgid "Date of Expiry(Hijri)"
+msgstr "تاريخ انتهاء الصلاحية (هجري)"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__department_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__department_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.view_emp_passport_register_filter
+msgid "Department"
+msgstr " قسم، أقسام"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__description
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__note
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__note
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Description"
+msgstr "وصف"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__display_name
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__display_name
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_res_documents__status
+msgid "Document Status"
+msgstr "حالة المستند"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_register__state__draft
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__state__draft
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model,name:saudi_hr_passport_management.model_hr_employee
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__employee_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__employee_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__employee_id
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__res_documents__status__employee
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.view_emp_passport_register_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_request_employee_submit
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_request_employee_submit
+msgid "Employee Has Submitted Passport To GR"
+msgstr "قدم الموظف جواز السفر إلى GR"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model,name:saudi_hr_passport_management.model_emp_passport_register
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_tree_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_tree_view
+msgid "Employee Passport Register"
+msgstr "سجل جواز سفر الموظف"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model,name:saudi_hr_passport_management.model_emp_passport_request
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+msgid "Employee Passport Request"
+msgstr "طلب جواز سفر الموظف"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__state__employee_submit
+msgid "Employee Submitted"
+msgstr "قدم الموظف"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__expiration_date
+msgid "Expiration date"
+msgstr "تاريخ انتهاء الصلاحية"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__expiration_date
+msgid "Expiration date of passport."
+msgstr "تاريخ انتهاء جواز السفر."
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__state__first_approve
+msgid "First Approval"
+msgstr "الموافقة الأولى"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+msgid "First Approve"
+msgstr "الموافقة الأولى"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_follower_ids
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_follower_ids
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_partner_ids
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_partner_ids
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__date_from
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__date_from
+msgid "From"
+msgstr "من"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+msgid "From Date"
+msgstr "من التاريخ"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_request_receive
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_request_receive
+msgid "GR Has Received Passport From Employee"
+msgstr "حصل GR على جواز سفر من الموظف"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_request_approve_gr_manager
+msgid "GR Manager Approve Passport Request"
+msgstr "مدير GR الموافقة على طلب جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_request_approve_gr_manager
+msgid ""
+"GR Manager Approve Passport Request And Ready For Allocation TO Employee"
+msgstr ""
+"يوافق مدير GR على طلب جواز السفر وجاهز للتخصيص إلى الموظف"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__res_documents__status__gr_user
+msgid "GR User"
+msgstr "مستخدم GR"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_request_approve_gr
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_request_approve_gr
+msgid "GR User Has Approved Passport Request"
+msgstr "وافق مستخدم GR على طلب جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.view_emp_passport_register_filter
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__has_message
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__has_message
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__has_message
+msgid "Has Message"
+msgstr "رسالة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__id
+msgid "ID"
+msgstr "معرفات"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__message_needaction
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__message_unread
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__message_needaction
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__message_unread
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__message_needaction
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__message_has_error
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__message_has_sms_error
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__message_has_error
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__message_has_sms_error
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__message_has_error
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: saudi_hr_passport_management
+#: model:ir.actions.act_window,name:saudi_hr_passport_management.action_int_passport_process_view
+#: model:ir.ui.menu,name:saudi_hr_passport_management.menu_int_passport_process
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_tree_view
+msgid "Internal Passport Process"
+msgstr "عملية جواز السفر الداخلي"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_internal_passport_process_cancel
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_internal_passport_process_cancel
+msgid "Internal Passport Process Request Cancel"
+msgstr "إلغاء طلب عملية جواز السفر الداخلي"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_internal_passport_process_confirm
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_internal_passport_process_confirm
+msgid "Internal Passport Process Request Confirmed"
+msgstr "تأكيد طلب عملية جواز السفر الداخلي"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_internal_passport_process_approve
+msgid ""
+"Internal Passport Process Request Has Been Approved By GR Manager And "
+"Passport Is Now Ready For Allocation To GR User"
+msgstr ""
+"تمت الموافقة على طلب عملية جواز السفر الداخلي من قبل مدير GR و"
+"جواز السفر جاهز الآن للتخصيص لمستخدم GR"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_internal_passport_process_approve
+msgid ""
+"Internal Passport Process Request Has Been Approved By GR Manager And "
+"Passport Is Now Ready For Allocation To GR user"
+msgstr ""
+"تمت الموافقة على طلب عملية جواز السفر الداخلي من قبل مدير GR و"
+"جواز السفر جاهز الآن للتخصيص لمستخدم GR"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model,name:saudi_hr_passport_management.model_int_passport_process
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Internal Passport process"
+msgstr "عملية جواز السفر الداخلي"
+
+#. module: saudi_hr_passport_management
+#: code:addons/saudi_hr_passport_management/models/emp_passport_request.py:0
+#: code:addons/saudi_hr_passport_management/models/emp_passport_request.py:0
+#: code:addons/saudi_hr_passport_management/models/int_passport_process.py:0
+#: code:addons/saudi_hr_passport_management/models/int_passport_process.py:0
+#, python-format
+msgid "Invalid Date! Please enter valid duration from and to date!"
+msgstr "تاريخ غير صالح! الرجاء إدخال مدة صالحة من و حتى الآن!"
+
+#. module: saudi_hr_passport_management
+#: code:addons/saudi_hr_passport_management/models/emp_passport_register.py:0
+#: code:addons/saudi_hr_passport_management/models/emp_passport_register.py:0
+#, python-format
+msgid "Invalid Expiry Date! Please enter valid date!"
+msgstr "تاريخ انتهاء الصلاحية غير صالح! الرجاء إدخال تاريخ صحيح!"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_is_follower
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_is_follower
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_is_follower
+msgid "Is Follower"
+msgstr "تابع"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__issue_date
+msgid "Issue date"
+msgstr "تاريخ الإصدار"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__issue_date
+msgid "Issue date of passport."
+msgstr "تاريخ اصدار جواز السفر."
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__job_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__job_id
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register____last_update
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request____last_update
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__write_date
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__write_date
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__loker
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__loker
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__loker
+msgid "Locker"
+msgstr "خزانة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_main_attachment_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_main_attachment_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_has_error
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_has_error
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_ids
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_ids
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: saudi_hr_passport_management
+#: model:mail.template,name:saudi_hr_passport_management.passport_expiry_email
+#: model:mail.template,subject:saudi_hr_passport_management.passport_expiry_email
+msgid "Notification For Passport Expiry"
+msgstr "إخطار انتهاء صلاحية جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.template,name:saudi_hr_passport_management.passport_resubmission_email
+#: model:mail.template,subject:saudi_hr_passport_management.passport_resubmission_email
+msgid "Notification For Passport Resubmission"
+msgstr "الإخطار بإعادة تقديم جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.template,name:saudi_hr_passport_management.passport_submission_email
+#: model:mail.template,subject:saudi_hr_passport_management.passport_submission_email
+msgid "Notification For Passport Submission"
+msgstr "الإخطار بتقديم جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_needaction_counter
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_needaction_counter
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_has_error_counter
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_has_error_counter
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__message_needaction_counter
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__message_needaction_counter
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__message_has_error_counter
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__message_has_error_counter
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__message_unread_counter
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__message_unread_counter
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__branch_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__store_branch_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__branch_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__store_branch_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__store_branch_id
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__res_documents__status__office
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.view_emp_passport_register_filter
+msgid "Office"
+msgstr "مكتب. مقر. مركز"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Other Information"
+msgstr "معلومات أخرى"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__other_reason
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__other_reason
+msgid "Other Reason"
+msgstr "سبب آخر"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__reason__others
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__reason__others
+msgid "Others"
+msgstr "آحرون"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+msgid "Passport Information"
+msgstr "معلومات جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_submit
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_submit
+msgid "Passport Is Submitted By GR User"
+msgstr "يتم تقديم جواز السفر من قبل مستخدم GR"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__place_of_issue
+msgid "Passport Issued place."
+msgstr "مكان إصدار جواز السفر."
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__passport_no
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__passport_no
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_hr_employee__passport_id
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__passport_no
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_res_users__passport_id
+msgid "Passport No"
+msgstr "رقم جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_receive
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_receive
+msgid "Passport Received"
+msgstr "استلام جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:ir.actions.act_window,name:saudi_hr_passport_management.action_emp_passport_register_view
+#: model:ir.ui.menu,name:saudi_hr_passport_management.menu_emp_passport_register
+msgid "Passport Register"
+msgstr "سجل جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_registration_cancel
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_registration_cancel
+msgid "Passport Registration Cancel"
+msgstr "إلغاء تسجيل جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_registration_confirm
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_registration_confirm
+msgid "Passport Registration Confirmed"
+msgstr "تأكيد تسجيل جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__reason__passport_renewal
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__reason__passport_renewal
+msgid "Passport Renewal"
+msgstr "تجديد جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:ir.actions.act_window,name:saudi_hr_passport_management.action_emp_passport_request_view
+#: model:ir.ui.menu,name:saudi_hr_passport_management.menu_emp_passport_request
+msgid "Passport Request"
+msgstr "طلب جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_request_cancel
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_request_cancel
+msgid "Passport Request Cancel"
+msgstr "إلغاء طلب جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_request_confirm
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_request_confirm
+msgid "Passport Request Confirmed"
+msgstr "تم تأكيد طلب جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: code:addons/saudi_hr_passport_management/models/int_passport_process.py:0
+#, python-format
+msgid ""
+"Passport is not registered by this employee , please contact his HR manger!"
+msgstr ""
+"لم يتم تسجيل جواز السفر من قبل هذا الموظف ، يرجى الاتصال بمدير الموارد البشرية!"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__passport_no
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__passport_no
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__passport_no
+msgid "Passport number."
+msgstr "رقم جواز السفر."
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__store_branch_id
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__store_branch_id
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__store_branch_id
+msgid "Passport store branch."
+msgstr "فرع متجر الجوازات."
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__place_of_issue
+msgid "Place of Issue"
+msgstr "مكان صدوره"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__profession
+msgid "Profession"
+msgstr "مهنة"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Put the description here..."
+msgstr "ضع الوصف هنا ..."
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__state__second_approve
+msgid "Ready To Allocation"
+msgstr "جاهز للتخصيص"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__reason
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__reason
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+msgid "Reason"
+msgstr "سبب"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+msgid "Receive"
+msgstr "تسلم"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_register__state__receive
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__emp_passport_request__state__receive
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+msgid "Received"
+msgstr "تم الاستلام"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__receive_by
+msgid "Received By"
+msgstr "استلمت من قبل"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model,name:saudi_hr_passport_management.model_res_documents
+msgid "Res Documents"
+msgstr "وثائق الدقة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__user_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.view_emp_passport_register_filter
+msgid "Responsible"
+msgstr "مسؤول"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_has_sms_error
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_has_sms_error
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.actions.server,name:saudi_hr_passport_management.cron_passport_expire_ir_actions_server
+#: model:ir.cron,cron_name:saudi_hr_passport_management.cron_passport_expire
+#: model:ir.cron,name:saudi_hr_passport_management.cron_passport_expire
+msgid "Scheduler for passport Expire"
+msgstr "مجدول جواز السفر تنتهي"
+
+#. module: saudi_hr_passport_management
+#: model:ir.actions.server,name:saudi_hr_passport_management.cron_passport_resubmission_ir_actions_server
+#: model:ir.cron,cron_name:saudi_hr_passport_management.cron_passport_resubmission
+#: model:ir.cron,name:saudi_hr_passport_management.cron_passport_resubmission
+msgid "Scheduler for passport Resubmission"
+msgstr "المجدول لإعادة تقديم جواز السفر"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.view_emp_passport_register_filter
+msgid "Search Employee Card"
+msgstr "البحث عن بطاقة الموظف"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+msgid "Second Approve"
+msgstr "الموافقة الثانية"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Set To Draft"
+msgstr "تعيين إلى مسودة"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_internal_passport_process_stage
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_registration_stage
+#: model:mail.message.subtype,name:saudi_hr_passport_management.mt_passport_request_stage
+msgid "Stage Changed"
+msgstr "تغيرت المرحلة"
+
+#. module: saudi_hr_passport_management
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_internal_passport_process_stage
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_registration_stage
+#: model:mail.message.subtype,description:saudi_hr_passport_management.mt_passport_request_stage
+msgid "Stage changed"
+msgstr "تغيرت المرحلة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__state
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__state
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__state
+msgid "State"
+msgstr "ولاية"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.view_emp_passport_register_filter
+msgid "Status"
+msgstr "حالة"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_register_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Storage Information"
+msgstr "معلومات التخزين"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_form_view
+msgid "Submit"
+msgstr "إرسال"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__register_date
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.view_emp_passport_register_filter
+msgid "Submit Date"
+msgstr "تاريخ النشر"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_form_view
+msgid "Submit To GR"
+msgstr "أرسل إلى GR"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields.selection,name:saudi_hr_passport_management.selection__int_passport_process__state__submit
+msgid "Submitted"
+msgstr "مقدم"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__submit_date
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__submit_date
+msgid "Submitted Date"
+msgstr "تاريخ تقديمه"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.constraint,message:saudi_hr_passport_management.constraint_emp_passport_register_emp_uniq
+msgid "This employee's Passport is already Register."
+msgstr "تم تسجيل جواز سفر هذا الموظف بالفعل."
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__date_to
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__date_to
+msgid "To"
+msgstr "ل"
+
+#. module: saudi_hr_passport_management
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.emp_passport_request_filter
+#: model_terms:ir.ui.view,arch_db:saudi_hr_passport_management.int_passport_process_filter
+msgid "To Date"
+msgstr "حتي اليوم"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_unread
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_unread
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__message_unread_counter
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__message_unread_counter
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__user_id
+msgid "User"
+msgstr "مستخدم"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model,name:saudi_hr_passport_management.model_res_users
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_register__website_message_ids
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_emp_passport_request__website_message_ids
+#: model:ir.model.fields,field_description:saudi_hr_passport_management.field_int_passport_process__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: saudi_hr_passport_management
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_register__website_message_ids
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_emp_passport_request__website_message_ids
+#: model:ir.model.fields,help:saudi_hr_passport_management.field_int_passport_process__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: saudi_hr_passport_management
+#: code:addons/saudi_hr_passport_management/models/emp_passport_register.py:0
+#: code:addons/saudi_hr_passport_management/models/emp_passport_request.py:0
+#: code:addons/saudi_hr_passport_management/models/int_passport_process.py:0
+#, python-format
+msgid "You can not delete record in this stage!"
+msgstr "لا يمكنك حذف سجل في هذه المرحلة!"
+
+#. module: saudi_hr_passport_management
+#: code:addons/saudi_hr_passport_management/models/emp_passport_request.py:0
+#, python-format
+msgid "Your passport is not registered,please contact your HR manger!"
+msgstr "جواز سفرك غير مسجل ، يرجى الاتصال بمدير الموارد البشرية الخاص بك!"

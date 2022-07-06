@@ -1,0 +1,169 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saudi_hr_clearance_it
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-07 13:19+0000\n"
+"PO-Revision-Date: 2022-01-07 13:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_clearance_it
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.report_employee_clearance_template1
+msgid "<span><strong>IT Department</strong></span>"
+msgstr "<span><strong>قسم تكنولوجيا المعلومات</strong></span>"
+
+#. module: saudi_hr_clearance_it
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.report_employee_clearance_template1
+msgid "<span>Handled By</span>"
+msgstr "<span> تم التعامل معه بواسطة </span>"
+
+#. module: saudi_hr_clearance_it
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.report_employee_clearance_template1
+msgid "<span>Item</span>"
+msgstr "<span> عنصر </span>"
+
+#. module: saudi_hr_clearance_it
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.report_employee_clearance_template1
+msgid "<span>Last Update By</span>"
+msgstr "<span> آخر تحديث بواسطة </span>"
+
+#. module: saudi_hr_clearance_it
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.report_employee_clearance_template1
+msgid "<span>Last Updated On</span>"
+msgstr "<span> تاريخ آخر تحديث </span>"
+
+#. module: saudi_hr_clearance_it
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.report_employee_clearance_template1
+msgid "<span>Remarks</span>"
+msgstr "<span> ملاحظات </span>"
+
+#. module: saudi_hr_clearance_it
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.report_employee_clearance_template1
+msgid "<span>Status</span>"
+msgstr "<span> الحالة </span>"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model,name:saudi_hr_clearance_it.model_clearance_department
+msgid "Clearance Department"
+msgstr "قسم التخليص"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model,name:saudi_hr_clearance_it.model_clearance_department_data
+msgid "Clearance Department Data"
+msgstr "بيانات إدارة التخليص"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model.fields,field_description:saudi_hr_clearance_it.field_clearance_department__department_type
+#: model:ir.model.fields,field_description:saudi_hr_clearance_it.field_clearance_department_data__department_type
+msgid "Department Type"
+msgstr "نوع القسم"
+
+#. module: saudi_hr_clearance_it
+#: model:clearance.department.data,item:saudi_hr_clearance_it.clearance_dept_5
+msgid "Email address removed"
+msgstr "تمت إزالة عنوان البريد الإلكتروني"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model,name:saudi_hr_clearance_it.model_hr_employee_clearance
+msgid "Employee Clearance"
+msgstr "تخليص الموظف"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model,name:saudi_hr_clearance_it.model_equipment_registration
+msgid "Equipment Registration"
+msgstr "تسجيل المعدات"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model.fields.selection,name:saudi_hr_clearance_it.selection__clearance_department__department_type__it
+#: model:ir.model.fields.selection,name:saudi_hr_clearance_it.selection__clearance_department_data__department_type__it
+msgid "IT"
+msgstr ""
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model.fields,field_description:saudi_hr_clearance_it.field_clearance_department__it_dept_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.hr_employee_clearance_form_view2
+msgid "IT Department"
+msgstr "قسم تكنولوجيا المعلومات"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model.fields,field_description:saudi_hr_clearance_it.field_hr_employee_clearance__it_dept_ids
+msgid "IT Departments"
+msgstr "أقسام تكنولوجيا المعلومات"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model.fields,field_description:saudi_hr_clearance_it.field_equipment_registration__it_dept_id
+msgid "It Dept"
+msgstr "قسم"
+
+#. module: saudi_hr_clearance_it
+#: model:clearance.department.data,item:saudi_hr_clearance_it.clearance_dept_1
+msgid "Laptop/Desktop"
+msgstr "كمبيوتر محمول / سطح المكتب"
+
+#. module: saudi_hr_clearance_it
+#: model:clearance.department.data,item:saudi_hr_clearance_it.clearance_dept_4
+msgid "Network Access removed"
+msgstr "تمت إزالة الوصول إلى الشبكة"
+
+#. module: saudi_hr_clearance_it
+#: model_terms:ir.ui.view,arch_db:saudi_hr_clearance_it.hr_employee_clearance_form_view2
+msgid "Next"
+msgstr "التالي"
+
+#. module: saudi_hr_clearance_it
+#: model:clearance.department.data,item:saudi_hr_clearance_it.clearance_dept_3
+msgid "Office Access Card"
+msgstr "بطاقة الوصول إلى المكتب"
+
+#. module: saudi_hr_clearance_it
+#: code:addons/saudi_hr_clearance_it/models/hr_employee_clearance.py:0
+#, python-format
+msgid "Please Update Employee Department Status."
+msgstr "الرجاء تحديث حالة قسم الموظف."
+
+#. module: saudi_hr_clearance_it
+#: code:addons/saudi_hr_clearance_it/models/hr_employee_clearance.py:0
+#, python-format
+msgid "Please Update Finance Department Status."
+msgstr "الرجاء تحديث حالة قسم المالية."
+
+#. module: saudi_hr_clearance_it
+#: code:addons/saudi_hr_clearance_it/models/hr_employee_clearance.py:0
+#, python-format
+msgid "Please Update HR Department Status."
+msgstr "يرجى تحديث حالة قسم الموارد البشرية."
+
+#. module: saudi_hr_clearance_it
+#: code:addons/saudi_hr_clearance_it/models/hr_employee_clearance.py:0
+#, python-format
+msgid "Please Update IT Department Status."
+msgstr "يرجى تحديث حالة قسم تكنولوجيا المعلومات."
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model.fields,field_description:saudi_hr_clearance_it.field_hr_employee_clearance__state
+msgid "Status"
+msgstr "حالة"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model.fields.selection,name:saudi_hr_clearance_it.selection__hr_employee_clearance__state__it_dept
+msgid "Waiting Finance Approval"
+msgstr "في انتظار الموافقة المالية"
+
+#. module: saudi_hr_clearance_it
+#: model:ir.model.fields.selection,name:saudi_hr_clearance_it.selection__hr_employee_clearance__state__emp_dept
+msgid "Waiting IT Approval"
+msgstr "في انتظار موافقة قسم تكنولوجيا المعلومات"
+
+#. module: saudi_hr_clearance_it
+#: code:addons/saudi_hr_clearance_it/models/hr_employee_clearance.py:0
+#, python-format
+msgid "You are not modify departments data please contact your administator."
+msgstr "أنت لا تقوم بتعديل بيانات الأقسام ، يرجى الاتصال بمديرك."

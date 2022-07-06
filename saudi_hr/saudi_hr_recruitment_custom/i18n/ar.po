@@ -1,0 +1,840 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saudi_hr_recruitment_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-12 13:32+0000\n"
+"PO-Revision-Date: 2022-01-12 13:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid ""
+" Number of hired employee must be less than expected number of employee in "
+"recruitment."
+msgstr ""
+"يجب أن يكون عدد الموظفين المعينين أقل من العدد المتوقع للموظف في"
+"تجنيد."
+
+#. module: saudi_hr_recruitment_custom
+#: model:mail.template,body_html:saudi_hr_recruitment_custom.email_template_applicant_offer
+msgid ""
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"                    <p>Dear  <t t-out=\"object.partner_name\"/>,</p>\n"
+"\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       It is our pleasure to confirm our offer of employment to you as a <b><t t-out=\"object.job_id.name or ''\"/></b> at <b><t t-out=\"object.company_id.name or ''\"/></b>. In this position, you will report directly to <b><t t-out=\"object.department_id.manager_id and object.department_id.manager_id.name or ''\"/></b> beginning <b><t t-out=\"object.joining_date or ''\"/></b>.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       Your salary will be <b><t t-out=\"object.salary_proposed or ''\"/></b> per year. Paychecks are issued once per a month, beginning with your first paycheck on <b>[PAYCHECK DATE]</b>.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       We will provide relocation assistance in the amount of <b><t t-out=\"('%02d')%(((object.salary_proposed/1.35)*0.25)*6)\"/></b>. If you leave <b><t t-out=\"object.company_id.name or ''\"/></b> before one year of continuous employment, you are required to return the total amount of relocation assistance.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       You will be eligible for medical and dental benefits beginning on your first day of employment. Vacation accrues at a rate of <b>[NUMBER]</b> hours per month. You will be eligible to take accrued vacation after <b>[NUMBER]</b> months of continuous employment.\n"
+"                    </p>\n"
+"                    <!-- <p style=\"margin-left: 30px;\">\n"
+"                       To confirm your acceptance of this offer of employment, please sign below and return to me by fax at <b><t t-out=\"object.company_id.fax or ''\"/></b>.\n"
+"                    </p> -->\n"
+"                    <br/>\n"
+"                    Sincerely,\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    HR Department,\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"                    <p>العزيز  <t t-out=\"object.partner_name\"/>,</p>\n"
+"\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       إنه لمن دواعي سرورنا أن نؤكد عرضنا للتوظيف لك بصفتك أ <b><t t-out=\"object.job_id.name or ''\"/></b> في <b><t t-out=\"object.company_id.name or ''\"/></b>. في هذا الموقف ، سوف تقدم تقريرا مباشرة إلى <b><t t-out=\"object.department_id.manager_id and object.department_id.manager_id.name or ''\"/></b> بداية <b><t t-out=\"object.joining_date or ''\"/></b>.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       سيكون راتبك <b><t t-out=\"object.salary_proposed or ''\"/></b> كل سنة. يتم إصدار شيكات الراتب مرة واحدة شهريًا ، بدءًا من أول شيك راتبك في <b>[تاريخ الدفع]</b>.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       سوف نقدم المساعدة في إعادة التوطين بمبلغ <b><t t-out=\"('%02d')%(((object.salary_proposed/1.35)*0.25)*6)\"/></b>. إذا غادرت <b><t t-out=\"object.company_id.name or ''\"/></b> قبل عام واحد من العمل المستمر ، يتعين عليك إعادة المبلغ الإجمالي لمساعدة إعادة التوطين.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       ستكون مؤهلاً للحصول على المزايا الطبية ومزايا طب الأسنان بدءًا من أول يوم عمل لك. استحقاق الإجازة بمعدل <b>[عدد]</b> ساعة في الشهر. ستكون مؤهلاً لأخذ إجازة مستحقة بعد <b>[عدد]</b> أشهر من العمل المستمر.\n"
+"                    </p>\n"
+"                    <!-- <p style=\"margin-left: 30px;\">\n"
+"                       لتأكيد موافقتك على عرض العمل هذا ، يرجى التوقيع أدناه والعودة إليّ عبر الفاكس على <b><t t-out=\"object.company_id.fax or ''\"/></b>.\n"
+"                    </p> -->\n"
+"                    <br/>\n"
+"                    بإخلاص,\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    قسم الموارد البشرية,\n"
+"                </div>\n"
+"            "
+
+#. module: saudi_hr_recruitment_custom
+#: model:mail.template,body_html:saudi_hr_recruitment_custom.email_template_applicant_acknowledge
+msgid ""
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"                    <p>Dear  <t t-out=\"object.partner_name\"/>,</p>\n"
+"\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       We have received your resume. Thank you for your interest in <b><t t-out=\"object.user_id.company_id.name or ''\"/></b>. We will forward your resume to departments with openings that match your skills, background, and education.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       If we find a match, we will contact you to schedule an interview. Otherwise, we will keep your resume on file for one year from application date. We will review your resume against any positions that become available during that time. Please do not resubmit your resume.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       Again, we appreciate your interest in <b><t t-out=\"object.user_id.company_id.name or ''\"/></b>. We wish you the best of luck in your job search.\n"
+"                    </p>\n"
+"                    <br/>\n"
+"                    Sincerely,\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    HR Department,\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"                    <p>العزيز  <t t-out=\"object.partner_name\"/>,</p>\n"
+"\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       لقد تلقينا سيرتك الذاتية. شكرا لاهتمامك <b><t t-out=\"object.user_id.company_id.name or ''\"/></b>. سنرسل سيرتك الذاتية إلى الأقسام ذات الفتحات التي تتناسب مع مهاراتك وخلفيتك وتعليمك.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       إذا وجدنا تطابقًا ، فسوف نتصل بك لتحديد موعد مقابلة. خلافًا لذلك ، سنحتفظ بسيرتك الذاتية في ملف لمدة عام واحد من تاريخ تقديم الطلب. سنراجع سيرتك الذاتية مقابل أي وظائف متاحة خلال ذلك الوقت. من فضلك لا تعيد تقديم سيرتك الذاتية.\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       مرة أخرى ، نقدر اهتمامك بـ <b><t t-out=\"object.user_id.company_id.name or ''\"/></b>. نتمنى لك كل التوفيق في البحث عن وظيفة.\n"
+"                    </p>\n"
+"                    <br/>\n"
+"                    بإخلاص,\n"
+"                    <br/>\n"
+"                    <br/>\n"
+"                    قسم الموارد البشرية,\n"
+"                </div>\n"
+"            "
+
+#. module: saudi_hr_recruitment_custom
+#: model:mail.template,body_html:saudi_hr_recruitment_custom.email_template_reminder_for_next_round
+msgid ""
+"<p>Hello <t t-out=\"object.employee_id.name\"/>,</p>\n"
+"                <p>You are responsible person for the next round.</p>\n"
+"                <p>Thanks,</p>\n"
+"                <p><t t-out=\"object.env.user.name\"/></p>\n"
+"            "
+msgstr ""
+"<p>مرحبا <t t-out=\"object.employee_id.name\"/>,</p>\n"
+"                <p>أنت الشخص المسؤول عن الجولة القادمة.</p>\n"
+"                <p>شكرا,</p>\n"
+"                <p><t t-out=\"object.env.user.name\"/></p>\n"
+"            "
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Address"
+msgstr "تبوك"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model,name:saudi_hr_recruitment_custom.model_hr_applicant
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__feedback_ids
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__applicant_id
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_res_documents__applicant_id
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_survey_user_input__applicant_id
+msgid "Applicant"
+msgstr "المتقدم"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__partner_name
+msgid "Applicant Name"
+msgstr "اسم التطبيق"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Application Name"
+msgstr "اسم التطبيق"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.actions.act_window,name:saudi_hr_recruitment_custom.portal_user_new_applicant_action
+msgid "Applications"
+msgstr "التطبيقات"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__arabic_name
+msgid "Arabic Name"
+msgstr "الاسم العربي"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__attachment_ids
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Attachments"
+msgstr "مرفقات"
+
+#. module: saudi_hr_recruitment_custom
+#: model:hr.recruitment.stage,legend_blocked:saudi_hr_recruitment_custom.stage_job6
+#: model:hr.recruitment.stage,legend_blocked:saudi_hr_recruitment_custom.stage_job7
+#: model:hr.recruitment.stage,legend_blocked:saudi_hr_recruitment_custom.stage_job8
+msgid "Blocked"
+msgstr "محظور"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__join_immedietly
+msgid "Can you join immediately after your notice period?"
+msgstr "هل يمكنك الانضمام مباشرة بعد فترة الإخطار؟"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.hr_recruitment_feedback_form
+msgid "Cancel"
+msgstr "يلغي"
+
+#. module: saudi_hr_recruitment_custom
+#: model:mail.template,name:saudi_hr_recruitment_custom.email_template_applicant_offer
+msgid "Candidate Offer Letter- Send by Email"
+msgstr "خطاب عرض المرشح - أرسل عبر البريد الإلكتروني"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__city
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "City"
+msgstr "مدينة"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.actions.act_window,help:saudi_hr_recruitment_custom.portal_user_new_applicant_action
+msgid "Click to register a new Applications."
+msgstr "انقر لتسجيل تطبيقات جديدة."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Country"
+msgstr "دولة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__date_of_birth
+msgid "Date of Birth"
+msgstr "تاريخ الولادة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__marital_status__divorced
+msgid "Divorced"
+msgstr "مطلق"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__is_legal_right
+msgid ""
+"Do you have legal right to work in the country in which you are applying?"
+msgstr ""
+"هل لديك الحق القانوني في العمل في البلد الذي تقدم فيه?"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__is_legal_guardianship
+msgid "Do you hold any legal guardianship?"
+msgstr "هل لديك أي وصاية قانونية؟"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__document_ids
+msgid "Document"
+msgstr "وثيقة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__emp_id
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_survey_user_input__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,help:saudi_hr_recruitment_custom.field_hr_applicant__emp_id
+msgid "Employee linked to the applicant."
+msgstr "الموظف المرتبط بمقدم الطلب."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__source_type__external
+msgid "External"
+msgstr "خارجي"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__comment
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+#, python-format
+msgid "Feedback"
+msgstr "تعليق"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__feedback_done
+msgid "Feedback Done"
+msgstr "اكتملت التعليقات"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.actions.act_window,name:saudi_hr_recruitment_custom.action_recruitment_feedback
+msgid "Feedback Information"
+msgstr "معلومات التعليقات"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__feedback_by
+msgid "Feedback by"
+msgstr "ردود الفعل من"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.hr_recruitment_feedback_form
+msgid "Feedback form"
+msgstr "نموذج الملاحظات"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Feedback info."
+msgstr "معلومات التعليقات."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__gender__female
+msgid "Female"
+msgstr "أنثى"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Female Employee's age must be greater than 21."
+msgstr "يجب أن يكون عمر الموظفة أكبر من 21 عامًا."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__gender
+msgid "Gender"
+msgstr "جنس تذكير أو تأنيث"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,help:saudi_hr_recruitment_custom.field_hr_recruitment_stage__sequence
+msgid ""
+"Gives the sequence order when displaying a list of stages. Depends on "
+"sequence, movement of stages will be restricted. For ex; One can only move "
+"from one stage to its next and previous stages."
+msgstr ""
+"يعطي ترتيب التسلسل عند عرض قائمة بالمراحل. يعتمد على"
+"التسلسل ، سيتم تقييد حركة المراحل. على سبيل المثال ، يمكن للمرء فقط التحرك"
+"من مرحلة إلى مراحلها التالية والسابقة."
+
+#. module: saudi_hr_recruitment_custom
+#: model:hr.recruitment.stage,name:saudi_hr_recruitment_custom.stage_job6
+msgid "HR Interview"
+msgstr "مقابلة الموارد البشرية"
+
+#. module: saudi_hr_recruitment_custom
+#: model:mail.template,name:saudi_hr_recruitment_custom.email_template_applicant_acknowledge
+msgid "HR New Candidate Acknowledge- Send by Email"
+msgstr "إقرار مرشح الموارد البشرية الجديد - إرسال عبر البريد الإلكتروني"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model,name:saudi_hr_recruitment_custom.model_hr_survey_feedback
+msgid "HR Survey FeedBack"
+msgstr "تغذية استبيان الموارد البشرية"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_recruitment_stage__fold
+msgid "Hide in views if empty"
+msgstr "إخفاء في وجهات النظر إذا كانت فارغة"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Hire & Create Employee"
+msgstr "توظيف وإنشاء موظف"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_recruitment_stage__state__done
+msgid "Hired"
+msgstr "استأجرت"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__hired_by
+msgid "Hired by"
+msgstr "تم توضيفه عن طريق"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__hired_date
+msgid "Hired on"
+msgstr "استأجرت"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: saudi_hr_recruitment_custom
+#: model:hr.recruitment.stage,legend_normal:saudi_hr_recruitment_custom.stage_job6
+#: model:hr.recruitment.stage,legend_normal:saudi_hr_recruitment_custom.stage_job7
+#: model:hr.recruitment.stage,legend_normal:saudi_hr_recruitment_custom.stage_job8
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_recruitment_stage__state__open
+msgid "In Progress"
+msgstr "في تقدم"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Information"
+msgstr "معلومة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:hr.recruitment.stage,name:saudi_hr_recruitment_custom.stage_job7
+msgid "Initial Qualification"
+msgstr "التأهيل الأولي"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Insert Feedback"
+msgstr "أدخل الملاحظات"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__source_type__internal
+msgid "Internal"
+msgstr "داخلي"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__is_release
+msgid "Is your sponsor ready to give release to your company?"
+msgstr "هل الراعي الخاص بك على استعداد لإطلاق سراح شركتك؟"
+
+#. module: saudi_hr_recruitment_custom
+#: model:mail.template,subject:saudi_hr_recruitment_custom.email_template_applicant_offer
+msgid "Job Offer Letter : (Ref {{object.name or 'n/a' }})"
+msgstr "رسالة عرض العمل :(Ref {{object.name or 'n/a' }})"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__joining_date
+msgid "Joining Date"
+msgstr "تاريخ الانضمام"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Joining Date must be greater than today"
+msgstr "يجب أن يكون تاريخ الالتحاق أكبر من اليوم"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Kindly define Job Requisition for this job in Launch state."
+msgstr "يرجى تحديد طلب الوظيفة لهذه الوظيفة في حالة الإطلاق."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saudi_hr_recruitment_custom
+#: model:res.country.state,name:saudi_hr_recruitment_custom.state_Makkah
+msgid "Makkah"
+msgstr "مكه"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__gender__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Male employee's age must be greater than 18"
+msgstr "يجب أن يكون عمر الموظف أكبر من 18 عامًا"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__marital_status
+msgid "Marital Status"
+msgstr "الحالة الحالة الإجتماعية"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__marital_status__married
+msgid "Married"
+msgstr "زوجت"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Move to next stage"
+msgstr "انتقل إلى المرحلة التالية"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__is_release__n/a
+msgid "N/A"
+msgstr ""
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__national_id
+msgid "National Id"
+msgstr "الهوية الوطنية"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__country_id
+msgid "Nationality"
+msgstr "جنسية"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_recruitment_stage__state__draft
+msgid "New"
+msgstr "جديد"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "New Employee %s Hired"
+msgstr "تم تعيين الموظف الجديد %s"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__date_action
+msgid "Next Action Date"
+msgstr "تاريخ الإجراء التالي"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__next_round_required
+msgid "Next Round Required"
+msgstr "الجولة التالية مطلوبة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__is_legal_guardianship__no
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__is_legal_right__no
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__is_release__no
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__join_immedietly__no
+msgid "No"
+msgstr ""
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_search_bis
+msgid "Non-Saudi"
+msgstr "غير سعودي"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.hr_recruitment_feedback_form
+msgid "Ok"
+msgstr "موافق"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_recruitment_stage__state__pending
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Personal"
+msgstr "الشخصية"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Please enter rate between 0-10."
+msgstr "الرجاء إدخال السعر بين 0-10."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__given_rate
+msgid "Rate (0-10)"
+msgstr "معدل (0-10)"
+
+#. module: saudi_hr_recruitment_custom
+#: model:hr.recruitment.stage,legend_done:saudi_hr_recruitment_custom.stage_job6
+#: model:hr.recruitment.stage,legend_done:saudi_hr_recruitment_custom.stage_job7
+#: model:hr.recruitment.stage,legend_done:saudi_hr_recruitment_custom.stage_job8
+msgid "Ready for Next Stage"
+msgstr "جاهز للمرحلة التالية"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__not_joining_reason
+msgid "Reason"
+msgstr "سبب"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "Reason of Refusal"
+msgstr "سبب الرفض"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__user_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Recruiter"
+msgstr "المجند"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model,name:saudi_hr_recruitment_custom.model_hr_recruitment_stage
+msgid "Recruitment Stages"
+msgstr "مراحل التعيين"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__internal_reference
+msgid "Referred by"
+msgstr "نسب من قبل"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#: model:hr.recruitment.stage,name:saudi_hr_recruitment_custom.stage_job8
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+#, python-format
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.actions.act_window,name:saudi_hr_recruitment_custom.action_recruitment_refuse
+msgid "Refuse Information"
+msgstr "معلومات الرفض"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_recruitment_stage__state__cancel
+msgid "Refused"
+msgstr "رفض"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__refused_by
+msgid "Refused by"
+msgstr "رفضه"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__refuse_date
+msgid "Refused on"
+msgstr "رفض يوم"
+
+#. module: saudi_hr_recruitment_custom
+#: model:mail.template,name:saudi_hr_recruitment_custom.email_template_reminder_for_next_round
+#: model:mail.template,subject:saudi_hr_recruitment_custom.email_template_reminder_for_next_round
+msgid "Reminder for next round"
+msgstr "تذكير للجولة القادمة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model,name:saudi_hr_recruitment_custom.model_res_documents
+msgid "Res Documents"
+msgstr "وثائق الدقة"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.hr_recruitment_feedback_form
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Response Information"
+msgstr "معلومات الاستجابة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:mail.template,subject:saudi_hr_recruitment_custom.email_template_applicant_acknowledge
+msgid "Response to Job Application : (Ref {{object.name or 'n/a' }})"
+msgstr "الرد على طلب الوظيفة : (Ref {{object.name or 'n/a' }})"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__employee_id
+msgid "Responsible Person"
+msgstr "شخص مسؤول"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,help:saudi_hr_recruitment_custom.field_hr_survey_feedback__employee_id
+msgid ""
+"Responsible person for next round. A notification mail will be send to this "
+"person about next round."
+msgstr ""
+"الشخص المسؤول عن الجولة التالية. سيتم إرسال بريد إشعار إلى هذا"
+"شخص حول الجولة التالية."
+
+#. module: saudi_hr_recruitment_custom
+#: model:res.country.state,name:saudi_hr_recruitment_custom.state_Riyadh
+msgid "Riyadh"
+msgstr "الرياض"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_search_bis
+msgid "Saudi"
+msgstr "سعودي"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__is_saudi
+msgid "Saudi/ Non Saudi"
+msgstr "سعوديون / غير سعوديين"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Send Offer Letter"
+msgstr "إرسال خطاب العرض"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_recruitment_stage__sequence
+msgid "Sequence"
+msgstr "المسلسل"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__marital_status__single
+msgid "Single"
+msgstr "غير مرتبطة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__source_type
+msgid "Source Type"
+msgstr "نوع المصدر"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_survey_feedback__stage_id
+msgid "Stage"
+msgstr "المسرح"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__state
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__state_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "State"
+msgstr "ولاية"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_recruitment_stage__state
+msgid "Status"
+msgstr "حالة"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__street
+msgid "Street"
+msgstr "شارع"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "Street..."
+msgstr "شارع..."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__street2
+msgid "Street2"
+msgstr "شارع 2"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model,name:saudi_hr_recruitment_custom.model_survey_user_input
+msgid "Survey User Input"
+msgstr "مُدخلات مستخدم الاستطلاع"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,help:saudi_hr_recruitment_custom.field_hr_applicant__state
+#: model:ir.model.fields,help:saudi_hr_recruitment_custom.field_hr_recruitment_stage__state
+msgid ""
+"The related status for the stage. The status of your document will "
+"automatically change according to the selected stage. Example, a stage is "
+"related to the status 'Close', when your document reach this stage, it will "
+"be automatically closed."
+msgstr ""
+"الحالة ذات الصلة للمرحلة. حالة المستند الخاص بك"
+"يتغير تلقائيًا وفقًا للمرحلة المحددة. مثال ، المرحلة هي"
+"ذات الصلة بالحالة 'إغلاق '، عندما يصل المستند إلى هذه المرحلة ، فسيتم"
+"يتم إغلاقه تلقائيًا."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,help:saudi_hr_recruitment_custom.field_hr_recruitment_stage__fold
+msgid ""
+"This stage is not visible, for example in status bar or kanban view, when "
+"there are no records in that stage to display."
+msgstr ""
+"هذه المرحلة غير مرئية ، على سبيل المثال في شريط الحالة أو عرض كانبان ، عندما"
+"لا توجد سجلات لعرضها في تلك المرحلة."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,help:saudi_hr_recruitment_custom.field_hr_survey_feedback__next_round_required
+msgid "Tick this field if further round required in this stage."
+msgstr "ضع علامة في هذا الحقل إذا تطلب الأمر جولة أخرى في هذه المرحلة."
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_recruitment_stage__state__verification
+msgid "Verification"
+msgstr "تحقق"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__marital_status__widower
+msgid "Widower"
+msgstr "أرمل"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__is_legal_guardianship__yes
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__is_legal_right__yes
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__is_release__yes
+#: model:ir.model.fields.selection,name:saudi_hr_recruitment_custom.selection__hr_applicant__join_immedietly__yes
+msgid "Yes"
+msgstr "نعم"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة %s!"
+
+#. module: saudi_hr_recruitment_custom
+#: code:addons/saudi_hr_recruitment_custom/models/hr_recruitment_custom.py:0
+#, python-format
+msgid "You must define Applied Job for this applicant."
+msgstr "يجب عليك تحديد الوظيفة التطبيقية لهذا المتقدم."
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "ZIP"
+msgstr ""
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_applicant__zip
+msgid "Zip"
+msgstr ""
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid ""
+"attrs=\"{'invisible':['|',('state','in',['done','cancel']),'&amp;',('interview_required','=',True),('is_survey','=',False)]"
+" }\""
+msgstr ""
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.inherit_hr_applicant_view_form
+msgid "e.g. Part Time"
+msgstr "على سبيل المثال دوام جزئى"
+
+#. module: saudi_hr_recruitment_custom
+#: model:ir.model.fields,field_description:saudi_hr_recruitment_custom.field_hr_recruitment_stage__feedback
+msgid "feedback"
+msgstr "تعليق"
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.hr_recruitment_feedback_form
+msgid "move_to_next_stage"
+msgstr ""
+
+#. module: saudi_hr_recruitment_custom
+#: model_terms:ir.ui.view,arch_db:saudi_hr_recruitment_custom.hr_recruitment_feedback_form
+msgid "or"
+msgstr "أو"

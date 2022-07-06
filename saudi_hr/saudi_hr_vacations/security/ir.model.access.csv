@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+hr_vacation_user,hr_vacation_user,model_hr_vacation,base.group_user,1,1,1,1
+change.enddate.wizard.user,change.enddate.wizard.user,model_change_enddate_wizard,base.group_user,1,1,1,1

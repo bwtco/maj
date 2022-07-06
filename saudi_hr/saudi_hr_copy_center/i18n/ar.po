@@ -1,0 +1,810 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saudi_hr_copy_center
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-10 09:07+0000\n"
+"PO-Revision-Date: 2022-01-10 09:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__copy_style__1_sided_to_1_sided
+msgid "1 sided to 1 sided"
+msgstr "1 وجه إلى 1 جانب"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__copy_style__1_sided_to_2_sided
+msgid "1 sided to 2 sided"
+msgstr "1 على الوجهين"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__copy_style__2_sided_to_1_sided
+msgid "2 sided to 1 sided"
+msgstr "وجهان إلى جانب واحد"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__copy_style__2_sided_to_2_sided
+msgid "2 sided to 2 sided"
+msgstr "2 على الوجهين"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__paper__a3
+msgid "A3"
+msgstr "A3"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__paper__a4
+msgid "A4"
+msgstr ""
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model,name:saudi_hr_copy_center.model_admin_reports
+msgid "Admin Reports"
+msgstr "تقارير المسؤول"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__price_subtotal
+msgid "Amount"
+msgstr "مقدار"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Approve"
+msgstr "يعتمد"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__state__validate
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Approved"
+msgstr "وافق"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__approved_date
+msgid "Approved Date"
+msgstr "تاريخ الموافقة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__approved_by
+msgid "Approved by"
+msgstr "تمت الموافقة عليه من قبل"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary4
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary4
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary4_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary4_product_template
+msgid "Black and White"
+msgstr "اسود و ابيض"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary3
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary3
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary3_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary3_product_template
+msgid "Blue window cover with blue back"
+msgstr "غطاء نافذة أزرق مع ظهر أزرق"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary8
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary8
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary8_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary8_product_template
+msgid "CD Burning"
+msgstr "حرق القرص المضغوط"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__request_type__confidential
+msgid "CONFIDENTIAL"
+msgstr "مؤتمن"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__calculate_company_expense
+msgid "Calculate Company Expense"
+msgstr "حساب مصاريف الشركة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__paper__cardstock
+msgid "Cardstock"
+msgstr "البطاقات"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Client Details"
+msgstr "تفاصيل العميل"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary_product_template
+msgid "Collated"
+msgstr "مرتبة"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary5
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary5
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary5_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary5_product_template
+msgid "Colour"
+msgstr "لون"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__paper__colour_paper
+msgid "Colour Paper"
+msgstr "ورق ملون"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__company_contribution
+msgid "Company Contribution"
+msgstr "مساهمة الشركة"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Confirm"
+msgstr "يتأكد"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model,name:saudi_hr_copy_center.model_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__copy_center_id
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__admin_reports__report__copy_center
+#: model:product.product,name:saudi_hr_copy_center.copy_center
+#: model:product.template,name:saudi_hr_copy_center.copy_center_product_template
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_tree_view
+msgid "Copy Center"
+msgstr "مركز نسخ"
+
+#. module: saudi_hr_copy_center
+#: model:ir.actions.act_window,name:saudi_hr_copy_center.action_hr_admin_copy_center
+#: model:ir.ui.menu,name:saudi_hr_copy_center.menu_hr_admin_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Copy Center Request"
+msgstr "طلب مركز النسخ"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Copy Details"
+msgstr "نسخ التفاصيل"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__copy_style
+msgid "Copy Style"
+msgstr "نسخ النمط"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__create_uid
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__create_date
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,uom_name:saudi_hr_copy_center.copy_center
+#: model:product.template,uom_name:saudi_hr_copy_center.copy_center_product_template
+msgid "Days"
+msgstr "أيام"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__delivery_instructions__deliver_to_another_employee
+msgid "Deliver to another employee"
+msgstr "تسليم إلى موظف آخر"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__delivery_instructions__deliver_to_employee_desk
+msgid "Deliver to employee desk"
+msgstr "تسليم إلى مكتب الموظف"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Delivery Details"
+msgstr "تفاصيل التسليم"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__delivery_instructions
+msgid "Delivery Instructions"
+msgstr "تعليمات التوصيل"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__department_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Department"
+msgstr "قسم، أقسام"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__description
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Description"
+msgstr "وصف"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__display_name
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__state__done
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Done"
+msgstr "فعله"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__state__draft
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__email_contact
+msgid "Email Contact"
+msgstr "الاتصال عبر البريد الالكتروني"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__employee_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Employee"
+msgstr "موظف"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__emp_contribution
+msgid "Employee Contribution"
+msgstr "مساهمة الموظف"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Employee Details"
+msgstr "تفاصيل الموظف"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__delivery_instructions__employee_to_retrieved_from_copy_centre
+msgid "Employee to retrieved from copy centre "
+msgstr "استرجاع الموظف من مركز النسخ"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Expense"
+msgstr "مصروف"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__expense_note
+msgid "Expense Note"
+msgstr "ملاحظة المصاريف"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__expense_ids
+msgid "Expenses"
+msgstr "نفقات"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "رمز الخط الرائع ، على سبيل المثال FA- المهام"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Generate Expense"
+msgstr "توليد المصاريف"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary1
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary1
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary1_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary1_product_template
+msgid "Grouped"
+msgstr "مجمعة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__has_message
+msgid "Has Message"
+msgstr "رسالة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__id
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__id
+msgid "ID"
+msgstr "بطاقة تعريف"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى نشاط استثناء."
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__message_needaction
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__message_has_error
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__state__in_progress
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "In Progress"
+msgstr "في تقدم"
+
+#. module: saudi_hr_copy_center
+#: code:addons/saudi_hr_copy_center/models/hr_copy_center.py:0
+#, python-format
+msgid "Information"
+msgstr "معلومة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_is_follower
+msgid "Is Follower"
+msgstr "تابع"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__job_description
+msgid "Job Description"
+msgstr "المسمى الوظيفي"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__job_id
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Job Position"
+msgstr "وظيفه"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Job Requirements"
+msgstr "متطلبات العمل"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__orientation__landscape
+msgid "Landscape"
+msgstr "المناظر الطبيعيه"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center____last_update
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__write_uid
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__write_date
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__paper__letterhead
+msgid "Letterhead"
+msgstr "ورقة ذات رأسية"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__paper__letterhead_2nd_sheets
+msgid "Letterhead 2nd Sheets"
+msgstr "الأوراق الثانية ذات الرأسية"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__mobile_contact
+msgid "Mobile Contact"
+msgstr "جهة اتصال المحمول"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__request_type__non_confidential
+msgid "NON-CONFIDENTIAL"
+msgstr "غير سرية"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "النشاط التالي حدث التقويم"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Notes"
+msgstr "ملحوظات"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__orientation
+msgid "Orientation"
+msgstr "توجيه"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__paper__other
+msgid "Other"
+msgstr "آخر"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__delivery_instructions__other_delivery_request_
+msgid "Other delivery request"
+msgstr "طلب توصيل آخر"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__company_contribution_amount
+msgid "Paid By Company"
+msgstr "تدفع من قبل الشركة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__emp_contribution_amount
+msgid "Paid By Employee"
+msgstr "يدفع من قبل الموظف"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__paper
+msgid "Paper"
+msgstr "ورق"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__quantity
+msgid "Paper Per Set"
+msgstr "ورقة لكل مجموعة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__payment_mode
+msgid "Payment By"
+msgstr "الدفع بواسطة"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary7
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary7
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary7_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary7_product_template
+msgid "Plastic spiral binding"
+msgstr "ربط حلزوني بلاستيكي"
+
+#. module: saudi_hr_copy_center
+#: code:addons/saudi_hr_copy_center/models/hr_copy_center.py:0
+#, python-format
+msgid "Please add Copy Details first !"
+msgstr "الرجاء إضافة تفاصيل النسخ أولاً!"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__orientation__portrait
+msgid "Portrait"
+msgstr "لوحة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__product_ids
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__product_id
+msgid "Product"
+msgstr "منتج"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model,name:saudi_hr_copy_center.model_product_line
+msgid "Product Line"
+msgstr "خط الانتاج"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model,name:saudi_hr_copy_center.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__state__refuse
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Refused"
+msgstr "رفض"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_admin_reports__report
+msgid "Report"
+msgstr "نقل"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__request_type
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Request Type"
+msgstr "نوع الطلب"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__date_required
+msgid "Require Date"
+msgstr "مطلوب التاريخ"
+
+#. module: saudi_hr_copy_center
+#: code:addons/saudi_hr_copy_center/models/hr_copy_center.py:0
+#, python-format
+msgid "Require Date must be greater than Submit Date."
+msgstr "يجب أن يكون التاريخ المطلوب أكبر من تاريخ الإرسال."
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__activity_user_id
+msgid "Responsible User"
+msgstr "مستخدم مسؤول"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Set as Draft"
+msgstr "تعيين كمسودة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__set
+msgid "Sets"
+msgstr "مجموعات"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__special_instructions
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Special Instructions"
+msgstr "مجموعات"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary6
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary6
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary6_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary6_product_template
+msgid "Spiral binding"
+msgstr "دوامة ملزمة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__state
+msgid "State"
+msgstr "ولاية"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_product__stationary
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_template__stationary
+msgid "Stationary"
+msgstr "ثابت"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة على أساس الأنشطة \ n"
+"متأخر: تاريخ الاستحقاق فات بالفعل \ n"
+"اليوم: تاريخ النشاط هو اليوم \ n"
+"مخطط له: الأنشطة المستقبلية."
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__date_submited
+msgid "Submit Date"
+msgstr "تاريخ النشر"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Submitted Date"
+msgstr "تاريخ تقديمه"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Total"
+msgstr "مجموع"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__amount_total
+msgid "Total Amount"
+msgstr "المبلغ الإجمالي"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__expense_total
+msgid "Total Expense"
+msgstr "المصاريف الكلية"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,description_sale:saudi_hr_copy_center.product_product_stationary2
+#: model:product.product,name:saudi_hr_copy_center.product_product_stationary2
+#: model:product.template,description_sale:saudi_hr_copy_center.product_product_stationary2_product_template
+#: model:product.template,name:saudi_hr_copy_center.product_product_stationary2_product_template
+msgid "Transparent Cover Page with blue back"
+msgstr "صفحة غلاف شفافة مع ظهر أزرق"
+
+#. module: saudi_hr_copy_center
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.copy_center_request_form_view
+msgid "Type"
+msgstr "نوع"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_product_line__price_unit
+msgid "Unit Price"
+msgstr "سعر الوحدة"
+
+#. module: saudi_hr_copy_center
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary1
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary2
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary3
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary4
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary5
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary6
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary7
+#: model:product.product,uom_name:saudi_hr_copy_center.product_product_stationary8
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary1_product_template
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary2_product_template
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary3_product_template
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary4_product_template
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary5_product_template
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary6_product_template
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary7_product_template
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary8_product_template
+#: model:product.template,uom_name:saudi_hr_copy_center.product_product_stationary_product_template
+msgid "Units"
+msgstr "الوحدات"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields.selection,name:saudi_hr_copy_center.selection__copy_center__state__confirm
+#: model_terms:ir.ui.view,arch_db:saudi_hr_copy_center.hr_admin_copy_center_filter
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,field_description:saudi_hr_copy_center.field_copy_center__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: saudi_hr_copy_center
+#: model:ir.model.fields,help:saudi_hr_copy_center.field_copy_center__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: saudi_hr_copy_center
+#: code:addons/saudi_hr_copy_center/models/hr_copy_center.py:0
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"

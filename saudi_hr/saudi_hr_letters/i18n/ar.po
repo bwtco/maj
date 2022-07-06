@@ -1,0 +1,2025 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* saudi_hr_letters
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-12 05:15+0000\n"
+"PO-Revision-Date: 2022-01-12 05:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__saudi_hr_letters_whomeconcern
+msgid " To Whom Concern (English) "
+msgstr "إلى من يهمه الأمر (إنجليزي)"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__towhom_concern
+msgid " To Whom Concern (Male)"
+msgstr "لمن يهمه الأمر (ذكر)"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.bankloan_transfer_female
+msgid "'Bank Loan Transfer Female'"
+msgstr "'تحويل القرض المصرفي أنثى'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.bankloan_transfer
+msgid "'Bank Loan Transfer'"
+msgstr "'تحويل القرض المصرفي'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.bankopen_account_female
+msgid "'Bank Open Account Female'"
+msgstr "'بنك فتح حساب انثى'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.bankopen_account
+msgid "'Bank Open Account'"
+msgstr "'فتح حساب بنكي'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.family_iqama
+msgid "'Family Iqama'"
+msgstr "'إقامة الأسرة'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.house_allowence
+msgid "'House Allowance'"
+msgstr "'بدل سكن'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.mroor_report
+msgid "'Mroor Report'"
+msgstr "'تقرير مروور'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.certificate_ofapprove
+msgid "'Ratification Certificate'"
+msgstr "'شهادة تصديق'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.saudibritish_bankloan
+msgid "'Saudi British Bank Loan Form'"
+msgstr "'نموذج قرض البنك السعودي البريطاني'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.stamping_certificate_female
+msgid "'Stamping Certificate Female'"
+msgstr "'شهادة ختم انثى'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.stamping_certificate
+msgid "'Stamping Certificate'"
+msgstr "'شهادة ختم'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.saudi_hr_letters_whomeconcern
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.towhom_concern_female
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.towhome_concern
+msgid "'To Whome Concern'"
+msgstr "'لمن يهمه الأمر'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.saudi_hr_letters_transport
+msgid "'Transport Report'"
+msgstr "'تقرير النقل'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.walid_school
+msgid "'Valid School'"
+msgstr "'مدرسة صالحة'"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,print_report_name:saudi_hr_letters.wifefrom_home_country
+msgid "'Wife Home Country'"
+msgstr "'زوجة الوطن الوطن'"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "- المملكة العربية السعودية"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid ". <span>حســابه رقــم </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid ".التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid ".السلام عليكم و رحمة الله و بركاته"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+msgid ".السلام عليكم ورحمة الله وبركاته"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid ".السلام عليكم ورحمة الله وبركاته وبعد"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid ".العمل حتى هذا التاريخ"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid ".الغاء التحويل الا باخلاء طرف البنك من قبلكم"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid ".او التزامات مالية اتجاه الشركة"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid ".رأس العمل حتى هذا التاريخ."
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid ".قانونية تجاه الشركة"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid ".وتقبلوا تحياتنا"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "/ السادة"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid ": بياناته كتالي"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid ": نحيطكم علما بتعهدنا بالقيام بما يلي"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid ":‬‬ ‫التـاريخ‬"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid ":‬‬‫التـاريخ‬"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<font face=\"Helvetica\" color=\"white\">-------------</font>\n"
+"                           I"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<font face=\"Helvetica\" color=\"white\">-------------</font>\n"
+"                           In case of termination or expiration of the employee’s service with us for any reason, whatsoever, we will immediately inform you in writing prior to the employee leaving the Kingdom of Saudi Arabia.  In addition, we also undertake to pay his end of service benefits / indemnity to the said account."
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<font face=\"Helvetica\" color=\"white\">-------------</font>\n"
+"                           We hereby confirm that the above-mentioned employee is employed by us and has requested us to transfer his monthly salary to his Account No."
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<font face=\"Helvetica\" color=\"white\">-------------</font> This "
+"undertaking as stated herein, shall remain valid and in full force until we "
+"receive a written notice from you releasing us from our obligations "
+"hereunder."
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid ""
+"<font face=\"Helvetica\" size=\"16.0\" style=\"P1; text-align: "
+"left;\">__________________ </font>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<font face=\"Helvetica\" size=\"16.0\">__________________ </font>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "<font face=\"Helvetica\" size=\"16.0\">__________________ </font><br/>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "<font face=\"Helvetica\">_______________</font><br/>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid ""
+"<font face=\"Helvetica-Bold ; \" style=\"font-weight: bold;\" size=\"14.0\">فرع الرياض.</font>\n"
+"                                إلتحق بنا في تاريخ"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid ""
+"<font face=\"Helvetica-Bold ;\" style=\"font-weight: bold; \" "
+"size=\"14.0\">فرع الرياض.</font><span>إلتحق بنا في تاريخ </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+msgid ""
+"<font face=\"Helvetica-Bold\" size=\"14.0\">\n"
+"                                    السـادة / إدارة مـرور\n"
+"                                </font>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid ""
+"<font face=\"Helvetica-Bold\" size=\"14.0\">\n"
+"                                    المحترمين\n"
+"                                </font>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+msgid ""
+"<font style=\"text-align: left;\" face=\"Helvetica\" "
+"size=\"16.0\">__________________ </font>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid ""
+"<span style=\"color: white;\">\n"
+"                                <font color=\"white\"> .........</font>\n"
+"                            </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid ""
+"<span style=\"font-color:white; color:white\">\n"
+"                                <font color=\"white\"> .........</font>\n"
+"                            </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                                Personnel Department :\n"
+"                            </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                                إدارة شؤون الموظفين :\n"
+"                            </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               (if different from below)\n"
+"                           </span>\n"
+"                           <font face=\"Helvetica\" size=\"11.0\">________________</font>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               (إذا كان مختلفًا عما يلي)\n"
+"                           </span>\n"
+"                           <font face=\"Helvetica\" size=\"11.0\">________________</font>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Allowances:\n"
+"                               Housing:\n"
+"                            </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               البدلات:\n"
+"                               الإسكان:\n"
+"                            </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               CONFIRMED EMPLOYMENT :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               العمل المؤكّد :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Contract Status :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               حالة التعاقد :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Date / Place :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               تاريخ / مكان :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Date of Joining :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               تاريخ الالتحاق :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Deductions :\n"
+"                           </span>\n"
+"                           <font face=\"Helvetica\">\n"
+"                               None\n"
+"                           </font>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               الخصومات :\n"
+"                           </span>\n"
+"                           <font face=\"Helvetica\">\n"
+"                               None\n"
+"                           </font>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               End of Service Benefits :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               مكافأة نهاية الخدمة :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Expiry Date :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               تاريخ الانتهاء :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               ID / Iqama Number :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               معرفات / Iqama عدد :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               If contract, non-renewable:\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               إذا كان العقد غير قابل للتجديد:\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Name of Authorized Person(s) / Title(s) :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               اسم الشخص المرخص له(س) / عنوان(س) :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Nationality :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               جنسية :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Payment Date :\n"
+"                           </span>\n"
+"                           <u> End of each Georgian Month </u>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               يوم الدفع او الاستحقاق :\n"
+"                           </span>\n"
+"                           <u> نهاية كل شهر جورجي </u>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Personnel Department authorized\n"
+"                               <br/>\n"
+"                               signatory\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               أذن قسم شؤون الموظفين\n"
+"                               <br/>\n"
+"                               الموقع\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Position :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               موضع :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Signature(s):_____________________</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Signature:</span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               إمضاء:</span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               Staff No. :\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               رقم الموظف. :\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                               The Saudi British Bank\n"
+"                           </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                               البنك السعودي البريطاني\n"
+"                           </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold\">\n"
+"                           Employee Name :\n"
+"                        </span>"
+msgstr ""
+"<span style=\"font-weight: bold\">\n"
+"                           اسم الموظف :\n"
+"                        </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">Riyadh</span>"
+msgstr "<span style=\"font-weight: bold\">الرياض</span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"<span style=\"font-weight: bold; display: inline;\">\n"
+"                               Monthly basic salary :\n"
+"                            </span>"
+msgstr ""
+"<span style=\"font-weight: bold; display: inline;\">\n"
+"                               الراتب الأساسي الشهري :\n"
+"                            </span>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "<span>  هو   أحد موظفين شركة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "<span> إلتحق بنا في تاريخ</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "<span> اجماليا وقدره</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "<span> الجنسية بموجب إقامة/ بطاقة أحوال رقم </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "<span> الرياض بأن الأستاذ /</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid ""
+"<span> العمل حتى هذا التاريخ ويرغب في الحصول على رخصة قيادة/ شراء</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span> بوظيفة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+msgid "<span> حتى هذا التاريخ ويرغب في الحصول على رخصة قيادة/ شراء</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span> ريال، ولا يزال على رأس العمل</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+msgid "<span> صادرة من الرياض، هو أحد الموظفين في شركة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "<span> فرع </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span> فرع</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid "<span> نفيدكم بأن الأستاذ /</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid "<span> و لا يزال على رأس</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "<span> ويعمل بوظيفة </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span> ويعمل</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "<span> يعمل بوظيفة </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid "<span>'هو أحد الموظفين في شركة  </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "<span>.التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>.التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span>.السلام عليكم و رحمة الله و بركاته</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "<span>.السلام عليكم ورحمة الله وبركاته وبعد</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>.السلام عليكم ورحمة الله وبركاته</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "<span>.الشركة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>.بالتوجيه إلى من يلزم لمنحه التأشيرة المطلوبة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span>.حتى هذا التاريخ</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>.ريال بالإضافة إلى التأمين الطبي والسكن له ولعائلته</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+msgid "<span>.سيارة ولا مانع لدينا من ذلك</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span>.قانونية تجاه الشركة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "<span>.مانع لدينا من ذلك</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>.وتقبلوا تحياتنا</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "<span>.ولعائلته</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid "<span>أحد موظفين شركة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>إلتحق بنا في تاريخ</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span>التحق بنا في تاريخ</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid "<span>الجنسية  بموجب إقامة/ بطاقة أحوال رقم</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid "<span>الجنسية بموجب إقامة/ بطاقة أحوال رقـم </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>الجنسية بموجب إقامة/ بطاقة أحوال رقم</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "<span>الجنسية بموجب اقامة رقم</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid "<span>الرياض، هو أحد الموظفين في شركة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid ""
+"<span>السعودية، لذا ليس لدينا مانع من ذلك، ونأمل من سعادتكم التكرم</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span>المذكور راتبا اجماليا وقدره</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>بأن الأستاذ /</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "<span>بوظيفة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "<span>ريال بالإضافة إلى التأمين الطبي والسكن له</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "<span>ريال</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid "<span>صادرة من</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "<span>على رأس العمل حتى هذا التاريخ. ويرغب في إستئجار مسكن ولا</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>فرع </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid "<span>فرع الرياض ويعمل بوظيفة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "<span>فرع</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid "<span>م. ولا يزال على رأس العمل حتى هذا</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>م، ويعمل بوظيفة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "<span>منذ تاريخ</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>نفيد سعادتكم نحن شركة </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span>نفيدكم بأن الأستاذ /</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "<span>نفيدكم بأن الأستاذ/</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "<span>هو أحد الموظفين في شركة </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span>هو أحد الموظفين في شركة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "<span>هو أحد موظفين شركة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+msgid "<span>و لا يزال على رأس العمل </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid ""
+"<span>وحيث أنه يود استقدام زوجته للإقامة برفقته في المملكة العربية\n"
+"                        </span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid ""
+"<span>وحيث أنه يود استقدام زوجته للإقامة برفقته في المملكة العربية</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "<span>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية تجاه</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid ""
+"<span>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية مالية او</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "<span>ولا يزال على رأس العمل حتى هذا</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "<span>ولا يزال</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "<span>ويتقاضى المذكور راتبا اجماليا وقدر</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "<span>ويتقاضى المذكور راتبا</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid "<span>ويتقاضى</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "<span>ويعمل بوظيفة</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+msgid "<span>‫فرع‬</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "<span>ﺻﺎﺩﺭﺓ ﻣﻦ</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "<span>ﻫﻮ ﺃﺣﺪ اﻟﻤﻮﻇﻔﻴﻦ ﻓﻲ ﺷﺮﻛﺔ</span>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+msgid ""
+"<u>\n"
+"                                    <span>الى من يهمه الأمر</span>\n"
+"                                </u>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid ""
+"<u>\n"
+"                             الى من يهمه الأمر</u>"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+msgid "<u>To Whom It May Concern</u>"
+msgstr "<u>إلى من يهمه الأمر</u>"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "Approve"
+msgstr "يعتمد"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__state__approve
+msgid "Approved"
+msgstr "وافق"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__approved_date
+msgid "Approved Date"
+msgstr "تاريخ الموافقة"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__approved_by
+msgid "Approved by"
+msgstr "تمت الموافقة عليه من قبل"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_res_country__arabic_country_name
+msgid "Arabic Name"
+msgstr "الاسم العربي"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__manager_id
+msgid "Authorised by"
+msgstr "مرخص بها من"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.bankloan_transfer
+msgid "Bank Loan Transfer"
+msgstr "تحويل القرض المصرفي"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__bank_loan_female
+msgid "Bank Loan Transfer (Female) "
+msgstr "تحويل القرض المصرفي (أنثى)"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__bank_loan
+msgid "Bank Loan Transfer (Male) "
+msgstr "تحويل القرض المصرفي (ذكر)"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.bankloan_transfer_female
+msgid "Bank Loan Transfer Female"
+msgstr "تحويل القرض المصرفي أنثى"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.bankopen_account
+msgid "Bank Open Account"
+msgstr "فتح حساب بنكي"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__bankopen_account_female
+msgid "Bank Open Account (Female)"
+msgstr "فتح حساب بنكي (انثى)"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__bankopen_account
+msgid "Bank Open Account (Male)"
+msgstr "فتح حساب بنكي (ذكر)"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.bankopen_account_female
+msgid "Bank Open Account female"
+msgstr "بنك فتح حساب انثى"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_bankloan_transfer_female_qweb
+msgid "Bankloan Transfer Female Report"
+msgstr "تقرير أنثى التحويل المصرفي"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_bankloan_transfer_qweb
+msgid "Bankloan Transfer Report"
+msgstr "تقرير التحويل المصرفي"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_bankopen_account_report_female
+msgid "Bankopen Account Female Report"
+msgstr "تقرير أنثى حساب Bankopen"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_bankopen_account_report
+msgid "Bankopen Account Report"
+msgstr "تقرير حساب Bankopen"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_certificate_toapprove
+msgid "Certifcate ToApprove"
+msgstr "شهادة للموافقة عليها"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_res_country
+msgid "Country"
+msgstr "الدولة"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__date
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+msgid "Department since"
+msgstr "قسم منذ ذلك الحين"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "Department."
+msgstr " قسم، أقسام."
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__description
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "Description"
+msgstr "وصف"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__employee_id
+msgid "Employee"
+msgstr "موظف"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.family_iqama
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__family_iqama
+msgid "Family Iqama"
+msgstr "إقامة الأسرة"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_family_iqama_report
+msgid "Family Iqama Report"
+msgstr "تقرير إقامة الأسرة"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: saudi_hr_letters
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#: code:addons/saudi_hr_letters/report/reports_saudi_hr_letters.py:0
+#, python-format
+msgid "Form content is missing, this report cannot be printed."
+msgstr "محتوى النموذج مفقود ، لا يمكن طباعة هذا التقرير."
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__handled_by_id
+msgid "Handled by"
+msgstr "أنجز من قبل"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__has_message
+msgid "Has Message"
+msgstr "رسالة"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.house_allowence
+msgid "House Allowance"
+msgstr "بدل سكن"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_house_allowance_report
+msgid "House Allowance Report"
+msgstr "تقرير بدل السكن"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__house_allowance
+msgid "Housing Allowance"
+msgstr "بدل سكن"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,help:saudi_hr_letters.field_multi_reports__message_needaction
+#: model:ir.model.fields,help:saudi_hr_letters.field_multi_reports__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها ، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,help:saudi_hr_letters.field_multi_reports__message_has_error
+#: model:ir.model.fields,help:saudi_hr_letters.field_multi_reports__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__state__inprogress
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "In Progress"
+msgstr "في تقدم"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_res_users__is_authorized
+msgid "Is Authorized"
+msgstr "أذن"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_is_follower
+msgid "Is Follower"
+msgstr "تابع"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports____last_update
+msgid "Last Modified on"
+msgstr "تاريخ آخر تعديل"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saudi_hr_letters
+#: code:addons/saudi_hr_letters/models/multi_reports.py:0
+#, python-format
+msgid "Letter request is approved."
+msgstr "تمت الموافقة على طلب الخطاب."
+
+#. module: saudi_hr_letters
+#: code:addons/saudi_hr_letters/models/multi_reports.py:0
+#, python-format
+msgid "Letter request is in progress."
+msgstr "طلب الرسالة قيد التقدم."
+
+#. module: saudi_hr_letters
+#: code:addons/saudi_hr_letters/models/multi_reports.py:0
+#, python-format
+msgid "Letter request is refused."
+msgstr "تم رفض طلب الخطاب."
+
+#. module: saudi_hr_letters
+#: model:ir.actions.act_window,name:saudi_hr_letters.action_multi_reports_form
+#: model:ir.ui.menu,name:saudi_hr_letters.menu_saudi_hr_letters_reports
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_tree
+msgid "Letters"
+msgstr "حروف"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.mroor_report
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_mroor_qreport
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__mroor_report
+msgid "Mroor Report"
+msgstr "تقرير مروور"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_multi_reports
+msgid "Multi Reports"
+msgstr "تقارير متعددة"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "NON-RENEWABLE [ ]"
+msgstr "غير متجدد [ ]"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,help:saudi_hr_letters.field_multi_reports__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,help:saudi_hr_letters.field_multi_reports__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,help:saudi_hr_letters.field_multi_reports__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"Office Riyadh.  Accordingly, we hereby irrevocably and unconditionally "
+"undertake to transfer the monthly salary to the said account at the<u> end "
+"of each Gregorian month.</u>"
+msgstr ""
+"مكتب الرياض. وعليه فإننا بموجب هذا بشكل نهائي وغير مشروط"
+"التعهد بتحويل الراتب الشهري إلى الحساب المذكور في نهاية <u>"
+"من كل شهر ميلادي.</u>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"Office.  I also irrevocably and unconditionally assign and authorize the "
+"payment of my monthly salary and any other benefits / entitlements from my "
+"employment with"
+msgstr ""
+"المكتب. أنا أيضًا أسند إلى"
+"دفع راتبي الشهري وأي مزايا / استحقاقات أخرى من حسابي"
+"العمل مع"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "Office:"
+msgstr "مكتب. مقر. مركز:"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "Print"
+msgstr "مطبعة"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "Put the description here..."
+msgstr "ضع الوصف هنا ..."
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "RENEWABLE [ ]"
+msgstr "قابل للتجديد [ ]"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.certificate_ofapprove
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__certi_approval
+msgid "Ratification Certificate"
+msgstr "شهادة تصديق"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__state__refuse
+msgid "Refused"
+msgstr "رفض"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__refused_date
+msgid "Refused Date"
+msgstr "تاريخ الرفض"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__refused_by
+msgid "Refused by"
+msgstr "رفضه"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_ir_actions_report
+msgid "Report Action"
+msgstr "إجراء التقرير"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__report_type
+msgid "Report Type"
+msgstr "نوع التقرير"
+
+#. module: saudi_hr_letters
+#: code:addons/saudi_hr_letters/models/multi_reports.py:0
+#, python-format
+msgid "Request Submitted."
+msgstr "طلب مقدم."
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "SR /-"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.saudibritish_bankloan
+msgid "Saudi British Bank Loan Form"
+msgstr "نموذج قرض البنك السعودي البريطاني"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__saudibritish_bankloan
+msgid "Saudi British Bankloan Transfer"
+msgstr "التحويل المصرفي السعودي البريطاني"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_saudi_hr_letters_transport_report
+msgid "Saudi HR Letters Transport Report"
+msgstr "تقرير نقل خطابات الموارد البشرية السعودية"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_saudibritish_bankloan_report
+msgid "Saudibritish Bankloan Report"
+msgstr "تقرير البنك السعودي البريطاني"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "Set to Draft"
+msgstr "تعيين إلى مسودة"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "Sincerely yours,"
+msgstr "تفضلوا بقبول فائق الاحترام"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.stamping_certificate
+msgid "Stamping Certificate"
+msgstr "شهادة ختم"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__stamping_certificate
+msgid "Stamping Certificate  (Male)"
+msgstr "شهادة ختم (ذكر)"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__stamping_certificate_female
+msgid "Stamping Certificate (Female)"
+msgstr "شهادة ختم (اناث)"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.stamping_certificate_female
+msgid "Stamping Certificate Female"
+msgstr "شهادة ختم انثى"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_stamping_certificate_female_report
+msgid "Stamping Certificate Female Report"
+msgstr "تقرير أنثى شهادة ختم"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_stamping_certificate_report
+msgid "Stamping Certificate Report"
+msgstr "تقرير شهادة الختم"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__state
+msgid "State"
+msgstr "ولاية"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.view_multi_reports_form
+msgid "Submit"
+msgstr "إرسال"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__state__confirm
+msgid "Submitted"
+msgstr "مقدم"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "Telephone No(s). :"
+msgstr "أرقام الهواتف). :"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "This certificate is being issued upon the requested of"
+msgstr "يتم إصدار هذه الشهادة بناءً على طلب"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "This is to certify that"
+msgstr "هذا لتاكيد ان"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.saudi_hr_letters_whomeconcern
+#: model:ir.actions.report,name:saudi_hr_letters.towhome_concern
+msgid "To Whom Concern"
+msgstr "لمن يهمه الأمر"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__towhom_concern_female
+msgid "To Whom Concern (Female)"
+msgstr "لمن يهمه الأمر (أنثى)"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "To Whom It May Concern"
+msgstr "إلى من يهمه الأمر"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.towhom_concern_female
+msgid "To Whome Concern Female"
+msgstr "لمن يهمه الامر انثى"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_towhome_concern_arabic_report
+msgid "TowhomeConcern Arabic Report"
+msgstr "لمن يهمه الأمر باللغة العربية"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_towhom_concern_female_report
+msgid "TowhomeConcern Female Report"
+msgstr "لمن يهمه الأمر تقرير المرأة"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.saudi_hr_letters_transport
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__saudi_hr_letters_transport
+msgid "Transport Report"
+msgstr "تقرير النقل"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_res_users
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.walid_school
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__walid_school
+msgid "Valid School"
+msgstr "مدرسة صالحة"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_walid_school_report
+msgid "Walid School Report"
+msgstr "تقرير مدرسي ساري المفعول"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,field_description:saudi_hr_letters.field_multi_reports__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields,help:saudi_hr_letters.field_multi_reports__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_whomeconcern_report
+msgid "WhomeConcern Report"
+msgstr "تقرير من يهمه الأمر"
+
+#. module: saudi_hr_letters
+#: model:ir.model.fields.selection,name:saudi_hr_letters.selection__multi_reports__report_type__wifefrom_home_country
+msgid "Wife From  Home Country"
+msgstr "زوجة من وطنها"
+
+#. module: saudi_hr_letters
+#: model:ir.actions.report,name:saudi_hr_letters.wifefrom_home_country
+msgid "Wife Home Country"
+msgstr "زوجة الوطن الوطن"
+
+#. module: saudi_hr_letters
+#: model:ir.model,name:saudi_hr_letters.model_report_saudi_hr_letters_wifefrom_home_country_report
+msgid "Wife from Home Country Report"
+msgstr "زوجة من الوطن تقرير"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid "__ السادة / الملحقية السعودية في"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "___________________________"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+msgid "_____________________________"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "as a full time employee since"
+msgstr "كموظف بدوام كامل منذ ذلك الحين"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "gross salary is SR"
+msgstr "الراتب الإجمالي ريال سعودي"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+msgid ""
+"has been working with us in the capacity of in the capacity of\n"
+"                                <font color=\"white\"> </font>"
+msgstr ""
+"يعمل معنا بصفته\n"
+"                                <font color=\"white\"> </font>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid ""
+"hereby irrevocably and unconditionally authorize The Saudi British Bank to "
+"deduct any amount due to the Bank from my Account No."
+msgstr ""
+"تفويض بموجب هذا بشكل غير قابل للنقض وغير مشروط للبنك السعودي البريطاني"
+"اقتطع أي مبلغ مستحق للبنك من حسابي رقم."
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "in"
+msgstr "في"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+msgid "in the"
+msgstr "في ال"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid ""
+"in the capacity of\n"
+"                            <font color=\"white\"> </font>"
+msgstr ""
+"في قدرة\n"
+"                            <font color=\"white\"> </font>"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "is employed with"
+msgstr "يعمل مع"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "maintained at"
+msgstr "حافظ في"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "maintained with your"
+msgstr "يتم الاحتفاظ بها مع"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "national, holder of ID No"
+msgstr "مواطن ، حامل بطاقة الهوية رقم"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+msgid "national, holding ID No"
+msgstr "مواطن ، حامل بطاقة الهوية رقم"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "to The Saudi British Bank."
+msgstr "إلى البنك السعودي البريطاني."
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudibritish_bankloan_report
+msgid "with Iqama No"
+msgstr "مع Iqama عدد"
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.whomeconcern_report
+msgid "without any obligation to our company."
+msgstr "دون أي التزام تجاه شركتنا."
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.walid_school_report
+msgid "would like to enrol his child."
+msgstr "يود تسجيل طفله."
+
+#. module: saudi_hr_letters
+#: code:addons/saudi_hr_letters/models/multi_reports.py:0
+#, python-format
+msgid "you can not delete record which is in %s stage."
+msgstr "لا يمكنك حذف السجل الموجود في المرحلة %s."
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "استمــرار تحـويل الرواتـب الشـهرية للمــذكور أعــلاه لايـداعها في"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "التـاريخ :"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+msgid "التـاريخ‬  :‬‬"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid "التـاريخ‬ :‫"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid "الجنسية بموجب إقامة/ بطاقة أحوال رقم"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "الرياض - المملكة العربية السعودية"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "السادة / مدير مكتب الإستقدام"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+msgid "السادة / مدير مكتب الإستقدام بالرياض"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid "السـادة / إدارة مـرور الرياض"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid "المحترمين"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "المملكة العربية السعودية"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "الموافق"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.saudi_hr_letters_transport_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "الموافق‬"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "تاريخ منذ"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "ريال، ولا تزال على"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid "ريال، ولا يزال على رأس"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid "منذ تاريخ"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+msgid "نفيدكم بأن الأستاذ/"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "هـ"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.house_allowance_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.mroor_qreport
+msgid "هـ‬‬"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid "هو"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+msgid "وتتقاضى المذكورة راتبا إجماليا وقدره"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "وتحويل مستحقات نهاية الخدمة عند استقالته او تقاعده على أن لا يتم"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report_female
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid "وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية مالية او"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "وقد منح له هذا الخطاب بناء على طلبه دون أدنى مسؤولية"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid "ويتقاضى المذكور راتبا إجماليا وقدر"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid "يعمل بوظيفة"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "١.الراتب الأساسي :"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "٢. بدل سكن :"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_female_qweb
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankloan_transfer_qweb
+msgid "٣. بدل نقل :"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.family_iqama_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.stamping_certificate_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhom_concern_female_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.towhome_concern_arabic_report
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.wifefrom_home_country_report
+msgid "‪هـ‬‬"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid ""
+"‫\n"
+"                                الموافق‬"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.certificate_toapprove
+msgid ""
+"‫\n"
+"                            ‫التـاريخ‬ :‬‬"
+msgstr ""
+
+#. module: saudi_hr_letters
+#: model_terms:ir.ui.view,arch_db:saudi_hr_letters.bankopen_account_report
+msgid "‫ ‬‬ ‫التـاريخ :‬"
+msgstr ""
