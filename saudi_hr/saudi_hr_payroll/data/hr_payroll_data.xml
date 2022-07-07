@@ -65,15 +65,82 @@
 
     <!--Transport Allowance-->
     <record id="hr_salary_rule_transportationallowance" model="hr.salary.rule">
-       <field name="amount_select">percentage</field>
-       <field eval="10.0" name="amount_percentage"/>
-       <field name="amount_percentage_base">contract.wage</field>
-       <field name="code">TA</field>
-       <field name="category_id" ref="TA"/>
-       <field name="name">Transportation Allowance</field>
-       <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
-       <field name="sequence" eval="10"/>
+        <field name="code">TA</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="name">Transportation Allowance</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (contract.trans_allow == 'fixed_amount' and contract.tra_fixed_amt > 0.0) or (contract.trans_allow == 'percentage' and contract.tra_per > 0.0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = 0
+if contract.trans_allow == 'fixed_amount':
+    result = contract.tra_fixed_amt;
+else:
+    result=contract.wage/100 * contract.tra_per
+        </field>
+        <field name="sequence" eval="10"/>
+        <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
    </record>
+
+    <record id="hr_salary_rule_houserentallowance1" model="hr.salary.rule">
+            <field name="code">HRA</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="name">House Rent Allowance</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = (contract.hra_allow == 'fixed_amount' and contract.hra_fixed_amt > 0.0) or (contract.hra_allow == 'percentage' and contract.hra_per > 0.0)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+if contract.hra_allow == 'fixed_amount':
+    result = contract.hra_fixed_amt;
+else:
+    result=contract.wage/100 * contract.hra_per
+            </field>
+            <field name="sequence" eval="5"/>
+            <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
+        </record>
+
+        <record id="hr_salary_rule_convanceallowance1" model="hr.salary.rule">
+            <field name="code">CA</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="name">Conveyance Allowance</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = (contract.con_allow == 'fixed_amount' and contract.con_fixed_amt > 0.0) or (contract.con_allow == 'percentage' and contract.con_per > 0.0)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+if contract.con_allow == 'fixed_amount':
+    result = contract.con_fixed_amt;
+else:
+    result=contract.wage/100 * contract.con_per
+            </field>
+            <field name="sequence" eval="10"/>
+            <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
+        </record>
+
+        <record id="hr_salary_rule_ca_gravie" model="hr.salary.rule">
+            <field name="code">CAGG</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="name">Conveyance Allowance For Gravie</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = (contract.congravie_fixed_amt > 0)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.congravie_fixed_amt</field>
+            <field name="sequence" eval="15"/>
+            <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
+        </record>
+
+        <record id="hr_salary_rule_meal_voucher" model="hr.salary.rule">
+            <field name="code">MA</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="name">Meal Voucher</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = (contract.meal_fixed_amt > 0)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.meal_fixed_amt</field>
+            <field name="sequence" eval="16"/>
+            <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
+         </record>
 
     <!-- Other Allowance -->
     <record id="hr_salary_rule_other_allowance" model="hr.salary.rule">

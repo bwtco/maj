@@ -24,6 +24,7 @@
         'views/other_hr_payslip.xml',
         'views/hr_payroll_view.xml',
         'views/hr_payslip_export_view.xml',
+        'views/hr_contract_view.xml',
         'wizard/company_payslip_report_view.xml',
         'menu.xml',
     ],

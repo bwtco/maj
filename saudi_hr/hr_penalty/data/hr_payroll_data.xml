@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+      <!-- Penalty Deduction -->
+      <record id="hr_salary_rule_penalty" model="hr.salary.rule">
+         <field name="name">Penalty Deduction</field>
+         <field name="category_id" ref="hr_payroll.DED"/>
+         <field name="code">PEN</field>
+         <field name="sequence" eval="140"/>
+         <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
+         <field name="condition_select">none</field>
+         <field name="amount_select">fix</field>
+         <field name="quantity">1</field>
+         <field name="amount_fix">0.00</field>
+      </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Contract View -->
+    <record id="hr_contract_form_inherit" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='information']" position="after">
+                <page string="Allowances" name="allowance">
+                    <group>
+                        <group>
+                            <field name="hra_allow" />
+                         </group>
+                        <group>
+                            <field name="hra_fixed_amt" attrs="{'invisible':[('hra_allow','!=','fixed_amount')],  'required':[('hra_allow','=', 'fixed_amount')]}" />
+                            <field name="hra_per" attrs="{'invisible':[('hra_allow','=','fixed_amount')], 'required':[('hra_allow','!=', 'fixed_amount')]}"/>
+                        </group>
+                    </group>
+
+                    <group>
+                        <group>
+                            <field name="trans_allow" />
+                         </group>
+                        <group>
+                            <field name="tra_fixed_amt" attrs="{'invisible':[('trans_allow','!=','fixed_amount')],
+                                'required':[('trans_allow','=', 'fixed_amount')]}" />
+                            <field name="tra_per" attrs="{'invisible':[('trans_allow','=','fixed_amount')],
+                                'required':[('trans_allow','!=', 'fixed_amount')]}"/>
+                        </group>
+                    </group>
+
+                    <group>
+                        <group>
+                            <field name="con_allow" />
+                         </group>
+                        <group>
+                            <field name="con_fixed_amt" attrs="{'invisible':[('con_allow','!=','fixed_amount')],
+                                'required':[('con_allow','=', 'fixed_amount')]}" />
+                            <field name="con_per" attrs="{'invisible':[('con_allow','=','fixed_amount')],
+                                'required':[('con_allow','!=', 'fixed_amount')]}"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="meal_fixed_amt" required="1" />
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="congravie_fixed_amt" required="1" />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
