@@ -4,3 +4,4 @@
 from . import hr_payroll
 from . import other_hr_payslip
 from . import hr_payslip_export
+from . import hr_contract

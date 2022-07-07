@@ -16,9 +16,9 @@
                 </div>
             </xpath>
             <xpath expr="//page[@name='information']//group[@name='salary']" position="inside">
-                <field name="basic"/>
+               <!--  <field name="basic"/>
                 <field name="HRA"/>
-                <field name="TA"/>
+                <field name="TA"/> -->
             </xpath>
             <xpath expr="//page[@name='information']" position="inside">
                 <group name="other_allowance" string="Other Allowances">
