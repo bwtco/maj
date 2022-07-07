@@ -82,7 +82,7 @@ else:
         <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
    </record>
 
-    <record id="hr_payroll.hr_salary_rule_houserentallowance1" model="hr.salary.rule">
+    <record id="hr_salary_rule_houserentallowance1" model="hr.salary.rule">
             <field name="code">HRA</field>
             <field name="category_id" ref="hr_payroll.ALW"/>
             <field name="name">House Rent Allowance</field>
@@ -100,7 +100,7 @@ else:
             <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
         </record>
 
-        <record id="hr_payroll.hr_salary_rule_convanceallowance1" model="hr.salary.rule">
+        <record id="hr_salary_rule_convanceallowance1" model="hr.salary.rule">
             <field name="code">CA</field>
             <field name="category_id" ref="hr_payroll.ALW"/>
             <field name="name">Conveyance Allowance</field>
@@ -118,7 +118,7 @@ else:
             <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
         </record>
 
-        <record id="hr_payroll.hr_salary_rule_ca_gravie" model="hr.salary.rule">
+        <record id="hr_salary_rule_ca_gravie" model="hr.salary.rule">
             <field name="code">CAGG</field>
             <field name="category_id" ref="hr_payroll.ALW"/>
             <field name="name">Conveyance Allowance For Gravie</field>
@@ -130,7 +130,7 @@ else:
             <field name="struct_id" ref="hr_payroll_base.payroll_base_structure_002"/>
         </record>
 
-        <record id="hr_payroll.hr_salary_rule_meal_voucher" model="hr.salary.rule">
+        <record id="hr_salary_rule_meal_voucher" model="hr.salary.rule">
             <field name="code">MA</field>
             <field name="category_id" ref="hr_payroll.ALW"/>
             <field name="name">Meal Voucher</field>
