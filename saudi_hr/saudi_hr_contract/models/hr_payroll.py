@@ -26,14 +26,14 @@ class HrPayslip(models.Model):
     @api.onchange('employee_id', 'struct_id', 'contract_id', 'date_from', 'date_to')
     def _compute_worked_days_line_ids(self):
         res = super(HrPayslip, self)._compute_worked_days_line_ids()
-        self.input_line_ids = False
         for rec in self:
+            rec.input_line_ids = False
             if not rec.employee_id.date_of_leave and rec.contract_id.signon_bonus_amount > 0:
                 for period in rec.contract_id.period_ids:
                     if len(rec.contract_id.period_ids) > 0:
                         signon_amt = rec.contract_id.signon_bonus_amount / len(rec.contract_id.period_ids)
                         if period.date_start == rec.date_from or period.date_stop == rec.date_to:
-                            self.write({'input_line_ids': [(0, 0, {
+                            rec.write({'input_line_ids': [(0, 0, {
                                     'payslip_id': rec.id,
                                     'sequence': 2,
                                     'input_type_id': self.env.ref('saudi_hr_contract.signon_bonuse_other_input').id,

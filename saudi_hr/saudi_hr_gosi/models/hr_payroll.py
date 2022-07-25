@@ -29,8 +29,9 @@ class HrPayslip(models.Model):
             onchange details of employee based on selecting gosi_id.
         """
         res = super(HrPayslip, self)._compute_worked_days_line_ids()
-        if self.employee_id:
-            self.gosi_id = self.employee_id.gosi_ids.id
+        for rec in self:
+            if rec.employee_id:
+                rec.gosi_id = rec.employee_id.gosi_ids.id
         return res
 
     def action_payslip_done(self):
