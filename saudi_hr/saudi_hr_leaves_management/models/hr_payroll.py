@@ -36,9 +36,10 @@ class HrPayslip(models.Model):
     def _compute_worked_days_line_ids(self):
         super(HrPayslip, self)._compute_worked_days_line_ids()
         res = {}
-        self.bank_account_id = False
-        if self.employee_id:
-            self.bank_account_id = self.employee_id.bank_account_id.id,
+        for rec in self:
+            rec.bank_account_id = False
+            if rec.employee_id:
+                rec.bank_account_id = rec.employee_id.bank_account_id.id,
         return res
 
     # def onchange_employee_id(self, date_from, date_to, employee_id=False, contract_id=False):

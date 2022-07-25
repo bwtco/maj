@@ -67,77 +67,78 @@ class HrPayslip(models.Model):
         res_list = []
         alw_no_of_days = alw_no_of_hours = alw_percentage = alw_amt = 0.0
         ded_no_of_days = ded_no_of_hours = ded_percentage = ded_amt = 0.0
-        other_ids = self.get_other_allowance_deduction(self.employee_id, self.date_from, self.date_to)
-        input_deduction_lines = {}
-        input_allowance_lines = {}
-        for other in other_ids:
-            if other.operation_type == 'allowance':
-                if other.calc_type == 'amount':
-                    alw_amt += other.amount
-                    if 'OTHER_ALLOWANCE_AMOUNT' not in input_allowance_lines:
-                        input_allowance_lines['OTHER_ALLOWANCE_AMOUNT'] = alw_amt
-                    else:
-                        input_allowance_lines.update({'OTHER_ALLOWANCE_AMOUNT': alw_amt})
-                elif other.calc_type == 'days':
-                    alw_no_of_days += other.no_of_days
-                    if 'OTHER_ALLOWANCE_DAYS' not in input_allowance_lines:
-                        input_allowance_lines['OTHER_ALLOWANCE_DAYS'] = alw_no_of_days
-                    else:
-                        input_allowance_lines.update({'OTHER_ALLOWANCE_DAYS': alw_no_of_days})
-                elif other.calc_type == 'hours':
-                    alw_no_of_hours += other.no_of_hours
-                    if 'OTHER_ALLOWANCE_HOURS' not in input_allowance_lines:
-                        input_allowance_lines['OTHER_ALLOWANCE_HOURS'] = alw_no_of_hours
-                    else:
-                        input_allowance_lines.update({'OTHER_ALLOWANCE_HOURS': alw_no_of_hours})
-                elif other.calc_type == 'percentage':
-                    alw_percentage += other.percentage
-                    if 'OTHER_ALLOWANCE_PERCENTAGE' not in input_allowance_lines:
-                        input_allowance_lines['OTHER_ALLOWANCE_PERCENTAGE'] = alw_percentage
-                    else:
-                        input_allowance_lines.update({'OTHER_ALLOWANCE_PERCENTAGE': alw_percentage})
+        for rec in self:
+            other_ids = rec.get_other_allowance_deduction(rec.employee_id, rec.date_from, rec.date_to)
+            input_deduction_lines = {}
+            input_allowance_lines = {}
+            for other in other_ids:
+                if other.operation_type == 'allowance':
+                    if other.calc_type == 'amount':
+                        alw_amt += other.amount
+                        if 'OTHER_ALLOWANCE_AMOUNT' not in input_allowance_lines:
+                            input_allowance_lines['OTHER_ALLOWANCE_AMOUNT'] = alw_amt
+                        else:
+                            input_allowance_lines.update({'OTHER_ALLOWANCE_AMOUNT': alw_amt})
+                    elif other.calc_type == 'days':
+                        alw_no_of_days += other.no_of_days
+                        if 'OTHER_ALLOWANCE_DAYS' not in input_allowance_lines:
+                            input_allowance_lines['OTHER_ALLOWANCE_DAYS'] = alw_no_of_days
+                        else:
+                            input_allowance_lines.update({'OTHER_ALLOWANCE_DAYS': alw_no_of_days})
+                    elif other.calc_type == 'hours':
+                        alw_no_of_hours += other.no_of_hours
+                        if 'OTHER_ALLOWANCE_HOURS' not in input_allowance_lines:
+                            input_allowance_lines['OTHER_ALLOWANCE_HOURS'] = alw_no_of_hours
+                        else:
+                            input_allowance_lines.update({'OTHER_ALLOWANCE_HOURS': alw_no_of_hours})
+                    elif other.calc_type == 'percentage':
+                        alw_percentage += other.percentage
+                        if 'OTHER_ALLOWANCE_PERCENTAGE' not in input_allowance_lines:
+                            input_allowance_lines['OTHER_ALLOWANCE_PERCENTAGE'] = alw_percentage
+                        else:
+                            input_allowance_lines.update({'OTHER_ALLOWANCE_PERCENTAGE': alw_percentage})
 
-            elif other.operation_type == 'deduction':
-                if other.calc_type == 'amount':
-                    ded_amt += other.amount
-                    if 'OTHER_DEDUCTION_AMOUNT' not in input_deduction_lines:
-                        input_deduction_lines['OTHER_DEDUCTION_AMOUNT'] = ded_amt
-                    else:
-                        input_deduction_lines.update({'OTHER_DEDUCTION_AMOUNT': ded_amt})
-                elif other.calc_type == 'days':
-                    ded_no_of_days += other.no_of_days
-                    if 'OTHER_DEDUCTION_DAYS' not in input_deduction_lines:
-                        input_deduction_lines['OTHER_DEDUCTION_DAYS'] = ded_no_of_days
-                    else:
-                        input_deduction_lines.update({'OTHER_DEDUCTION_DAYS': ded_no_of_days})
-                elif other.calc_type == 'hours':
-                    ded_no_of_hours += other.no_of_hours
-                    if 'OTHER_DEDUCTION_HOURS' not in input_deduction_lines:
-                        input_deduction_lines['OTHER_DEDUCTION_HOURS'] = ded_no_of_hours
-                    else:
-                        input_deduction_lines.update({'OTHER_DEDUCTION_HOURS': ded_no_of_hours})
-                elif other.calc_type == 'percentage':
-                    ded_percentage += other.percentage
-                    if 'OTHER_DEDUCTION_PERCENTAGE' not in input_deduction_lines:
-                        input_deduction_lines['OTHER_DEDUCTION_PERCENTAGE'] = ded_percentage
-                    else:
-                        input_deduction_lines.update({'OTHER_DEDUCTION_PERCENTAGE': ded_percentage})
+                elif other.operation_type == 'deduction':
+                    if other.calc_type == 'amount':
+                        ded_amt += other.amount
+                        if 'OTHER_DEDUCTION_AMOUNT' not in input_deduction_lines:
+                            input_deduction_lines['OTHER_DEDUCTION_AMOUNT'] = ded_amt
+                        else:
+                            input_deduction_lines.update({'OTHER_DEDUCTION_AMOUNT': ded_amt})
+                    elif other.calc_type == 'days':
+                        ded_no_of_days += other.no_of_days
+                        if 'OTHER_DEDUCTION_DAYS' not in input_deduction_lines:
+                            input_deduction_lines['OTHER_DEDUCTION_DAYS'] = ded_no_of_days
+                        else:
+                            input_deduction_lines.update({'OTHER_DEDUCTION_DAYS': ded_no_of_days})
+                    elif other.calc_type == 'hours':
+                        ded_no_of_hours += other.no_of_hours
+                        if 'OTHER_DEDUCTION_HOURS' not in input_deduction_lines:
+                            input_deduction_lines['OTHER_DEDUCTION_HOURS'] = ded_no_of_hours
+                        else:
+                            input_deduction_lines.update({'OTHER_DEDUCTION_HOURS': ded_no_of_hours})
+                    elif other.calc_type == 'percentage':
+                        ded_percentage += other.percentage
+                        if 'OTHER_DEDUCTION_PERCENTAGE' not in input_deduction_lines:
+                            input_deduction_lines['OTHER_DEDUCTION_PERCENTAGE'] = ded_percentage
+                        else:
+                            input_deduction_lines.update({'OTHER_DEDUCTION_PERCENTAGE': ded_percentage})
 
-        for code, amount in input_allowance_lines.items():
-            input_type_id = self.env['hr.payslip.input.type'].search([('code', '=', code)], limit=1)
-            self.input_line_ids = [(0, 0, {'input_type_id': input_type_id.id,
-                                            'name': 'Other Allowance',
-                                            'code': code,
-                                            'amount': amount,
-                                            'contract_id': self.contract_id.id})]
+            for code, amount in input_allowance_lines.items():
+                input_type_id = self.env['hr.payslip.input.type'].search([('code', '=', code)], limit=1)
+                rec.input_line_ids = [(0, 0, {'input_type_id': input_type_id.id,
+                                                'name': 'Other Allowance',
+                                                'code': code,
+                                                'amount': amount,
+                                                'contract_id': rec.contract_id.id})]
 
-        for code, amount in input_deduction_lines.items():
-            input_type_id = self.env['hr.payslip.input.type'].search([('code', '=', code)], limit=1)
-            self.input_line_ids = [(0, 0, {'input_type_id': input_type_id.id,
-                                            'name': 'Other Deduction',
-                                            'code': code,
-                                            'amount': amount,
-                                            'contract_id': self.contract_id.id})]
+            for code, amount in input_deduction_lines.items():
+                input_type_id = self.env['hr.payslip.input.type'].search([('code', '=', code)], limit=1)
+                rec.input_line_ids = [(0, 0, {'input_type_id': input_type_id.id,
+                                                'name': 'Other Deduction',
+                                                'code': code,
+                                                'amount': amount,
+                                                'contract_id': rec.contract_id.id})]
         return res
 
     def compute_sheet(self):
